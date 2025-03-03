@@ -1,5 +1,5 @@
-export default function Hola(){
+export default function projects(){
     return(
-        <h1>hlanda</h1>
+        <div>hola</div>
     )
 }

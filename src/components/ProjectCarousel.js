@@ -25,8 +25,10 @@ export default function ProjectCarousel() {
       <button onClick={prevSlide} className={styles.arrow}>❮</button>
       <div className={styles.card}>
         <img src={projects[currentIndex].image} alt={projects[currentIndex].title} className={styles.image} />
-        <h3>{projects[currentIndex].title}</h3>
-        <p>{projects[currentIndex].description}</p>
+        <div className={styles.projectInfo}>
+          <a href={`http://localhost:3000/projects/${currentIndex+1}`}><h3 className={styles.projectTittle}>{projects[currentIndex].title}</h3></a>
+          <p>{projects[currentIndex].description}</p>
+        </div>
       </div>
       <button onClick={nextSlide} className={styles.arrow}>❯</button>
     </div>
