@@ -1,14 +1,14 @@
 .lista{
-    color: white;
+    color: black;
     list-style: none;
     width: 17vw;
     margin-left: 4vw;
-    background-color: black;
+    background-color: white;
     text-align: center;
 
 }
 .listaConetidos{
-    color: white;
+    color: black;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -25,10 +25,10 @@
     width: 20vw;
 }
 .botonLista{
-    color: white;
-    background-color: black;
+    color: black;
+    background-color:white;
     cursor: pointer;
-    border: solid 3px white;
+    border: solid 3px black;
     position: absolute;
     margin-right: 16vw;
     height: 100vh;
@@ -40,7 +40,7 @@
 .itemLista{
     width: 100%;
     height: 10vh;
-    border: solid 1px white;
+    border: solid 1px black;
     padding-top: 1vh;
     cursor: pointer;
     
@@ -52,7 +52,7 @@
 .itemListaContenidos{
     width: 100%;
     height: 50vh;
-    border: solid 1px white;
+    border: solid 1px black;
     padding-top: 1vh;
     text-align: center;
 
