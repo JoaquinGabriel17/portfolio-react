@@ -11,16 +11,10 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Presentation></Presentation>
-      <section className={styles.about}>
         <About></About>
         <Experiencia></Experiencia>
-      </section>
-      <Skills></Skills>
-      <section className={styles.carousel}>
-        <h1>Proyectos</h1>
+       <Skills></Skills>
         <ProjectCarousel></ProjectCarousel>
-      </section>
-
     </div>
   );
 }
