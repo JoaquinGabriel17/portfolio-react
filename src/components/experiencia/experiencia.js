@@ -1,9 +1,9 @@
-import styles from './about.module.css'
+import styles from './experiencia.module.css'
 
-export default function About (info){
+export default function Experiencia(){
     return(
         <section id="sobre-mi" className={styles.aboutSection}>
-        <h1 className={styles.title}>Sobre mí</h1>
+        <h1 className={styles.title}>Experiencia</h1>
         <div className={styles.aboutContent}>
           <p>
             Soy <strong>Joaquín Ocampo</strong>, un desarrollador full stack apasionado por la tecnología y la resolución de problemas.
