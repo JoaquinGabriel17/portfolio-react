@@ -1,28 +1,44 @@
   
   .card {
-    text-align: center;
-    border: 1px solid #ddd;
+    text-align: start;
+    border: 1px solid rgb(255, 255, 255, 0.1);
     border-radius: 8px;
     padding: 1rem;
-    background-color: #fff;
+    background-color: rgb(255, 255, 255, 0.1);
     box-shadow: 0 4px 8px #0000001a;
     height: 100%;
-    display: flex
-;
-    color: black;
-    width: 85%;
+    display: flex;
+    color: white;
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    flex-direction: column;
   }
-  .image {
-    width: 100%;
-    border-radius: 4px;
-    min-height: 100%;
-    height: 100%;
+  .paragraph{
+    font-size: 1.1rem;      /* equivalente a 16px en la mayoría de los navegadores */
+    line-height: 1.6;     /* mejora la legibilidad */
+    max-width: 800px;     /* evita que las líneas se hagan demasiado largas */
+    margin-bottom: 1rem;  /* separación entre párrafos */
+    
   }
-  .projectTittle{
-    text-decoration: underline;
-    cursor: pointer;
+
+  .cardContain{
+    gap: 10px
   }
-  
-.projectTittle:hover{
-  color: aqua;
-}
+
+  .title{
+    margin: 20px;
+  }
+  .icon{
+    max-width: 250px;
+    max-height: 100px;
+  }
+  .subtitle{
+    position: center;
+  }
+  .separador{
+    display: flex;
+    flex-direction: row;
+    gap: 20px
+  }

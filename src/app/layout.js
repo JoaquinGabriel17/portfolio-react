@@ -24,6 +24,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {/*<MenuDesplegable></MenuDesplegable>*/}
+        <Navbar></Navbar>
         {children}
         <Footer></Footer>
       </body>

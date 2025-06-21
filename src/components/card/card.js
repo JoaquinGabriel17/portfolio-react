@@ -1,15 +1,24 @@
 import styles from './card.module.css'
 
-export default function Card({id, image, link, description, title}) {
-
+export default function Card({ paragraph, title, subtitle, icon }) {
     return (
-        <div className={styles.card}>
-            <img src={image} alt={title} className={styles.image} />
-            <div className={styles.projectInfo}>
-                <a href={`http://localhost:3000/projects/${id}`}><h3 className={styles.projectTittle}>{title}</h3></a>
-                <p>{description}</p>
-                <a href={link}>{`${link}`}</a>
+        <div className={styles.cardContain}>
+            {title && <h1 className={styles.title}>{title }</h1>}
+            <div className={styles.card}>
+                {subtitle && <div className={styles.separador}>
+                    {icon && <img 
+                        src={icon} 
+                        alt='icono de experiencia'
+                        className={styles.icon}
+                    ></img>}
+                    <h2 className={styles.subtitle}>{subtitle}</h2>
+                </div>}
+                <p  
+                    className={styles.paragraph}
+                    dangerouslySetInnerHTML={{ __html: paragraph }}
+                ></p>
             </div>
-        </div>
-    )
-}
+      </div>
+    );
+  }
+  

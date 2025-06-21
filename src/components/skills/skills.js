@@ -39,7 +39,7 @@ export default function Skills() {
 
     return (
 
-        <section id="habilidades" className={styles.skillsSection}>
+        <div id="habilidades" className={styles.skillsSection}>
             <div>
                 <h2 className={styles.title}>Lenguajes y tecnologías</h2>
                 <div className={styles.skillsGrid}>
@@ -64,7 +64,7 @@ export default function Skills() {
                     ))}
                 </div>
             </div>
-        </section>
+        </div>
 
 
     )
