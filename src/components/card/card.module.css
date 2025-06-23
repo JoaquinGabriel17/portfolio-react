@@ -12,7 +12,7 @@
     max-width: 800px;
     width: 90%;
     margin: 0 auto;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     flex-direction: column;
   }
   .paragraph{
@@ -29,10 +29,14 @@
 
   .title{
     margin: 20px;
+    color: yellow;
   }
   .icon{
     max-width: 250px;
     max-height: 100px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
   }
   .subtitle{
     position: center;

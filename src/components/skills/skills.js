@@ -13,7 +13,7 @@ import postman from '@/../public/Postman.svg'
 import swagger from '@/../public/Swagger.svg'
 import microsql from '@/../public/micro sql.svg'
 import c from '@/../public/C++.svg'
-
+import SkillCard from '../skillCard/skillCard'
 
 
 export default function Skills() {
@@ -28,8 +28,6 @@ export default function Skills() {
         { name: 'Next.js', src: next.src },
         { name: 'C++', src: c.src },
         { name: 'PostgreSQL', src: postgre.src },
-    ]
-    let herramientas = [
         { name: 'FileZilla', src: filezila.src },
         { name: 'MongoDB Compass', src: mongo.src },
         { name: 'Postman', src: postman.src },
@@ -40,27 +38,13 @@ export default function Skills() {
     return (
 
         <div id="habilidades" className={styles.skillsSection}>
-            <div>
-                <h2 className={styles.title}>Lenguajes y tecnologías</h2>
+            <div className={styles.skillContain}>
+                <h2 className={styles.title}>Stack</h2>
                 <div className={styles.skillsGrid}>
                     {lenguajes.map((skill) => (
-                        <figure key={skill.name} className={styles.skill}>
-                            <img src={skill.src} alt={skill.name} />
-                            <figcaption>{skill.name}</figcaption>
-                        </figure>
-                    ))}
-                </div>
-            </div>
-
-            <div>
-                <h2 className={styles.title}>Herramientas</h2>
-                <div className={styles.skillsGrid}>
-                    {herramientas.map((tool) => (
-                        <figure key={tool.name} className={styles.skill}>
-                            <img src={tool.src} alt={tool.name} />
-                            <figcaption>{tool.name}</figcaption>
-                        </figure>
-
+                        <SkillCard
+                            skill={skill}
+                        ></SkillCard>
                     ))}
                 </div>
             </div>

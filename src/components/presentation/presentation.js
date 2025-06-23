@@ -4,7 +4,7 @@ export default function Presentation() {
     return (
         <section className={styles.presentation}>
             <h1>Joaquín Ocampo Taboada</h1>
-            <h2 className={styles.presentationName}>Full Stack Developer & Bug Exterminator</h2>
+            <h2 className={styles.presentationName}>Full Stack Developer</h2>
             <p className={styles.parrafo}>Me apasiona aprender y desafiarme con nuevos conocimientos y tecnologías. Siempre estoy en busca de nuevos desafíos que impulsen mi crecimiento y el desarrollo de mis habilidades.</p>
   
         </section>
