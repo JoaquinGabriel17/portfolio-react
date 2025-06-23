@@ -41,8 +41,9 @@ export default function Skills() {
             <div className={styles.skillContain}>
                 <h2 className={styles.title}>Stack</h2>
                 <div className={styles.skillsGrid}>
-                    {lenguajes.map((skill) => (
+                    {lenguajes.map((skill, index) => (
                         <SkillCard
+                            key={index}
                             skill={skill}
                         ></SkillCard>
                     ))}
