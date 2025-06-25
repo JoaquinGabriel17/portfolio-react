@@ -26,7 +26,6 @@ export default function RootLayout({ children }) {
         {/*<MenuDesplegable></MenuDesplegable>*/}
         <Navbar></Navbar>
         {children}
-        <Footer></Footer>
       </body>
     </html>
   );
