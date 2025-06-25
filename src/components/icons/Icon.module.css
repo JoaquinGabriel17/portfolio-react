@@ -1,0 +1,59 @@
+.icon{
+    width: 3.2rem;
+    height: 3.2rem;
+    padding: 0.2rem;
+    transition: 0.3s;
+    
+}
+.iconContain{
+    display: flex;
+    flex-direction: row;
+    margin: 60px;
+    border-radius: 8px;
+    background-color: white;
+    width: 20rem;
+    justify-content: space-around;
+    position: relative;
+    
+    
+}
+.iconContain :hover{
+    transform: scale(1.1);
+}
+
+.iconLabel{
+    cursor: pointer;
+}
+
+.copyMsg{
+    position: absolute;
+    bottom: 50px;
+    background-color: white;
+    width: 18rem;
+    color: black;
+    border-radius: 8px;
+    z-index: 999;
+}
+
+.tooltip {
+    position: absolute;
+    bottom: 120%; /* o top: -1.5rem; */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    color: rgb(255, 0, 0);
+    padding: 4px 8px;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 100;
+  }
+  
+  .iconContain:hover .tooltip {
+    opacity: 1;
+  }
+
+  

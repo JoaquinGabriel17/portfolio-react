@@ -72,6 +72,9 @@
     height: 50%;
     width: 100%;
     background: radial-gradient(circle, rgb(241 0 0 / 50%) -60%, transparent 45%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .secondBody{
     height: 50%;

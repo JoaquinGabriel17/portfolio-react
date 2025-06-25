@@ -1,8 +1,7 @@
 import styles from './card.module.css'
 
-export default function Card({ paragraph, title, subtitle, icon, date, list }) {
+export default function Card({ paragraph, title, subtitle, icon, date, titleList, itemsList, list }) {
 
-    /*console.log(list.items)*/
     return (
         <div className={styles.cardContain}>
             {title && <h1 className={styles.title}>{title}</h1>}
@@ -14,22 +13,26 @@ export default function Card({ paragraph, title, subtitle, icon, date, list }) {
                         alt='icono de experiencia'
                         className={styles.icon}
                     ></img>}
+                    <div className={styles.dateAndSubTitle}>
                     <h2 className={styles.subtitle}>{subtitle}</h2>
                     <p className={styles.date}>{date}</p>
+                    </div>
 
                 </div>}
                 <p  
                     className={styles.paragraph}
                     dangerouslySetInnerHTML={{ __html: paragraph }}
                 ></p>
-                {list && <>
-                    <h3>{list.title}</h3>
-                    <ul>
-                        {list.items.map((item)=>{
-                            <li>{item}</li>
-                        })}
-                    </ul>    
-                </>}
+              {list && list.map((item, index) => (
+  <div key={index}>
+    <h3>{item.titleList}</h3>
+    <ul>
+      {item.itemsList.map((subItem, subIndex) => (
+        <li key={subIndex}>{subItem}</li>
+      ))}
+    </ul>
+  </div>
+))}
             </div>
       </div>
     );
