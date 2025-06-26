@@ -92,23 +92,14 @@
 
 @media (max-width: 768px){
     .secondBody{
-        width: 480px;
-        padding: 5px;
+        width: 95vw;
+        padding: 2vw;
+        padding-right: 3vw;
 
     }
     .firstBody{
-        width: 480px;
-        padding: 5px;
-    }
-}
-
-@media (max-width: 480px){
-    .secondBody{
-        width: 350px;
-        padding: 5px;
-    }
-    .firstBody{
-        width: 350px;
-        padding: 5px;
+        width: 95vw;
+        padding: 2vw;
+        padding-right: 3vw;
     }
 }
