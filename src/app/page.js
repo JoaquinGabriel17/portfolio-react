@@ -83,7 +83,7 @@ let ProjectInfo = [
           key='experience'
         ></Card>
         <Skills></Skills>
-        <Projects ProjectsInfo={ProjectInfo}></Projects>
+       <Projects ProjectsInfo={ProjectInfo}></Projects>
       </div>
         {/*<ProjectCarousel></ProjectCarousel>*/}
     </div>

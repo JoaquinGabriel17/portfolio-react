@@ -51,6 +51,10 @@
     .skillWrapper{
       margin-bottom: 1rem;
     }
+    .skill{
+      width: 75px;
+      height: 100px;
+    }
   }
 
 

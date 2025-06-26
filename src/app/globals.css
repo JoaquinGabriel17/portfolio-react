@@ -29,3 +29,8 @@ h2{
   color: yellow;
 }
 
+@media (max-width: 768px){
+  p{
+    max-width: 100%;
+  }
+}

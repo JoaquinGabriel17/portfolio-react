@@ -2,7 +2,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5%;
+    padding: 20px;
     margin-top: 17vh;
 }
 .presentation h1{
@@ -27,3 +27,11 @@
     text-align: center;
     text-wrap: balance;
   }
+
+
+@media (max-width: 768px){
+    .presentation{
+        padding: 5px;
+        margin-top: 10vh;
+    }
+}

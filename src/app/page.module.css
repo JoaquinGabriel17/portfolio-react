@@ -92,13 +92,14 @@
 
 @media (max-width: 768px){
     .secondBody{
-        width: 95vw;
-        padding: 2vw;
+        width: 100vw;
+        padding: 0;
+        padding-left: 2vw;
         padding-right: 3vw;
 
     }
     .firstBody{
-        width: 95vw;
+        width: 100vw;
         padding: 2vw;
         padding-right: 3vw;
     }
