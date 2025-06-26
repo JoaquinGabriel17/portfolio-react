@@ -104,11 +104,11 @@
 
 @media (max-width: 480px){
     .secondBody{
-        width: 390px;
+        width: 350px;
         padding: 5px;
     }
     .firstBody{
-        width: 390px;
+        width: 350px;
         padding: 5px;
     }
 }
