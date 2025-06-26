@@ -1,6 +1,5 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import ProjectCarousel from "@/components/projectCarousel/ProjectCarousel";
 import Presentation from "@/components/presentation/presentation";
 import Skills from "@/components/skills/skills";
 import Card from "@/components/card/card";
@@ -9,6 +8,7 @@ import github from '@/../public/github.svg'
 import linkedin from '@/../public/linkedin.svg'
 import wasap from '@/../public/whatsapp-brands.svg'
 import email from '@/../public/email.svg'
+import Projects from "@/components/projects/Project";
 
 export default function Home() {
 
@@ -45,6 +45,14 @@ export default function Home() {
     {src: wasap.src, href: '+54 9 3876 56-7092'},
     {src: email.src, href: 'joaquingabriel3@hotmail.com'}
   ]
+
+let ProjectInfo = [
+  {
+    name: 'Rosa de los vientos',
+    description: 'hola',
+    image: 'https://www.unav.edu/documents/16800098/0/Hamas+1200.jpg/f742d015-eb85-c50b-d4f1-784577ab2bb3?t=1705265161613'
+  }
+]
   
 
   return (
@@ -70,6 +78,7 @@ export default function Home() {
           key='experience'
         ></Card>
         <Skills></Skills>
+        <Projects ProjectsInfo={ProjectInfo}></Projects>
       </div>
         {/*<ProjectCarousel></ProjectCarousel>*/}
     </div>
