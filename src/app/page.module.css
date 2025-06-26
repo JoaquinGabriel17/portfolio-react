@@ -4,9 +4,11 @@
         flex-direction: column;
         align-items: center;
         /* min-height: 91%; */
-        /* width: 100%; */
+        
+        
         box-sizing: border-box;
-        /* gap: 5vh;*/
+
+        gap: 30px;
 }
 
 .aboutMe{
@@ -69,19 +71,44 @@
 
 
 .firstBody{
-    height: 50%;
-    width: 100%;
+    width: 1263px;
     background: radial-gradient(circle, rgb(241 0 0 / 50%) -60%, transparent 65%);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+
 }
 .secondBody{
-    height: 50%;
-    width: 100%;
+    width: 1263px;
     background: radial-gradient(circle, rgba(0, 241, 241, 0.5) -60%, transparent 65%);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
+    padding: 20px;
+
+}
+
+@media (max-width: 768px){
+    .secondBody{
+        width: 480px;
+        padding: 5px;
+
+    }
+    .firstBody{
+        width: 480px;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 480px){
+    .secondBody{
+        width: 390px;
+        padding: 5px;
+    }
+    .firstBody{
+        width: 390px;
+        padding: 5px;
+    }
 }

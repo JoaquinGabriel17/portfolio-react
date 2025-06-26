@@ -10,21 +10,19 @@
     flex-direction: row;
     margin: 60px;
     border-radius: 8px;
-    background-color: white;
     width: 20rem;
     justify-content: space-around;
     position: relative;
+    align-items: center;
+    height: 5rem;
     
     
 }
-.iconContain :hover{
-    transform: scale(1.1);
-}
-
-.iconLabel{
+.iconContain a:hover{
+    transform: scale(1.2);
+    transition: 0.3s;
     cursor: pointer;
 }
-
 .copyMsg{
     position: absolute;
     bottom: 50px;
@@ -38,18 +36,13 @@
 .tooltip {
     position: absolute;
     bottom: 120%; /* o top: -1.5rem; */
-    left: 50%;
-    transform: translateX(-50%);
     background-color: white;
-    color: rgb(255, 0, 0);
+    color: black;
     padding: 4px 8px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     border-radius: 4px;
     white-space: nowrap;
     opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.2s ease;
-    z-index: 100;
   }
   
   .iconContain:hover .tooltip {

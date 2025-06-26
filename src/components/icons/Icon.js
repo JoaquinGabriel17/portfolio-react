@@ -1,39 +1,77 @@
 "use client"
 import styles from './Icon.module.css'
 import { useState } from 'react';
+import { FaGithub, FaLinkedin, FaWhatsapp,FaEnvelope } from 'react-icons/fa';
 
-export default function Icon({iconList}){
 
-    const [copiado, setCopiado] = useState('');
+export default function Icon(){
+
+    const [copiado, setCopiado] = useState('Haz click para copiar la información');
 
     const copiar = (texto) => {
       navigator.clipboard.writeText(texto).then(() => {
         setCopiado(`Copiado: ${texto}`);
-        setTimeout(() => setCopiado(''), 2000);
+        setTimeout(() => setCopiado('Haz click para copiar la información'), 2000);
       });
     };
 
     return(
         <div className={styles.iconContain}>
-            {iconList && iconList.map((icon,index) =>{
-                return <div key={index}>
-                        <a 
-                        key={index}
-                        onClick={() => copiar(icon.href)}
-                        className={styles.iconLabel}>
-                            <img                         
-                            src={icon.src} 
-                            key={index} 
-                            alt={icon.href}
-                            className={styles.icon}
-                            ></img>
-                        </a>
-                        {/*<span className={styles.tooltip}>Copiar</span>  Inteno de etiqueta "copiar" al pasar cursor sobre icono*/}
-                        
-                    </div>
-            })}
-            {copiado && <p className={styles.copyMsg}>{copiado}</p>}
+            <a>
+        <FaGithub 
+        className={styles.icon}
+        onClick={() => {copiar('https://github.com/JoaquinGabriel17')}}
+        ></FaGithub>
+      </a>
+      <a>
+        <FaLinkedin 
+        className={styles.icon}
+        onClick={() => {copiar('https://www.linkedin.com/in/joaquin-ocampo-a7b213252/')}}
+        ></FaLinkedin>
+      </a>
+      <a>
+        <FaWhatsapp 
+        className={styles.icon}
+        onClick={() => {copiar('+54 9 3876 56-7092')}}
+        ></FaWhatsapp>
+      </a>
+      <a>
+        <FaEnvelope 
+        className={styles.icon}
+        onClick={() => {copiar('joaquingabriel3@hotmail.com')}}
+        ></FaEnvelope>
+      </a>
+      <p className={styles.tooltip}>{copiado}</p>
         </div>
     )
 }
 
+
+/*
+      <div className={styles.iconContain}>
+      <a>
+        <FaGithub 
+        className={styles.icon}
+        onClick={() => {copiar('https://github.com/JoaquinGabriel17')}}
+        ></FaGithub>
+      </a>
+      <a>
+        <FaLinkedin 
+        className={styles.icon}
+        onClick={() => {copiar('https://www.linkedin.com/in/joaquin-ocampo-a7b213252/')}}
+        ></FaLinkedin>
+      </a>
+      <a>
+        <FaWhatsapp 
+        className={styles.icon}
+        onClick={() => {copiar('+54 9 3876 56-7092')}}
+        ></FaWhatsapp>
+      </a>
+      <a>
+        <FaEnvelope 
+        className={styles.icon}
+        onClick={() => {copiar('joaquingabriel3@hotmail.com')}}
+        ></FaEnvelope>
+      </a>
+      </div>
+*/

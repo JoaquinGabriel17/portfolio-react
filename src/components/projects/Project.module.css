@@ -1,0 +1,4 @@
+.proejctsContainer{
+    display: flex;
+    flex-direction: row;
+}

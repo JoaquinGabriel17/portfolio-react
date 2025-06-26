@@ -15,8 +15,14 @@
     /* padding-inline: 2rem; */
     padding: 10px;
     /* justify-content: space-around; */
-    gap: 69%;
+    gap: 60%;
 }
+@media (max-width: 768px) {
+    /* Estilos para tablets y celulares */
+    .navbar{
+        opacity: 0;
+    }
+  }
 
 .navbar h1{
     font-family: 'Dancing Script', cursive;;

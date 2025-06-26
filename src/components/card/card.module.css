@@ -6,7 +6,6 @@
     padding: 1rem;
     background-color: rgb(255, 255, 255, 0.1);
     box-shadow: 0 4px 8px #0000001a;
-    height: 100%;
     display: flex;
     color: white;
     max-width: 800px;
@@ -17,10 +16,8 @@
   }
   .paragraph{
     font-size: 1.1rem;      /* equivalente a 16px en la mayoría de los navegadores */
-    line-height: 1.6;     /* mejora la legibilidad */
-    max-width: 800px;     /* evita que las líneas se hagan demasiado largas */
-    margin-bottom: 1rem;  /* separación entre párrafos */
-    
+    margin: 0;
+    margin-bottom: 10px;    
   }
 
   .cardContain{
@@ -39,9 +36,7 @@
     border-radius: 5px;
     object-fit: contain;
   }
-  .subtitle{
-    position: center;
-  }
+ 
   .separador{
     display: flex;
     flex-direction: row;
@@ -57,6 +52,7 @@
     color: black;
     font-weight: 500;
     text-align: center;
+    width: 200px;
   }
 
   .card ul{
@@ -73,12 +69,33 @@
   }
 
   .card h3 {
-    margin-bottom: 0.5rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    margin: 0;
+    margin-bottom: 15px;
     color: yellow; /* O el color que estés usando */
   }
 
   .dateAndSubTitle{
     display: flex;
     flex-direction: column;
+  }
+
+
+  .subtitle{
+    position: center;
+    color: white;
+  }
+
+  @media (max-width: 768px) {
+    /* Estilos para tablets y celulares */
+    .separador{
+      display: flex;
+      flex-direction: column;
+    }
+    .cardContain{
+      width: 460px;
+    }
+    .card{
+      padding: 10px;
+    }
   }

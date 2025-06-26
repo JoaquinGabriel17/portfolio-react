@@ -1,10 +1,11 @@
 .skillWrapper {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: visible;
+    padding: 0;
   }
 
 .skill {
@@ -46,6 +47,11 @@
     border: 1px solid rgba(0, 241, 241, 0.5);
   }
   
+  @media (max-width: 500px){
+    .skillWrapper{
+      margin-bottom: 1rem;
+    }
+  }
 
 
 

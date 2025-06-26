@@ -19,6 +19,7 @@ export default function Card({ paragraph, title, subtitle, icon, date, titleList
                     </div>
 
                 </div>}
+                {date && <h3>Descripción</h3>}
                 <p  
                     className={styles.paragraph}
                     dangerouslySetInnerHTML={{ __html: paragraph }}
