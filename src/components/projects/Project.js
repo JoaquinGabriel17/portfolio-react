@@ -3,7 +3,7 @@ import ProjectCard from '../ProjectCard/ProjectCard'
 
 export default function Projects({ProjectsInfo}){
     return (
-        <div>
+        <section>
         <h2>Proyectos</h2>
         <div className={styles.proejctsContainer}>
             
@@ -16,6 +16,6 @@ export default function Projects({ProjectsInfo}){
                 )
             })}
         </div>
-        </div>
+        </section>
     )
 }
