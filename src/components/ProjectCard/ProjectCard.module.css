@@ -1,11 +1,18 @@
-.ProjectCardContainer{
+.ProjectCard{
     display: flex;
     background-color: rgb(255, 255, 255, 0.1);
     border: solid 1px rgb(255, 255, 255, 0.1);
     border-radius: 8px;
     overflow: hidden;
+    width: 600px;
 }
 
-.ProjectCardContainer img{
+.ProjectCard img{
     width: 70%;
+}
+
+@media (max-width: 786px){
+    .ProjectCard{
+        width: 95%;
+    }
 }

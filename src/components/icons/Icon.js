@@ -11,7 +11,7 @@ export default function Icon(){
     const copiar = (texto) => {
       navigator.clipboard.writeText(texto).then(() => {
         setCopiado(`Copiado: ${texto}`);
-        setTimeout(() => setCopiado('Haz click para copiar la información'), 2000);
+        setTimeout(() => setCopiado('Click para copiar la información'), 2000);
       });
     };
 

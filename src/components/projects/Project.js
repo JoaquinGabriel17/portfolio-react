@@ -3,9 +3,9 @@ import ProjectCard from '../ProjectCard/ProjectCard'
 
 export default function Projects({ProjectsInfo}){
     return (
-        <section>
+        <div className={styles.projectContainer}>
         <h2>Proyectos</h2>
-        <div className={styles.proejctsContainer}>
+        <div className={styles.projectCardContainer}>
             
             {ProjectsInfo && ProjectsInfo.map((item, index)=>{
                 return(
@@ -16,6 +16,6 @@ export default function Projects({ProjectsInfo}){
                 )
             })}
         </div>
-        </section>
+        </div>
     )
 }

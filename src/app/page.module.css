@@ -80,7 +80,7 @@
 
 }
 .secondBody{
-    width: 1263px;
+    width: 1223px;
     background: radial-gradient(circle, rgba(0, 241, 241, 0.5) -60%, transparent 65%);
     display: flex;
     flex-direction: column;
