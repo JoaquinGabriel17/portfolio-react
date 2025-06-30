@@ -9,6 +9,11 @@ import linkedin from '@/../public/linkedin.svg'
 import wasap from '@/../public/whatsapp-brands.svg'
 import email from '@/../public/email.svg'
 import Projects from "@/components/projects/Project";
+import rosa from '@/../public/rosadelviento.png'
+import hills from '@/../public/hillsappi.png'
+import { DiReact } from 'react-icons/di';
+import { SiRedux, SiFirebase, SiJavascript } from 'react-icons/si';
+
 
 export default function Home() {
 
@@ -49,15 +54,19 @@ export default function Home() {
 let ProjectInfo = [
   {
     name: 'Rosa de los vientos',
-    description: 'hola',
-    image: 'https://www.unav.edu/documents/16800098/0/Hamas+1200.jpg/f742d015-eb85-c50b-d4f1-784577ab2bb3?t=1705265161613'
+    description: 'Rosa de los vientos es un restaurante digital donde los usuarios pueden comprar y vender alimentos.',
+    image: rosa.src,
+    features: ['Registro de usuarios', 'Compra', 'Venta', 'Gestión de envíos'],
+    techIcons: [<DiReact key="react" />, <SiRedux key="redux" />, <SiFirebase key="firebase" />, <SiJavascript key="js" />]
   },
   {
-    name: 'tumadre',
-    description: 'holanda',
-    image: 'https://sportshub.cbsistatic.com/i/r/2025/06/22/4753fc61-77f6-4e01-b33a-f40defc302b6/thumbnail/770x433/faddd0ea013501bceb80efa63215cc8e/jon-jones-plain.jpg'
+    name: 'Appi Hills',
+    description: 'Appi Hills es un e-commerce donde los usuarios pueden comprar, vender y gestionar los envíos en línea.',
+    image: hills.src,
+    features: ['Registro de usuarios', 'Compra', 'Venta', 'Gestión de envíos'],
+    techIcons: [<DiReact key="react" />, <SiRedux key="redux" />, <SiJavascript key="js" />]
   }
-]
+];
   
 
   return (

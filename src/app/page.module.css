@@ -94,13 +94,8 @@
     .secondBody{
         width: 100vw;
         padding: 0;
-        padding-left: 2vw;
-        padding-right: 2vw;
-
     }
     .firstBody{
         width: 100vw;
-        padding: 2vw;
-        padding-right: 2vw;
     }
 }

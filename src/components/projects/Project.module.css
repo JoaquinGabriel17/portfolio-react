@@ -9,3 +9,12 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+@media (max-width: 786px){
+    .projectCardContainer{
+        flex-direction: column;
+        gap: 10px;
+        justify-content: center;
+        padding-left: 5px;
+    }
+}

@@ -45,33 +45,3 @@ export default function Icon(){
         </div>
     )
 }
-
-
-/*
-      <div className={styles.iconContain}>
-      <a>
-        <FaGithub 
-        className={styles.icon}
-        onClick={() => {copiar('https://github.com/JoaquinGabriel17')}}
-        ></FaGithub>
-      </a>
-      <a>
-        <FaLinkedin 
-        className={styles.icon}
-        onClick={() => {copiar('https://www.linkedin.com/in/joaquin-ocampo-a7b213252/')}}
-        ></FaLinkedin>
-      </a>
-      <a>
-        <FaWhatsapp 
-        className={styles.icon}
-        onClick={() => {copiar('+54 9 3876 56-7092')}}
-        ></FaWhatsapp>
-      </a>
-      <a>
-        <FaEnvelope 
-        className={styles.icon}
-        onClick={() => {copiar('joaquingabriel3@hotmail.com')}}
-        ></FaEnvelope>
-      </a>
-      </div>
-*/
