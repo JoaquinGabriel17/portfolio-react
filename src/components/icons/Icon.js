@@ -2,6 +2,7 @@
 import styles from './Icon.module.css'
 import { useState } from 'react';
 import { FaGithub, FaLinkedin, FaWhatsapp,FaEnvelope } from 'react-icons/fa';
+import { FaDownload } from 'react-icons/fa';
 
 
 export default function Icon(){
@@ -16,7 +17,8 @@ export default function Icon(){
     };
 
     return(
-        <div className={styles.iconContain}>
+      <div className={styles.container}>
+        <div className={styles.iconContainer}>
             <a>
         <FaGithub 
         className={styles.icon}
@@ -42,6 +44,14 @@ export default function Icon(){
         ></FaEnvelope>
       </a>
       <p className={styles.tooltip}>{copiado}</p>
+        </div>
+        <a
+      href="/CV-Joaquin-Ocampo.docx" download >
+        <button className={styles.CVButton}>
+          <FaDownload /> Descargar CV
+        </button>
+
+    </a>
         </div>
     )
 }
