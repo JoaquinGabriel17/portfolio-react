@@ -44,7 +44,7 @@
 .CardContent {
     display: flex;
     width: 100%;
-    transition: filter 0.3s ease;
+    transition: filter 0.3s ease
   }
   
   .ProjectCard:hover .CardContent {
@@ -84,5 +84,8 @@
 @media (max-width: 786px){
     .ProjectCard{
         width: 95%;
+    }
+    .CardContent{
+        flex-direction: column;
     }
 }
