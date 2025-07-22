@@ -1,99 +1,152 @@
-.ProjectCard{
-    display: flex;
-    background-color: rgb(255, 255, 255, 0.1);
-    border: solid 1px black;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 600px;
-    cursor: default;
+.ProjectCard {
     position: relative;
-    transition: box-shadow 0.3s ease;
-}
-.ProjectCard::before {
-    content: "";
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle at center, rgba(0, 241, 241, 0.2)0%, transparent 60%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-    z-index: 1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    max-height: 200px;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255, 0.1);
+    width: 600px;
+    margin-bottom: 50px;
+
+  }
+  .infoContainer{
+    display: flex;
+    flex-direction: row;
   }
   
-  .ProjectCard:hover::before {
-    opacity: 1;
+  .expandida {
+    max-height: 600px;
   }
-.ProjectCard img{
+  .expandida:hover .CardContent {
+    filter: blur(0px);
+  }
+  
+  
+  .ProjectCard img {
     width: 60%;
-}
-.ProjectCard article{
+    object-fit: cover; /* o 'contain' */
+    height: auto;
+
+  }
+  
+  .ProjectCard article {
     padding: 5px;
-}
-.ProjectCard ul{
+    transition: opacity 0.3s ease;
+  }
+  
+  .ProjectCard ul {
     list-style: none;
     text-align: start;
     padding-left: 5px;
-}
-.ProjectCard p{
+  }
+  
+  .ProjectCard p {
     text-align: start;
     padding-left: 5px;
-}
-.CardContent {
+  }
+  
+  .CardContent {
     display: flex;
     width: 100%;
-    transition: filter 0.3s ease
+    transition: filter 0.3s ease;
+    flex-direction: column;
   }
   
   .ProjectCard:hover .CardContent {
     filter: blur(3px);
   }
+  .ProjectCard.expandida:hover .CardContent {
+    filter: none !important;
+  }
 
-/* Contenedor de los íconos que aparece en hover */
-.TechOverlay {
+  .buttonContainer{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .buttonContainer button{
+    width: 210px;
+    font-size: 1.5rem;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    border: 2px solid rgb(255, 255, 255, 0.1);
+    color: white;
+    cursor: pointer;
+  }
+  .buttonContainer button:hover{
+    border: 2px solid rgb(138, 0, 0);
+
+  }
+  
+  
+  /* ---------- OVERLAY EN HOVER ---------- */
+  
+  .TechOverlay {
     position: absolute;
     top: 0;
     left: 0;
+    z-index: 10;
     width: 100%;
     height: 100%;
     background-color: rgba(10, 10, 10, 0.6);
+    backdrop-filter: blur(4px);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    font-size: 3rem;
-    color: white;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
-}
-.TechOverlay h5{
-    position: absolute;
-    bottom: 5rem;
-    font-size: 1rem;
-}
-/* Mostrar íconos al hacer hover */
-.ProjectCard:hover .TechOverlay {
+  }
+  
+  .ProjectCard:hover .TechOverlay {
     opacity: 1;
     pointer-events: all;
-    filter: none; /* Para que los íconos no se vean borrosos */
-}
-
-@media (max-width: 786px){
-    .ProjectCard{
-        width: 95%;
+  }
+  
+  .OverlayContent {
+    text-align: center;
+    color: white;
+  }
+  
+  .OverlayContent h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .TechIcons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    font-size: 4rem;
+  }
+  
+  /* ---------- RESPONSIVE ---------- */
+  
+  @media (max-width: 786px) {
+    .ProjectCard {
+      width: 95%;
     }
-    .CardContent{
-        flex-direction: column;
+  
+    .CardContent {
+      flex-direction: column;
     }
-    .ProjectCard ul{
-        list-style:circle;
-        padding-left: 20px;
+  
+    .ProjectCard ul {
+      list-style: circle;
+      padding-left: 20px;
     }
-    .ProjectCard img{
-        width: 100%;
+  
+    .ProjectCard img {
+      width: 100%;
     }
-    
-}
+  
+    .TechIcons {
+      flex-wrap: wrap;
+    }
+  }
+  

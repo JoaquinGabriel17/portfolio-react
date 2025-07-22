@@ -12,7 +12,11 @@ import Projects from "@/components/projects/Project";
 import rosa from '@/../public/rosadelviento.png'
 import hills from '@/../public/hillsappi.png'
 import { DiReact } from 'react-icons/di';
-import { SiRedux, SiFirebase, SiJavascript } from 'react-icons/si';
+import { SiNextdotjs, SiMongodb, SiRedux, SiFirebase, SiJavascript } from 'react-icons/si';
+import linko from '@/../public/linko.png'
+import { FaServer } from 'react-icons/fa'; // alternativa representativa para Express
+
+
 
 
 export default function Home() {
@@ -57,14 +61,33 @@ let ProjectInfo = [
     description: 'Rosa de los vientos es un restaurante digital donde los usuarios pueden comprar y vender alimentos.',
     image: rosa.src,
     features: ['Registro de usuarios', 'Compra', 'Venta', 'Gestión de envíos'],
-    techIcons: [<DiReact key="react" />, <SiRedux key="redux" />, <SiFirebase key="firebase" />, <SiJavascript key="js" />]
+    techIcons: [<DiReact key="react" />, <SiRedux key="redux" />, <SiFirebase key="firebase" />, <SiJavascript key="js" />],
+    links:{
+      github: 'https://github.com/OscarMayaC/PFhenryFront',
+      demo: 'https://p-fhenry-front.vercel.app/'
+    }
   },
-  {
+  /*{
     name: 'Appi Hills',
     description: 'Appi Hills es un e-commerce donde los usuarios pueden comprar, vender y gestionar los envíos en línea.',
     image: hills.src,
     features: ['Registro de usuarios', 'Compra', 'Venta', 'Gestión de envíos'],
-    techIcons: [<DiReact key="react" />, <SiRedux key="redux" />, <SiJavascript key="js" />]
+    techIcons: [<DiReact key="react" />, <SiRedux key="redux" />, <SiJavascript key="js" />],
+    links:{
+      github: 'https://github.com/JoaquinGabriel17/url-shortener',
+      demo: ''
+    }
+  },*/
+  {
+    name: 'Linko',
+    description: 'Linko es un acortador de URLs con una interfaz simple e intuitiva, creado para demostrar habilidades en desarrollo full stack con tecnologías modernas.',
+    image: linko.src,
+    features: ['Registro de usuarios', 'Acortar URLs', 'Guardar URLs'],
+    techIcons: [<DiReact key="react" />, <SiNextdotjs key="next" />, <SiJavascript key="js" />, <SiMongodb key="mongodb" />],
+    links:{
+      github: 'https://github.com/JoaquinGabriel17/url-shortener',
+      demo: 'https://linko-nine.vercel.app/'
+    }
   }
 ];
   

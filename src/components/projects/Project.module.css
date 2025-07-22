@@ -2,12 +2,16 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 600px;
 
 }
 .projectCardContainer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 10px;
+
+
 }
 
 @media (max-width: 786px){
