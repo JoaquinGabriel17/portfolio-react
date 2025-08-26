@@ -11,6 +11,7 @@ import email from '@/../public/email.svg'
 import Projects from "@/components/projects/Project";
 import rosa from '@/../public/rosadelviento.png'
 import hills from '@/../public/hillsappi.png'
+import criptoMetrics from '@/../public/cripto-metrics.png'
 import { DiReact } from 'react-icons/di';
 import { SiNextdotjs, SiMongodb, SiRedux, SiFirebase, SiJavascript,SiExpress  } from 'react-icons/si';
 import linko from '@/../public/linko.png'
@@ -61,7 +62,7 @@ let ProjectInfo = [
     name: 'Movie Finder',
     description: 'Aplicación web que permite explorar más de 5.000 películas mediante una búsqueda indexada rápida, eficiente e intuitiva. Incluye múltiples filtros para refinar resultados',
     image: movie.src,
-    features: ['Registro de usuarios', 'Compra', 'Venta', 'Gestión de envíos'],
+    features: ['Búsqueda indexada', 'Agregar películas a favoritas', 'Información detallada de películas'],
     techIcons: [<DiReact key="react" /> , <SiJavascript key="js" />, <FaNodeJs key="node"/>],
     links:{
       github: 'https://github.com/JoaquinGabriel17/Movie-Finder',
@@ -79,17 +80,17 @@ let ProjectInfo = [
       demo: 'https://p-fhenry-front.vercel.app/'
     }
   },
-  /*{
-    name: 'Appi Hills',
-    description: 'Appi Hills es un e-commerce donde los usuarios pueden comprar, vender y gestionar los envíos en línea.',
-    image: hills.src,
-    features: ['Registro de usuarios', 'Compra', 'Venta', 'Gestión de envíos'],
+  {
+    name: 'Crypto Metrics',
+    description: 'Esta aplicación permite consultar en tiempo real las principales criptomonedas del mercado. El proyecto está desarrollado con React para la interfaz, integrando la API de CoinGecko para obtener los datos del mercado en vivo.',
+    image: criptoMetrics.src,
+    features: ['Registro de usuarios', 'Múltiples vistas de estadísticas', 'Estadísticas en tiempo real'],
     techIcons: [<DiReact key="react" />, <SiRedux key="redux" />, <SiJavascript key="js" />],
     links:{
-      github: 'https://github.com/JoaquinGabriel17/url-shortener',
-      demo: ''
+      github: 'https://github.com/JoaquinGabriel17/crypto-metrics',
+      demo: 'en desarrollo'
     }
-  },*/
+  },
   {
     name: 'Linko',
     description: 'Linko es un acortador de URLs con una interfaz simple e intuitiva, creado para demostrar habilidades en desarrollo full stack con tecnologías modernas.',

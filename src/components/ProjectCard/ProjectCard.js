@@ -35,7 +35,10 @@ export default function ProjectCard({ ProjectInfo }) {
         </div>
         <div className={styles.buttonContainer}>
             <a href={links.github} target='_blank' > <button>Repositorio</button></a>
-            <a href={links.demo} target='_blank' > <button>Demostración</button></a>
+            {links.demo == 'en desarrollo'? 
+            <a  > <button className={styles.dissableButton} disabled>En desarrollo</button></a>
+            : <a href={links.demo} target='_blank' > <button>Demostración</button></a>
+            }
         </div>
       </div>
 

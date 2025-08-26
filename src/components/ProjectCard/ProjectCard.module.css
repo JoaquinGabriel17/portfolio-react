@@ -38,9 +38,8 @@
   }
   
   .ProjectCard ul {
-    list-style: none;
     text-align: start;
-    padding-left: 5px;
+    padding-left: 1.2rem;
   }
   
   .ProjectCard p {
@@ -81,6 +80,14 @@
   .buttonContainer button:hover{
     border: 2px solid rgb(138, 0, 0);
 
+  }
+
+  .dissableButton{
+
+  }
+    .dissableButton:hover{
+    border: 1px solid gray;
+    cursor: default;
   }
   
   
