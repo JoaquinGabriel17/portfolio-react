@@ -82,9 +82,7 @@
 
   }
 
-  .dissableButton{
 
-  }
     .dissableButton:hover{
     border: 1px solid gray;
     cursor: default;
