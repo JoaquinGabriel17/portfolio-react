@@ -1,0 +1,99 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: #222222;
+  border-radius: 12px;
+  color: white;
+  padding: 24px;
+  max-width: 700px;
+  width: 90%;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease-in-out;
+  height: 90vh;
+}
+
+.closeButton {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border: none;
+  background: transparent;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.closeButton:hover {
+  transform: scale(1.1);
+}
+
+.title {
+  margin-bottom: 12px;
+  font-size: 1.8rem;
+  color: rgb(0, 241, 241);
+}
+.modal h3{
+  color: rgb(0, 241, 241)
+}
+.modal ul{
+  list-style-type: disc;
+  padding-left: 20px;
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  height: 60%;
+  object-fit: cover;
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  gap: 12px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  background-color: #0077ff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.link:hover {
+  background-color: #005fcc;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

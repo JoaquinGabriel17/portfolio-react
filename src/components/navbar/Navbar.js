@@ -8,13 +8,13 @@ export default function Navbar() {
     <nav className={styles.navbar}>
       <h1>Jo</h1>
       <div className={styles.iconContain}>
-      <a>
+      <a href='https://github.com/JoaquinGabriel17' target="_blank" rel="noopener noreferrer" >
         <FaGithub 
         className={styles.icon}
         onClick={() => {navigator.clipboard.writeText('https://github.com/JoaquinGabriel17')}}
         ></FaGithub>
       </a>
-      <a>
+      <a href='https://www.linkedin.com/in/joaquin-ocampo-a7b213252/' target="_blank" rel="noopener noreferrer">
         <FaLinkedin 
         className={styles.icon}
         onClick={() => {navigator.clipboard.writeText('https://www.linkedin.com/in/joaquin-ocampo-a7b213252/')}}

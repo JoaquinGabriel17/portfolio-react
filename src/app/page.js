@@ -11,7 +11,7 @@ import email from '@/../public/email.svg'
 import Projects from "@/components/projects/Project";
 import rosa from '@/../public/rosadelviento.png'
 import hills from '@/../public/hillsappi.png'
-import criptoMetrics from '@/../public/cripto-metrics.png'
+import criptoMetrics from '@/../public/cryptometrics.png'
 import { DiReact } from 'react-icons/di';
 import { SiNextdotjs, SiMongodb, SiRedux, SiFirebase, SiJavascript,SiExpress  } from 'react-icons/si';
 import linko from '@/../public/linko.png'

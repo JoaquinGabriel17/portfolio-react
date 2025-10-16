@@ -46,7 +46,7 @@ export default function Icon(){
       <p className={styles.tooltip}>{copiado}</p>
         </div>
         <a
-      href="/curriculum.docx" download >
+      href="/cv.docx" download >
         <button className={styles.CVButton}>
           <FaDownload /> Descargar CV
         </button>

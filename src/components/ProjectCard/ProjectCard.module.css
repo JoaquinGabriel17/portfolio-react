@@ -3,32 +3,31 @@
     cursor: pointer;
     transition: all 0.3s ease;
     overflow: hidden;
-    max-height: 200px;
+    height: 200px;
     border: 1px solid #ccc;
-    padding: 1rem;
     border-radius: 12px;
     background-color: rgb(255, 255, 255, 0.1);
     width: 568px;
+    padding-right: 0.3rem;
     margin-bottom: 50px;
 
   }
   .infoContainer{
     display: flex;
     flex-direction: row;
+    text-align: center;
   }
-  
-  .expandida {
-    max-height: 600px;
-  }
-  .expandida:hover .CardContent {
-    filter: blur(0px);
+  .proyectName{
+    text-align: center;
+    width: 30%;
+    height: 100%;
   }
   
   
   .ProjectCard img {
-    width: 60%;
-    object-fit: cover; /* o 'contain' */
-    height: auto;
+    width: 70%;
+    object-fit: contain; /* o 'contain' */
+    height: 100%;
 
   }
   

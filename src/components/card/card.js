@@ -1,6 +1,6 @@
 import styles from './card.module.css'
 
-export default function Card({ paragraph, title, subtitle, icon, date, titleList, itemsList, list }) {
+export default function Card({ paragraph, title, subtitle, icon, date, list }) {
 
     return (
         <div className={styles.cardContain}>
