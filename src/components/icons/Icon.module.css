@@ -13,13 +13,21 @@
     flex-direction: row;
     margin: 35px;
     border-radius: 8px;
-    width: 20rem;
     justify-content: space-around;
     position: relative;
     align-items: center;
     height: 5rem;
-    
-    
+    gap: 4rem;
+}
+.iconContainer a{
+    border: 1px solid gray;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding: 0 8px;
+    color: white;
+    text-decoration: none;
 }
 .iconContainer a:hover{
     transform: scale(1.2);
