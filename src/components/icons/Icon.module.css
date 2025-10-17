@@ -11,7 +11,7 @@
 .iconContainer{
     display: flex;
     flex-direction: row;
-    margin: 60px;
+    margin: 35px;
     border-radius: 8px;
     width: 20rem;
     justify-content: space-around;

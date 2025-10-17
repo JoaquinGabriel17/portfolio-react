@@ -16,7 +16,7 @@ export default function Projects({ProjectsInfo}){
 
     return (
     <div className={styles.projectContainer}>
-      <h2>Proyectos</h2>
+      <h1 className={styles.projectTitle}>Proyectos</h1>
       <div className={styles.projectCardContainer} ref={containerRef}>
         {ProjectsInfo &&
           ProjectsInfo.map((item, index) => (

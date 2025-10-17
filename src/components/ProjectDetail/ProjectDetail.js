@@ -16,6 +16,7 @@ export default function ProjectDetail({ project, onClose }) {
           alt={project.title}
           className={styles.image}
         />
+        <h3>Descripción</h3>
         <p className={styles.description}>{project.description}</p>
         <h3>Características</h3>
         <ul>

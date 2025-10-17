@@ -3,31 +3,30 @@
     cursor: pointer;
     transition: all 0.3s ease;
     overflow: hidden;
-    height: 200px;
+    height: 300px;
     border: 1px solid #ccc;
     border-radius: 12px;
     background-color: rgb(255, 255, 255, 0.1);
     width: 568px;
-    padding-right: 0.3rem;
     margin-bottom: 50px;
 
   }
   .infoContainer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: center;
   }
   .proyectName{
     text-align: center;
-    width: 30%;
-    height: 100%;
+    width: 100%;
+    margin: 10px 0;
   }
   
   
   .ProjectCard img {
-    width: 70%;
+    width: 100%;
     object-fit: contain; /* o 'contain' */
-    height: 100%;
+    border-radius: 8px;
 
   }
   

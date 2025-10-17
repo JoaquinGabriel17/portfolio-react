@@ -13,6 +13,10 @@
     flex-wrap: wrap;
 
 }
+.projectTitle{
+    color: yellow;
+    margin: 20px
+}
 
 @media (max-width: 786px){
     .projectCardContainer{

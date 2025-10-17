@@ -14,9 +14,9 @@ import hills from '@/../public/hillsappi.png'
 import criptoMetrics from '@/../public/cryptometrics.png'
 import { DiReact } from 'react-icons/di';
 import { SiNextdotjs, SiMongodb, SiRedux, SiFirebase, SiJavascript,SiExpress  } from 'react-icons/si';
-import linko from '@/../public/linko.png'
+import linko from '@/../public/linko2.png'
 import { FaServer,FaNodeJs } from 'react-icons/fa'; // alternativa representativa para Express
-import movie from '@/../public/movie.png'
+import movie from '@/../public/moviefinder.png'
 
 
 
@@ -112,10 +112,11 @@ let ProjectInfo = [
       <div className={styles.firstBody}>
         <Presentation></Presentation>
         <Icon iconList={icons}></Icon>
-        <Card 
+        {/*<Card 
           paragraph={about} 
           key='about'
         ></Card>
+        */ }
       </div>
       <div className={styles.secondBody}>
         <Card 

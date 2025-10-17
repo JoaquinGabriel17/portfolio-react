@@ -5,7 +5,7 @@ export default function Presentation() {
         <section className={styles.presentation}>
             <h1>Joaquín Ocampo Taboada</h1>
             <h2 className={styles.presentationName}>Full Stack Developer</h2>
-            <p className={styles.parrafo}>Me apasiona aprender y desafiarme con nuevos conocimientos y tecnologías. Siempre estoy en busca de nuevos desafíos que impulsen mi crecimiento y el desarrollo de mis habilidades.</p>
+            <p className={styles.parrafo}>Desarrollador Full Stack con más de 4 años de experiencia creando proyectos web dinámicos e innovadores, apasionado por transformar ideas en productos funcionales.</p>
   
         </section>
     )
