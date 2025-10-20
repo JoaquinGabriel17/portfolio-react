@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar.js";
 import Footer from "@/components/Footer/Footer";
 import MenuDesplegable from "@/components/menuDesplegable/MenuDesplegable";
+
 /*rm -rf node_modules package-lock.json */
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,8 +24,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        {/*<MenuDesplegable></MenuDesplegable>*/}
-        <Navbar></Navbar>
         {children}
       </body>
     </html>

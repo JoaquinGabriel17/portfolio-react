@@ -1,7 +1,8 @@
 import styles from './card.module.css'
 
-export default function Card({ paragraph, title, subtitle, icon, date, list }) {
+export default function Card({ data, lang }) {
 
+  let {paragraph, title, subtitle, icon, date, list} = data
     return (
         <div className={styles.cardContain}>
             {title && <h1 className={styles.title}>{title}</h1>}
@@ -19,7 +20,7 @@ export default function Card({ paragraph, title, subtitle, icon, date, list }) {
                     </div>
 
                 </div>}
-                {date && <h3>Descripción</h3>}
+                {date && <h3>{lang === "es" ? "Descripción" : "Description"}</h3>}
                 <p  
                     className={styles.paragraph}
                     dangerouslySetInnerHTML={{ __html: paragraph }}

@@ -1,3 +1,7 @@
+.ext{
+    display: contents;
+    width: 100vw;
+}
 .container{
     display: flex
     ;

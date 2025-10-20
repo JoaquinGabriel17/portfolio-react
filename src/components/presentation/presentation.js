@@ -1,11 +1,14 @@
 import styles from './presentation.module.css'
 
-export default function Presentation() {
+export default function Presentation(data) {
+
+    const { role, roleDescription } = data.data;
+    
     return (
         <section className={styles.presentation}>
             <h1>Joaquín Ocampo Taboada</h1>
-            <h2 className={styles.presentationName}>Full Stack Developer</h2>
-            <p className={styles.parrafo}>Desarrollador Full Stack con más de 4 años de experiencia creando proyectos web dinámicos e innovadores, apasionado por transformar ideas en productos funcionales.</p>
+            <h2 className={styles.presentationName}>{role}</h2>
+            <p className={styles.parrafo}>{roleDescription}</p>
   
         </section>
     )

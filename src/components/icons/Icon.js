@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaWhatsapp,FaEnvelope } from 'react-icons/fa';
 import { FaDownload } from 'react-icons/fa';
 
 
-export default function Icon(){
+export default function Icon({lang}){
 
 
     const copiar = (texto) => {
@@ -35,7 +35,7 @@ export default function Icon(){
         <a
       href="/cv.docx" download >
         <button className={styles.CVButton}>
-          <FaDownload /> Descargar CV
+          <FaDownload /> {lang === "es" ? "Descargar CV" : "Download CV"}
         </button>
 
     </a>

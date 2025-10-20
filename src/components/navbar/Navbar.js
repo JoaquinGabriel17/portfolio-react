@@ -3,10 +3,27 @@ import Link from 'next/link';
 import styles from './Navbar.module.css'
 import { FaGithub, FaLinkedin, FaWhatsapp,FaEnvelope } from 'react-icons/fa';
 
-export default function Navbar() {
+export default function Navbar({toChangeLang, lang}) {
   return (
     <nav className={styles.navbar}>
       <h1>Jo</h1>
+      <div className={styles.langButtons}>
+        <span>{lang === "es" ? "Lenguaje:  " : "Language:  "}</span>
+        <button
+          onClick={() => toChangeLang("es")}
+          className={lang === "es" ? styles.active : ""}
+        >
+          🇪🇸
+        </button>
+        <button
+          onClick={() => toChangeLang("en")}
+          className={lang === "en" ? styles.active : ""}
+        >
+          🇬🇧
+        </button>
+      </div>
+
+
       <div className={styles.iconContain}>
       <a href='https://github.com/JoaquinGabriel17' target="_blank" rel="noopener noreferrer" >
         <FaGithub 
