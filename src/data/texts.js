@@ -1,4 +1,11 @@
-// src/texts.js
+import { SiNextdotjs, SiMongodb, SiRedux, SiFirebase, SiJavascript,SiExpress  } from 'react-icons/si';
+import { FaServer,FaNodeJs } from 'react-icons/fa'; 
+import { DiReact } from 'react-icons/di';
+import rosa from '@/../public/rosadelviento.png'
+import criptoMetrics from '@/../public/cryptometrics.png'
+import linko from '@/../public/linko2.png'
+import movie from '@/../public/moviefinder.png'
+
 export const texts = {
   en: {
     presentation: {
@@ -24,15 +31,92 @@ export const texts = {
           itemsList : ['SQL, API REST, Zendesk, Mongo DB Compass, FileZilla, Microsoft Azure']
         }]
     },
-    about: {
-      title: "About Me",
-      desc: "I have experience in React, Node.js, SQL, and building responsive web applications. I love creating projects that solve real problems.",
-    },
-    projects: {
-      title: "Projects",
-      project1: "Crypto Dashboard",
-      project2: "Movie Search App",
-    },
+    ProjectInfo: [
+  {
+    name: 'Crypto Metrics',
+    description:
+      'This application allows users to track the main cryptocurrencies on the market in real time. The project is built with React for the interface, integrating the CoinGecko API to display up-to-date market data.',
+    image: criptoMetrics.src,
+    features: [
+      'User registration',
+      'Multiple statistic views',
+      'Real-time market data'
+    ],
+    techIcons: [
+      <DiReact key="react" />,
+      <SiRedux key="redux" />,
+      <SiJavascript key="js" />
+    ],
+    links: {
+      github: 'https://github.com/JoaquinGabriel17/crypto-metrics',
+      demo: 'https://crypto-metrics-sigma.vercel.app/'
+    }
+  },
+  {
+    name: 'Linko',
+    description:
+      'Linko is a URL shortener with a clean and intuitive interface, built to showcase full stack development skills using modern technologies.',
+    image: linko.src,
+    features: ['User registration', 'URL shortening', 'Save shortened links'],
+    techIcons: [
+      <DiReact key="react" />,
+      <SiNextdotjs key="next" />,
+      <SiJavascript key="js" />,
+      <SiMongodb key="mongodb" />,
+      <FaNodeJs key="node" />
+    ],
+    links: {
+      github: 'https://github.com/JoaquinGabriel17/url-shortener',
+      demo: 'https://linko-nine.vercel.app/'
+    }
+  },
+  {
+    name: 'Movie Finder',
+    description:
+      'A web application that lets users explore over 5,000 movies through a fast, efficient, and intuitive indexed search. Includes multiple filters to refine search results.',
+    image: movie.src,
+    features: [
+      'Indexed search',
+      'Add movies to favorites',
+      'Detailed movie information'
+    ],
+    techIcons: [
+      <DiReact key="react" />,
+      <SiJavascript key="js" />,
+      <FaNodeJs key="node" />
+    ],
+    links: {
+      github: 'https://github.com/JoaquinGabriel17/Movie-Finder',
+      demo: 'https://movie-finder-beige-zeta.vercel.app/'
+    }
+  },
+  {
+    name: 'Rosa de los vientos',
+    description:
+      'Rosa de los vientos is a digital restaurant platform where users can buy and sell food products online.',
+    image: rosa.src,
+    features: [
+      'User registration',
+      'Purchasing',
+      'Selling',
+      'Shipping management'
+    ],
+    techIcons: [
+      <DiReact key="react" />,
+      <SiRedux key="redux" />,
+      <SiFirebase key="firebase" />,
+      <SiJavascript key="js" />,
+      <FaNodeJs key="node" />
+    ],
+    links: {
+      github: 'https://github.com/OscarMayaC/PFhenryFront',
+      demo: 'https://p-fhenry-front.vercel.app/'
+    }
+  }
+],
+
+
+
     contact: {
       title: "Contact",
       email: "Email me at: joaquin@example.com",
@@ -62,19 +146,55 @@ export const texts = {
           itemsList : ['SQL, API REST, Zendesk, Mongo DB Compass, FileZilla, Microsoft Azure']
         }]
     },
-    header: {
-      title: "Desarrollador Full Stack",
-      desc: "",
-    },
-    about: {
-      title: "Sobre mí",
-      desc: "Tengo experiencia en React, Node.js, SQL y construcción de aplicaciones web responsivas. Me encanta crear proyectos que resuelvan problemas reales.",
-    },
-    projects: {
-      title: "Proyectos",
-      project1: "Crypto Dashboard",
-      project2: "App de Búsqueda de Películas",
-    },
+   
+    ProjectInfo: [
+  {
+    name: 'Crypto Metrics',
+    description: 'Esta aplicación permite consultar en tiempo real las principales criptomonedas del mercado. El proyecto está desarrollado con React para la interfaz, integrando la API de CoinGecko para obtener los datos del mercado en vivo.',
+    image: criptoMetrics.src,
+    features: ['Registro de usuarios', 'Múltiples vistas de estadísticas', 'Estadísticas en tiempo real'],
+    techIcons: [<DiReact key="react" />, <SiRedux key="redux" />, <SiJavascript key="js" />],
+    links:{
+      github: 'https://github.com/JoaquinGabriel17/crypto-metrics',
+      demo: 'https://crypto-metrics-sigma.vercel.app/'
+    }
+  },
+   {
+    name: 'Linko',
+    description: 'Linko es un acortador de URLs con una interfaz simple e intuitiva, creado para demostrar habilidades en desarrollo full stack con tecnologías modernas.',
+    image: linko.src,
+    features: ['Registro de usuarios', 'Acortar URLs', 'Guardar URLs'],
+    techIcons: [<DiReact key="react" />, <SiNextdotjs key="next" />, <SiJavascript key="js" />, <SiMongodb key="mongodb" />, <FaNodeJs key="node"/>],
+    links:{
+      github: 'https://github.com/JoaquinGabriel17/url-shortener',
+      demo: 'https://linko-nine.vercel.app/'
+    }
+  },
+  {
+    name: 'Movie Finder',
+    description: 'Aplicación web que permite explorar más de 5.000 películas mediante una búsqueda indexada rápida, eficiente e intuitiva. Incluye múltiples filtros para refinar resultados',
+    image: movie.src,
+    features: ['Búsqueda indexada', 'Agregar películas a favoritas', 'Información detallada de películas'],
+    techIcons: [<DiReact key="react" /> , <SiJavascript key="js" />, <FaNodeJs key="node"/>],
+    links:{
+      github: 'https://github.com/JoaquinGabriel17/Movie-Finder',
+      demo: 'https://movie-finder-beige-zeta.vercel.app/'
+    }
+  },
+  {
+    name: 'Rosa de los vientos',
+    description: 'Rosa de los vientos es un restaurante digital donde los usuarios pueden comprar y vender alimentos.',
+    image: rosa.src,
+    features: ['Registro de usuarios', 'Compra', 'Venta', 'Gestión de envíos'],
+    techIcons: [<DiReact key="react" />, <SiRedux key="redux" />, <SiFirebase key="firebase" />, <SiJavascript key="js" />, <FaNodeJs key="node"/> ],
+    links:{
+      github: 'https://github.com/OscarMayaC/PFhenryFront',
+      demo: 'https://p-fhenry-front.vercel.app/'
+    }
+  }
+  
+ 
+],
     contact: {
       title: "Contacto",
       email: "Escríbeme a: joaquin@example.com",

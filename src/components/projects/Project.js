@@ -4,7 +4,7 @@ import ProjectCard from '../ProjectCard/ProjectCard'
 import { useState, useRef, useEffect } from 'react'
 import ProjectDetail from '../ProjectDetail/ProjectDetail'
 
-export default function Projects({ProjectsInfo}){
+export default function Projects({ProjectsInfo, lang}){
   const [selectedProject, setSelectedProject] = useState(null);
 
     //Lógica para expandir carta
@@ -16,7 +16,7 @@ export default function Projects({ProjectsInfo}){
 
     return (
     <div className={styles.projectContainer}>
-      <h1 className={styles.projectTitle}>Proyectos</h1>
+      <h1 className={styles.projectTitle}>{lang === "es" ? "Proyectos" : "Projects"}</h1>
       <div className={styles.projectCardContainer} ref={containerRef}>
         {ProjectsInfo &&
           ProjectsInfo.map((item, index) => (

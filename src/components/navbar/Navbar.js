@@ -8,7 +8,7 @@ export default function Navbar({toChangeLang, lang}) {
     <nav className={styles.navbar}>
       <h1>Jo</h1>
       <div className={styles.langButtons}>
-        <span>{lang === "es" ? "Lenguaje:  " : "Language:  "}</span>
+        <span>{lang === "es" ? "Lengüaje:  " : "Language:  "}</span>
         <button
           onClick={() => toChangeLang("es")}
           className={lang === "es" ? styles.active : ""}
