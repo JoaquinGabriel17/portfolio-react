@@ -6,6 +6,7 @@ import { FaGithub, FaLinkedin, FaWhatsapp,FaEnvelope } from 'react-icons/fa';
 export default function Navbar({toChangeLang, lang}) {
   return (
     <nav className={styles.navbar}>
+      <div className={styles.separator}>
       <h1>Jo</h1>
       <div className={styles.langButtons}>
         <span>{lang === "es" ? "Lengüaje:  " : "Language:  "}</span>
@@ -21,6 +22,7 @@ export default function Navbar({toChangeLang, lang}) {
         >
           🇬🇧
         </button>
+      </div>
       </div>
 
 
