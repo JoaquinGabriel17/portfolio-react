@@ -24,6 +24,7 @@ export default function Projects({ProjectsInfo, lang}){
             <ProjectCard
               key={index}
               ProjectInfo={item}
+              lang={lang === "es" ? "es" : "en"}
               
             />
             </div>

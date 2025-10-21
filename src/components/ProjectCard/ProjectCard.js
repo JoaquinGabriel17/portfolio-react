@@ -1,7 +1,7 @@
 import styles from './ProjectCard.module.css';
 import { useState } from 'react';
 
-export default function ProjectCard({ ProjectInfo }) {
+export default function ProjectCard({ ProjectInfo, lang }) {
   const { image, name, description, features, techIcons, links } = ProjectInfo;
 
 
@@ -24,7 +24,7 @@ export default function ProjectCard({ ProjectInfo }) {
                 <span key={i}>{icon}</span>
               ))}
             </div>
-            <h2>Click para más información</h2>
+            <h2>{lang === "es" ? "Click para más información" : "Click for more information"}</h2>
           </div>
         </div>
     </div>
