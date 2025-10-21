@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./ProjectDetail.module.css";
 
-export default function ProjectDetail({ project, onClose }) {
+export default function ProjectDetail({ project, onClose, lang }) {
   if (!project) return null; // Si no hay proyecto seleccionado, no muestra nada
 
   return (
@@ -16,14 +16,26 @@ export default function ProjectDetail({ project, onClose }) {
           alt={project.title}
           className={styles.image}
         />
-        <h3>Descripción</h3>
+        <h3>{lang === "es" ? "Descripción" : "Description"}</h3>
         <p className={styles.description}>{project.description}</p>
-        <h3>Características</h3>
+        <div className={styles.featuresContainer}>
+          <div className={styles.featureSection}>
+        <h3>{lang === "es" ? "Características" : "Features"}</h3>
         <ul>
           {project.features.map((feature, index) => (
             <li key={index}>{feature}</li>
           ))}
         </ul>
+        </div>
+        <div className={styles.featureSection}>
+        <h3>{lang === "es" ? "Tecnologías" : "Technologies"}</h3>
+        <ul>
+          {project.technologies.map((feature, index) => (
+            <li key={index}>{feature}</li>
+          ))}
+        </ul>
+        </div>
+        </div>
 
         <div className={styles.links}>
           {project.links.demo && (

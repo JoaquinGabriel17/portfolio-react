@@ -74,6 +74,7 @@
     width: 100%;
     height: 100%;
     justify-content: center;
+    position: relative;
 }
 .langButtons button {
   padding: 6px 10px;
@@ -98,6 +99,10 @@
     align-items: center;
     gap: 3rem;
     flex-direction: row;
+}
+.langButtons span{
+    position: absolute;
+    top: 2px;
 }
 
 /*ICON STYLES*/

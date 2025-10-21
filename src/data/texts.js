@@ -47,6 +47,7 @@ export const texts = {
       <SiRedux key="redux" />,
       <SiJavascript key="js" />
     ],
+    technologies: ['React', 'Redux', 'JavaScript', 'Node.js'],
     links: {
       github: 'https://github.com/JoaquinGabriel17/crypto-metrics',
       demo: 'https://crypto-metrics-sigma.vercel.app/'
@@ -65,6 +66,7 @@ export const texts = {
       <SiMongodb key="mongodb" />,
       <FaNodeJs key="node" />
     ],
+    technologies: ['React', 'Next.js', 'JavaScript', 'MongoDB', 'Node.js'],
     links: {
       github: 'https://github.com/JoaquinGabriel17/url-shortener',
       demo: 'https://linko-nine.vercel.app/'
@@ -85,6 +87,7 @@ export const texts = {
       <SiJavascript key="js" />,
       <FaNodeJs key="node" />
     ],
+    technologies: ['React', 'Node.js', 'JavaScript'],
     links: {
       github: 'https://github.com/JoaquinGabriel17/Movie-Finder',
       demo: 'https://movie-finder-beige-zeta.vercel.app/'
@@ -108,6 +111,7 @@ export const texts = {
       <SiJavascript key="js" />,
       <FaNodeJs key="node" />
     ],
+    technologies: ['React', 'Node.js', 'JavaScript', 'Firebase', 'Redux'],
     links: {
       github: 'https://github.com/OscarMayaC/PFhenryFront',
       demo: 'https://p-fhenry-front.vercel.app/'

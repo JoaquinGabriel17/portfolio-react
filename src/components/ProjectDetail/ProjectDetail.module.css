@@ -43,6 +43,7 @@
   margin-bottom: 12px;
   font-size: 1.8rem;
   color: yellow;
+  margin-top: 0;
 }
 .modal h3{
   color: yellow
@@ -72,7 +73,7 @@
   justify-content: space-around;
   gap: 12px;
   width: 100%;
-  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .link {
@@ -82,13 +83,23 @@
   padding: 8px 14px;
   border-radius: 6px;
   transition: background-color 0.2s ease;
+  margin-top: 10px;
 }
 
 .link:hover {
   background-color: #005fcc;
   cursor: pointer;
 }
-
+.featuresContainer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+}
+.featureSection{
+  display: flex;
+  flex-direction: column;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
