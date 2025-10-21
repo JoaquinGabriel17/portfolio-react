@@ -2,9 +2,29 @@
 import Link from 'next/link';
 import styles from './Navbar.module.css'
 import { FaGithub, FaLinkedin, FaWhatsapp,FaEnvelope } from 'react-icons/fa';
+import MenuDesplegable from '../menuDesplegable/MenuDesplegable';
+import React, { useState, useEffect } from 'react';
 
 export default function Navbar({toChangeLang, lang}) {
+
+  const [isMobile, setIsMobile] = useState(false);
+
+useEffect(() => {
+  // Se ejecuta solo en el cliente
+  const checkMobile = () => setIsMobile(window.innerWidth < 768);
+
+  checkMobile(); // ejecuta la primera vez
+  window.addEventListener("resize", checkMobile);
+
+  return () => window.removeEventListener("resize", checkMobile);
+}, []);
+
+const langChangeHandler = (newLang) => {
+  toChangeLang(newLang);
+}
+
   return (
+    <>{isMobile ? <MenuDesplegable lang={lang === "es" ? "es" : "en"} toChangeLang={langChangeHandler}/> : 
     <nav className={styles.navbar}>
       <div className={styles.separator}>
       <h1>Jo</h1>
@@ -53,5 +73,6 @@ export default function Navbar({toChangeLang, lang}) {
       </a>
       </div>
     </nav>
+    }</>
   );
 }
