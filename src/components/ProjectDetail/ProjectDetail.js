@@ -22,7 +22,7 @@ export default function ProjectDetail({ project, onClose, lang }) {
           <div className={styles.featureSection}>
         <h3>{lang === "es" ? "Características" : "Features"}</h3>
         <ul>
-          {project.features.map((feature, index) => (
+          {project.features && project.features.map((feature, index) => (
             <li key={index}>{feature}</li>
           ))}
         </ul>
@@ -30,7 +30,7 @@ export default function ProjectDetail({ project, onClose, lang }) {
         <div className={styles.featureSection}>
         <h3>{lang === "es" ? "Tecnologías" : "Technologies"}</h3>
         <ul>
-          {project.technologies.map((feature, index) => (
+          {project.technologies && project.technologies.map((feature, index) => (
             <li key={index}>{feature}</li>
           ))}
         </ul>
