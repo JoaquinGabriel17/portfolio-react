@@ -9,7 +9,8 @@
         align-items: center;
         /* min-height: 91%; */
         
-        
+            background: radial-gradient(circle, rgb(241 0 0 / 10%) 0%, transparent 50%);
+
         box-sizing: border-box;
 
         gap: 30px;

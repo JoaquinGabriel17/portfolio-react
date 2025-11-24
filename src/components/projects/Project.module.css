@@ -7,9 +7,10 @@
 .projectCardContainer{
     display: flex;
     flex-direction: row;
-    
+    max-width: 1200px;
     gap: 4rem;
     flex-wrap: wrap;
+    justify-content: center;
 
 }
 .projectTitle{

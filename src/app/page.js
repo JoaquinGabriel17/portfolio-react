@@ -53,11 +53,8 @@ export default function Home() {
     <div className={styles.ext}>
       <Navbar toChangeLang={changeLang} lang={lang}></Navbar>
     <div className={styles.container}>
-      <div className={styles.firstBody}>
         <Presentation data={content.presentation} ></Presentation>
         <Icon iconList={icons} lang={lang}></Icon>
-      </div>
-      <div className={styles.secondBody}>
         <Card 
           data={content.experience}
           key='experience'
@@ -65,7 +62,6 @@ export default function Home() {
         ></Card>
         <Projects ProjectsInfo={content.ProjectInfo} lang={lang}></Projects>
         <Skills></Skills>
-      </div>
     </div>
     </div>
   );
