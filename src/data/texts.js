@@ -32,7 +32,7 @@ export const texts = {
         }]
     },
     ProjectInfo: [
-  {
+  /*{
     name: 'Crypto Metrics',
     description:
       'This application allows users to track the main cryptocurrencies on the market in real time. The project is built with React for the interface, integrating the CoinGecko API to display up-to-date market data.',
@@ -52,7 +52,7 @@ export const texts = {
       github: 'https://github.com/JoaquinGabriel17/crypto-metrics',
       demo: 'https://crypto-metrics-sigma.vercel.app/'
     }
-  },
+  },*/
   {
     name: 'Linko',
     description:
