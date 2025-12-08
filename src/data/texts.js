@@ -87,7 +87,7 @@ export const texts = {
       <SiJavascript key="js" />,
       <FaNodeJs key="node" />
     ],
-    technologies: ['React', 'Node.js', 'JavaScript'],
+    technologies: ['React', 'Redux', 'JavaScript'],
     links: {
       github: 'https://github.com/JoaquinGabriel17/Movie-Finder',
       demo: 'https://movie-finder-beige-zeta.vercel.app/'
@@ -169,6 +169,7 @@ export const texts = {
     image: linko.src,
     features: ['Registro de usuarios', 'Acortar URLs', 'Guardar URLs'],
     techIcons: [<DiReact key="react" />, <SiNextdotjs key="next" />, <SiJavascript key="js" />, <SiMongodb key="mongodb" />, <FaNodeJs key="node"/>],
+    technologies: ['React', 'Next.js', 'JavaScript', 'MongoDB', 'Node.js'],
     links:{
       github: 'https://github.com/JoaquinGabriel17/url-shortener',
       demo: 'https://linko-nine.vercel.app/'
@@ -180,6 +181,7 @@ export const texts = {
     image: movie.src,
     features: ['Búsqueda indexada', 'Agregar películas a favoritas', 'Información detallada de películas'],
     techIcons: [<DiReact key="react" /> , <SiJavascript key="js" />, <FaNodeJs key="node"/>],
+    technologies: ['React', 'Redux', 'JavaScript'],
     links:{
       github: 'https://github.com/JoaquinGabriel17/Movie-Finder',
       demo: 'https://movie-finder-beige-zeta.vercel.app/'
@@ -191,6 +193,7 @@ export const texts = {
     image: rosa.src,
     features: ['Registro de usuarios', 'Compra', 'Venta', 'Gestión de envíos'],
     techIcons: [<DiReact key="react" />, <SiRedux key="redux" />, <SiFirebase key="firebase" />, <SiJavascript key="js" />, <FaNodeJs key="node"/> ],
+     technologies: ['React', 'Node.js', 'JavaScript', 'Firebase', 'Redux'],
     links:{
       github: 'https://github.com/OscarMayaC/PFhenryFront',
       demo: 'https://p-fhenry-front.vercel.app/'
