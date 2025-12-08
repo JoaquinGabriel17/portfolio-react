@@ -152,7 +152,7 @@ export const texts = {
     },
    
     ProjectInfo: [
-  {
+  /*{
     name: 'Crypto Metrics',
     description: 'Esta aplicación permite consultar en tiempo real las principales criptomonedas del mercado. El proyecto está desarrollado con React para la interfaz, integrando la API de CoinGecko para obtener los datos del mercado en vivo.',
     image: criptoMetrics.src,
@@ -162,7 +162,7 @@ export const texts = {
       github: 'https://github.com/JoaquinGabriel17/crypto-metrics',
       demo: 'https://crypto-metrics-sigma.vercel.app/'
     }
-  },
+  },*/
    {
     name: 'Linko',
     description: 'Linko es un acortador de URLs con una interfaz simple e intuitiva, creado para demostrar habilidades en desarrollo full stack con tecnologías modernas.',
