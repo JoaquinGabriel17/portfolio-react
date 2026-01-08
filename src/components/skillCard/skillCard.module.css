@@ -1,65 +1,58 @@
+/* skillCard.module.css */
+
 .skillWrapper {
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: visible;
-    padding: 0;
-    margin-bottom: 1rem;
-  }
+  height: 100%; /* Asegura que todas las celdas del grid tengan la misma altura */
+}
 
 .skill {
-    display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: black;
-        background-color: rgb(255 255 255);
-        padding: 5px;
-        padding-bottom: 10px;
-         border: 1px hidden; 
-         margin: 0;
-        border-radius: 8px;
-        box-shadow: 0px 0px 10px 7px rgb(255 255 255 / 38%);
-        transition: transform 0.3s ease;
-        overflow: hidden;
-        will-change: transform;
-        width: 100px;
-        height: 100px;
-        gap: 5px;
-        transform-origin: center;
-        font-size: 1rem;
+  background: #1e1e24; /* Mismo fondo gris oscuro de los componentes anteriores */
+  border: 1px solid rgba(255, 255, 255, 0.08); /* Borde muy sutil */
+  border-radius: 12px;
+  padding: 2.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  word-break: break-word;
-  line-height: 1.1;
-  
-  }
-  
-  .skill img{
-    width: 100%;
-    height: 70%;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: default; /* O pointer si planeas que sean clickeables */
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
 
-  }
+/* Efecto Hover: Elevación y Borde Brillante */
+.skill:hover {
+  transform: translateY(-8px); /* Sube un poco más que las cards grandes */
+  border-color: rgba(129, 140, 248, 0.5); /* Color acento (#818cf8) al borde */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 
+              0 0 15px rgba(129, 140, 248, 0.2); /* Glow suave */
+  background: #23232a; /* Un tono apenas más claro al hacer hover */
+}
 
+.skill img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); /* Sombra suave al icono */
+}
 
-  .skill:hover {
-    transform: scale(1.2);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    border: 1px solid rgba(0, 241, 241, 0.5);
-  }
-  
-  @media (max-width: 500px){
-    .skillWrapper{
-      margin-bottom: 1rem;
-    }
-    .skill{
-      width: 75px;
-      height: 100px;
-    }
-  }
+/* Pequeño efecto en la imagen al hacer hover a la tarjeta */
+.skill:hover img {
+  transform: scale(1.1); /* El icono crece un poquito */
+}
 
+.skill figcaption {
+  color: #d1d5db; /* Gris claro */
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: color 0.3s ease;
+}
 
-
-  
-
-
+.skill:hover figcaption {
+  color: #fff; /* Texto blanco puro al hacer hover */
+}

@@ -11,11 +11,6 @@ export default function ProjectDetail({ project, onClose, lang }) {
           ✕
         </button>
         <h2 className={styles.title}>{project.name}</h2>
-        <img
-          src={project.image}
-          alt={project.title}
-          className={styles.image}
-        />
         <h3>{lang === "es" ? "Descripción" : "Description"}</h3>
         <p className={styles.description}>{project.description}</p>
         <div className={styles.featuresContainer}>

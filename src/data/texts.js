@@ -1,10 +1,11 @@
-import { SiNextdotjs, SiMongodb, SiRedux, SiFirebase, SiJavascript,SiExpress  } from 'react-icons/si';
+import { SiNextdotjs, SiMongodb, SiRedux, SiFirebase, SiJavascript,SiExpress, SiTypescript, SiTailwindcss  } from 'react-icons/si';
 import { FaServer,FaNodeJs } from 'react-icons/fa'; 
 import { DiReact } from 'react-icons/di';
 import rosa from '@/../public/rosadelviento.png'
 import criptoMetrics from '@/../public/cryptometrics.png'
 import linko from '@/../public/linko2.png'
 import movie from '@/../public/moviefinder.png'
+import agora  from '@/../public/agora.png'
 
 export const texts = {
   en: {
@@ -23,7 +24,7 @@ export const texts = {
           itemsList : [
   'Resolving incidents and performing technical analysis of requirements',
   'Integrating and consuming services through REST APIs',
-  'Querying and validating data in relational (SQL Server) and non-relational (MongoDB) databases',
+  'Querying and validating data in relational and non-relational databases',
   'Managing tickets in platforms such as Zendesk and tracking tasks in Visual Studio boards'
 ],    
         },
@@ -53,6 +54,33 @@ export const texts = {
       demo: 'https://crypto-metrics-sigma.vercel.app/'
     }
   },*/
+  {
+    name: 'Agora Mercado',
+    description:
+  'Agora is an e-commerce platform created to connect buyers and sellers in a digital, simple, and accessible way, allowing users to find and offer products in one place, from any device, without the need for downloads.',
+image: agora.src,
+features: [
+  'User registration and authentication system with access control',
+  'Real-time notifications using WebSockets',
+  'Order management with state control, automatic expiration, and historical records',
+  'Support system with tickets and real-time chat between users and administrators',
+  'Responsive design'
+],
+
+    techIcons: [
+      <DiReact key="react" />,
+      <SiExpress key="express" />,
+      <SiTypescript key="ts" />,
+      <FaNodeJs key="node"/>,
+      <SiTailwindcss key="tailwind" />,
+      <SiMongodb />
+    ],
+    technologies: ['React', 'Typescript', 'Mongo DB', 'Node.js', 'Tailwind CSS', 'Express'],
+    links: {
+      github: 'https://github.com/JoaquinGabriel17/rosario-mercado',
+      demo: 'https://agora-six-rho.vercel.app/'
+    }
+  },
   {
     name: 'Linko',
     description:
@@ -142,7 +170,7 @@ export const texts = {
           itemsList : [
             'Resolución de incidencias y análisis técnico de requerimientos',
             'Integración y consumo de servicios mediante API REST',
-            'Consultas y validaciones en bases de datos relacionales (SQL Server) y no relacionales (MongoDB)',
+            'Consultas y validaciones en bases de datos relacionales y no relacionales',
             'Gestión de tickets en plataformas como Zendesk y seguimiento de tareas en tableros de Visual Studio'
           ],    
         },
@@ -163,6 +191,33 @@ export const texts = {
       demo: 'https://crypto-metrics-sigma.vercel.app/'
     }
   },*/
+  {
+    name: 'Agora Mercado',
+    description:
+    'Agora es un e-commerce creado para conectar compradores y vendedores de forma digital, simple y accesible, permitiendo encontrar y ofrecer productos en un solo lugar, desde cualquier dispositivo y sin necesidad de descargas.',
+    image: agora.src,
+    features: [
+  'Sistema de registro y autenticación de usuarios con control de acceso',
+  'Notificaciones en tiempo real mediante WebSockets',
+  'Gestión de órdenes con control de estados, expiración automática y registro histórico',
+  'Sistema de soporte con tickets y chat en tiempo real entre usuarios y administradores',
+  'Diseño responsive'
+],
+
+    techIcons: [
+      <DiReact key="react" />,
+      <SiExpress key="express" />,
+      <SiTypescript key="ts" />,
+      <FaNodeJs key="node"/>,
+      <SiTailwindcss key="tailwind" />,
+      <SiMongodb />
+    ],
+    technologies: ['React', 'Typescript', 'Mongo DB', 'Node.js', 'Tailwind CSS', 'Express'],
+    links: {
+      github: 'https://github.com/JoaquinGabriel17/rosario-mercado',
+      demo: 'https://agora-six-rho.vercel.app/'
+    }
+  },
    {
     name: 'Linko',
     description: 'Linko es un acortador de URLs con una interfaz simple e intuitiva, creado para demostrar habilidades en desarrollo full stack con tecnologías modernas.',

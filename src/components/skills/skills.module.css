@@ -1,37 +1,66 @@
+/* skills.module.css */
+
 .skillsSection {
-    /*background-color: rgb(255, 255, 255, 0.1);*/
-    text-align: center;
-    font-size: 1.4rem;
-    color: black;
-    width: 70%;
-
-    margin-bottom: 4rem;
-    /*border: 1px solid rgb(255, 255, 255, 0.1);*/
-  }
-  
-  .skillsGrid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    gap: 1.5rem;
-    margin: 0;
-    overflow: visible;
-    width: 100%;
-  }
-
-  .title{
-    color: yellow;
-  }
-  
-.skillContain{
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  width: 100%;
+  padding: 2rem 0;
+  /* Animación suave de aparición */
+  animation: fadeIn 0.6s ease-out forwards;
 }
 
-@media (max-width: 500px){
-  .skillsGrid{
+.skillContain {
+  width: 100%;
+  max-width: 1000px; /* Un poco más ancho para que entren varias skills */
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center; /* Título centrado para esta sección */
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  /* El mismo gradiente característico de tu diseño */
+  background: linear-gradient(90deg, #fff, #a5b4fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+  display: inline-block;
+}
+
+/* Decoración debajo del título */
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 4px;
+  background-color: #818cf8; /* Color acento */
+  border-radius: 2px;
+}
+
+.skillsGrid {
+  display: grid;
+  /* Esto hace la magia: crea tantas columnas como quepan de mínimo 130px */
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ajuste para móviles muy pequeños */
+@media (max-width: 480px) {
+  .skillsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
     gap: 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
   }
 }

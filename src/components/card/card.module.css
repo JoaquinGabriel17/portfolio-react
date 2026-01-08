@@ -1,97 +1,187 @@
-  
+/* card.module.css */
+
+/* 1. Contenedor principal */
+.cardContain {
+  width: 100%;
+  margin-bottom: 2rem;
+  /* Animación suave de entrada al cargar */
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+/* 2. Título Principal (fuera de la tarjeta) */
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  /* Mismo gradiente que el componente anterior */
+  background: linear-gradient(90deg, #fff, #a5b4fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+/* 3. La Tarjeta en sí */
+.card {
+  background: #1e1e24; /* Mismo fondo gris oscuro */
+  border-radius: 16px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.08); /* Borde sutil */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+              0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  position: relative;
+  overflow: hidden; /* Para contener elementos internos */
+}
+
+/* Efecto Hover: La tarjeta se levanta y brilla un poco el borde */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 
+              0 10px 10px -5px rgba(0, 0, 0, 0.2);
+  border-color: rgba(129, 140, 248, 0.3); /* Color acento muy sutil en el borde */
+}
+
+/* 4. Encabezado de la tarjeta (Icono + Título + Fecha) */
+.separador {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.icon {
+  width: 30rem;
+  height: 64px;
+  object-fit: contain; /* O cover, dependiendo de tus iconos */
+  background-color: white; /* Fondo sutil para el icono */
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.dateAndSubTitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0 0 0.3rem 0;
+  line-height: 1.2;
+}
+
+.date {
+  color: #a0a0a0; /* Gris medio para información secundaria */
+  font-size: 0.95rem;
+  margin: 0;
+  font-family: monospace; /* Un toque técnico para la fecha */
+  background: rgba(255, 255, 255, 0.05);
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  width: fit-content;
+}
+
+/* 5. Títulos de secciones internas (Descripción, Listas) */
+.card h3 {
+  color: #818cf8; /* El mismo color índigo del componente anterior */
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+}
+
+/* Pequeña línea decorativa antes del h3 */
+.card h3::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: 16px;
+  background-color: #818cf8;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+
+/* 6. Párrafo (HTML insertado) */
+.paragraph {
+  color: #d1d5db; /* Gris claro muy legible */
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Estilos para negritas dentro del HTML inyectado */
+.paragraph strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* 7. Listas */
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  /* Si hay muchos items, crea un grid responsivo, sino se comporta como lista */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0.8rem;
+}
+
+.card li {
+  position: relative;
+  padding-left: 1.5rem;
+  color: #e5e7eb;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Bullet points personalizados (Triángulo/Flecha) */
+.card li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #818cf8;
+  font-weight: bold;
+}
+
+/* Animación de entrada simple */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 8. Responsive */
+@media (max-width: 600px) {
   .card {
-    text-align: start;
-    border: 1px solid black;
-    border-radius: 8px;
-    padding: 1rem;
-    background-color: rgb(255, 255, 255, 0.1);
-    box-shadow: 0 4px 8px #0000001a;
-    display: flex;
-    color: white;
-    margin: 0 auto;
-    padding: 1rem 1rem;
+    padding: 1.5rem;
+  }
+  
+  .separador {
     flex-direction: column;
-    position: relative;
-  }
-  .paragraph{
-    font-size: 1.1rem;      /* equivalente a 16px en la mayoría de los navegadores */
-    margin: 0;
-    margin-bottom: 10px;    
+    align-items: flex-start;
+    gap: 1rem;
   }
 
-  .cardContain{
-    gap: 10px
+  .icon {
+    width: 50px;
+    height: 50px;
   }
 
-  .title{
-    margin: 20px;
-    color: yellow;
+  .subtitle {
+    font-size: 1.2rem;
   }
-  .icon{
-    max-width: 300px;
-    max-height: 100px;
-    background-color: white;
-    padding: 5px;
-    border-radius: 5px;
-    object-fit: contain;
+  
+  .card ul {
+    grid-template-columns: 1fr; /* Una sola columna en móviles */
   }
- 
-  .separador{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-  }
-
-  .date{
-    background-color: white;
-    left: 49%;
-    top: 3.5rem;
-    padding: 4px;
-    border-radius: 8px;
-    color: black;
-    font-weight: 500;
-    text-align: center;
-    width: 200px;
-  }
-
-  .card ul{
-    
-    padding-left: 1.5rem;
-    margin: 0;
-    list-style-type: disc; 
-    margin-left: 10px;
-  }
-
-  .card li{
-    margin-bottom: 0.3rem;
-    line-height: 1.4;
-  }
-
-  .card h3 {
-    font-size: 1.3rem;
-    margin: 0;
-    margin-bottom: 15px;
-    color: yellow; /* O el color que estés usando */
-  }
-
-  .dateAndSubTitle{
-    display: flex;
-    flex-direction: column;
-  }
-
-
-  .subtitle{
-    position: center;
-    color: white;
-  }
-
-  @media (max-width: 768px) {
-    /* Estilos para tablets y celulares */
-    .separador{
-      display: flex;
-      flex-direction: column;
-    }
-    .card{
-      padding: 10px;
-    }
-  }
+}

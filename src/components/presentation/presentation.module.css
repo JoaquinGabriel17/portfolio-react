@@ -18,9 +18,12 @@
  }
 
 .presentationName{
-    color: yellow;
     font-size: 1.7rem;        /* Subtítulo: tu rol */
-  font-weight: 500
+  font-weight: 500;
+  background: linear-gradient(90deg, #fff, #a5b4fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .parrafo{
     font-size: 1.2rem; 

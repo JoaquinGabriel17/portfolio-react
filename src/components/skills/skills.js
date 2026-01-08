@@ -14,6 +14,9 @@ import swagger from '@/../public/Swagger.svg'
 import microsql from '@/../public/micro sql.svg'
 import c from '@/../public/C++.svg'
 import SkillCard from '../skillCard/skillCard'
+import typescript from '@/../public/typescript.svg'
+import { SiTypescript } from 'react-icons/si'
+
 
 
 export default function Skills() {
@@ -26,7 +29,7 @@ export default function Skills() {
         { name: 'CSS', src: css.src },
         { name: 'Node.js', src: node.src },
         { name: 'Next.js', src: next.src },
-        { name: 'C++', src: c.src },
+        { name: 'Typescript', src: typescript.src },
         { name: 'PostgreSQL', src: postgre.src },
         { name: 'FileZilla', src: filezila.src },
         { name: 'MongoDB Compass', src: mongo.src },

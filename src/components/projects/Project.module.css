@@ -14,7 +14,10 @@
 
 }
 .projectTitle{
-    color: yellow;
+    background: linear-gradient(90deg, #fff, #a5b4fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
     margin: 20px 0;
 }
 
