@@ -33,7 +33,7 @@ export default function Icon({lang}){
       </a>
         </div>
         <a
-      href="/cv.docx" download >
+      href="/cvg.pdf" download >
         <button className={styles.CVButton}>
           <FaDownload /> {lang === "es" ? "Descargar CV" : "Download CV"}
         </button>
