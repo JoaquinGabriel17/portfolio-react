@@ -3,10 +3,23 @@ import styles from './Icon.module.css'
 import { useState } from 'react';
 import { FaGithub, FaLinkedin, FaWhatsapp,FaEnvelope } from 'react-icons/fa';
 import { FaDownload } from 'react-icons/fa';
+import sql from '@/../public/SQL.svg'
+import js from '@/../public/JavaScript.svg'
+import node from '@/../public/Node.js.svg'
+import react from '@/../public/React.svg'
+import typescript from '@/../public/typescript.svg'
+
 
 
 export default function Icon({lang}){
 
+  const lenguajes = [
+        { name: 'SQL', src: sql.src },
+        { name: 'React', src: react.src },
+        { name: 'JavaScript', src: js.src },
+        { name: 'Node.js', src: node.src },
+        { name: 'Typescript', src: typescript.src },
+    ]
 
     const copiar = (texto) => {
       navigator.clipboard.writeText(texto)
@@ -39,6 +52,16 @@ export default function Icon({lang}){
         </button>
 
     </a>
+    <p>Con lo que mas trabajé</p>
+    {lenguajes.length && <div className={styles.techsList}>
+      {lenguajes.map((item) => (
+        <figure key={item.name} className={styles.skill}>
+          <img src={item.src} alt={item.name} />
+          <figcaption>{item.name}</figcaption>
+        </figure>
+      ))}
+      
+    </div>}
         </div>
     )
 }
