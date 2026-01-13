@@ -52,7 +52,7 @@ export default function Icon({lang}){
         </button>
 
     </a>
-    <p>Con lo que más trabajé</p>
+    <p>{ lang === "es" ?  "Con lo que más trabajé" : "What I worked with the most"}</p>
     {lenguajes.length && <div className={styles.techsList}>
       {lenguajes.map((item) => (
         <figure key={item.name} className={styles.skill}>

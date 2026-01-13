@@ -9,9 +9,11 @@ import agora  from '@/../public/agora.png'
 
 export const texts = {
   en: {
+    
     presentation: {
       role: "Full Stack Developer",
       roleDescription: "Full Stack Developer with over 2 years of experience in creating dynamic and innovative web applications. Passionate about turning ideas into functional products.",
+      mostWork: "What I worked with the most"
     },
     experience: {
         paragraph: "Alephee is a company that connects sellers with Mercado Libre through automated integrations. I was part of the support team, where I handled customer inquiries, analyzed technical issues, and managed solutions for both external users and internal teams.",
@@ -158,6 +160,7 @@ features: [
     presentation: {
       role: "Desarrollador Full Stack",
       roleDescription: "Desarrollador Full Stack con más de 2 años de experiencia creando aplicaciones web dinámicas e innovadoras. Apasionado por transformar ideas en productos funcionales.",
+      mostWork: "Con lo que mas trabajé"
     },
    experience: {
         paragraph: "Alephee es una empresa que conecta a vendedores con Mercado Libre a través de integraciones automatizadas. Formé parte del equipo de soporte, donde atendía consultas de clientes, analizaba problemas técnicos y gestionaba soluciones tanto para usuarios externos como para equipos internos.",

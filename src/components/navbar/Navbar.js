@@ -29,7 +29,7 @@ const langChangeHandler = (newLang) => {
       <div className={styles.separator}>
       <h1>Jo</h1>
       <div className={styles.langButtons}>
-        <span>{lang === "es" ? "Lengüaje:  " : "Language:  "}</span>
+        <span>{lang === "es" ? "Lenguaje:  " : "Language:  "}</span>
         <button
           onClick={() => toChangeLang("es")}
           className={lang === "es" ? styles.active : ""}
