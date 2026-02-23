@@ -9,12 +9,19 @@ export default function Projects({ ProjectsInfo, lang }) {
   const [selectedProject, setSelectedProject] = useState(null);
   const [currentPage, setCurrentPage] = useState(1);
   const containerRef = useRef(null);
+  const isFirstRender = useRef(true);
 
   useEffect(() => {
+  if (isFirstRender.current) {
+    isFirstRender.current = false;
+    return;
+  }
+
   containerRef.current?.scrollIntoView({
     behavior: "smooth",
     block: "start"
   });
+
 }, [currentPage]);
 
   const projectsPerPage = 3;
