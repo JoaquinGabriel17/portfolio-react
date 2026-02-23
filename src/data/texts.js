@@ -2,7 +2,6 @@ import { SiNextdotjs, SiMongodb, SiRedux, SiFirebase, SiJavascript,SiExpress, Si
 import { FaServer,FaNodeJs } from 'react-icons/fa'; 
 import { DiReact } from 'react-icons/di';
 import rosa from '@/../public/rosadelviento.png'
-import criptoMetrics from '@/../public/cryptometrics.png'
 import linko from '@/../public/linko2.png'
 import movie from '@/../public/moviefinder.png'
 import agora  from '@/../public/agora.png'
@@ -123,7 +122,7 @@ features: [
       demo: 'https://movie-finder-beige-zeta.vercel.app/'
     }
   },
- /* {
+  {
     name: 'Rosa de los vientos',
     description:
       'Rosa de los vientos is a digital restaurant platform where users can buy and sell food products online.',
@@ -146,7 +145,7 @@ features: [
       github: 'https://github.com/OscarMayaC/PFhenryFront',
       demo: 'https://p-fhenry-front.vercel.app/'
     }
-  }*/
+  }
 ],
 
 
@@ -245,7 +244,7 @@ features: [
       demo: 'https://movie-finder-beige-zeta.vercel.app/'
     }
   },
- /* {
+  {
     name: 'Rosa de los vientos',
     description: 'Rosa de los vientos es un restaurante digital donde los usuarios pueden comprar y vender alimentos.',
     image: rosa.src,
@@ -256,7 +255,7 @@ features: [
       github: 'https://github.com/OscarMayaC/PFhenryFront',
       demo: 'https://p-fhenry-front.vercel.app/'
     }
-  }*/
+  }
   
  
 ],

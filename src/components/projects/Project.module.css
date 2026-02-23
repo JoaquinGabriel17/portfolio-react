@@ -1,31 +1,50 @@
-.projectContainer{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-
-}
-.projectCardContainer{
-    display: flex;
-    flex-direction: row;
-    gap: 4rem;
-    flex-wrap: wrap;
-    justify-content: center;
-
+.pagination {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
 }
 .projectTitle{
-    background: linear-gradient(90deg, #fff, #a5b4fc);
+     font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  /* Mismo gradiente que el componente anterior */
+  background: linear-gradient(90deg, #fff, #a5b4fc);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-    margin: 20px 0;
+  display: inline-block;
 }
 
-@media (max-width: 1340px){
-    .projectCardContainer{
-        flex-direction: column;
-        gap: 10px;
-        justify-content: center;
-        padding-left: 5px;
-        align-items: center;
-    }
+.pageButton,
+.navButton {
+  padding: 8px 14px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #eee;
+  transition: 0.2s;
+}
+
+.pageButton:hover,
+.navButton:hover {
+  background: #ddd;
+}
+
+.activePage {
+  background: #333;
+  color: #a5b4fc;
+  border: 0.2px solid #a5b4fc;
+}
+.projectCardContainer{
+    display: flex;
+    margin-top: 0.5rem;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.navButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
 }
