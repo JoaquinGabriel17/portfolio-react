@@ -10,9 +10,6 @@ import linkedin from '@/../public/linkedin.svg'
 import wasap from '@/../public/whatsapp-brands.svg'
 import email from '@/../public/email.svg'
 import Projects from "@/components/projects/Project";
-
-
-
 import { useState, useEffect } from "react";
 import { texts } from "@/data/texts";
 import Navbar from "@/components/navbar/Navbar";

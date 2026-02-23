@@ -13,7 +13,7 @@ export default function Projects({ProjectsInfo, lang}){
       <div className={styles.projectCardContainer}>
         {ProjectsInfo &&
           ProjectsInfo.map((item, index) => (
-            <div onClick={() => setSelectedProject(item)} key={index}>
+            <div key={index}>
             <ProjectCard
               key={index}
               ProjectInfo={item}

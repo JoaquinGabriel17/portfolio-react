@@ -11,22 +11,46 @@ export default function ProjectCard({ ProjectInfo, lang }) {
     className={styles.ProjectCard}
     >
       <div className={styles.CardContent}>
+        <div className={styles.imagesContainer}>
+            <img src={image} alt={`${name} screenshot`} className={styles.projectImage} />   
+        </div>
         <div className={styles.infoContainer}>
-          <h1 className={styles.proyectName}>{name}</h1> 
-          <img src={image} alt={name} />      
-              
+          <h1 className={styles.proyectName}>{name}</h1>
+          <p>{description}</p>
+          <ul className={styles.featuresList}>
+            {features.map((feature, index) => (
+              <li key={index}>{feature}</li>
+            ))}
+          </ul>
+          <ul className={styles.techIconsList}>
+            {techIcons.map((techIcon, index) => (
+              <li key={index} className={styles.techIcon}>{techIcon}</li>
+            ))}
+          </ul>
+          <div className={styles.links}>
+          {links.demo && (
+            <a
+              href={links.demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              Ver Demo
+            </a>
+          )}
+          {links.github && (
+            <a
+              href={links.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.link}
+            >
+              Ver Repositorio
+            </a>
+          )}
+        </div>
         </div>
       </div>  
-        <div className={styles.TechOverlay}>
-          <div className={styles.OverlayContent}>
-            <div className={styles.TechIcons}>
-              {techIcons?.map((icon, i) => (
-                <span key={i}>{icon}</span>
-              ))}
-            </div>
-            <h2>{lang === "es" ? "Click para más información" : "Click for more information"}</h2>
-          </div>
-        </div>
     </div>
   );
 }

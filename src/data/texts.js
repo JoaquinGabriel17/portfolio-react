@@ -123,7 +123,7 @@ features: [
       demo: 'https://movie-finder-beige-zeta.vercel.app/'
     }
   },
-  {
+ /* {
     name: 'Rosa de los vientos',
     description:
       'Rosa de los vientos is a digital restaurant platform where users can buy and sell food products online.',
@@ -146,7 +146,7 @@ features: [
       github: 'https://github.com/OscarMayaC/PFhenryFront',
       demo: 'https://p-fhenry-front.vercel.app/'
     }
-  }
+  }*/
 ],
 
 
@@ -245,7 +245,7 @@ features: [
       demo: 'https://movie-finder-beige-zeta.vercel.app/'
     }
   },
-  {
+ /* {
     name: 'Rosa de los vientos',
     description: 'Rosa de los vientos es un restaurante digital donde los usuarios pueden comprar y vender alimentos.',
     image: rosa.src,
@@ -256,7 +256,7 @@ features: [
       github: 'https://github.com/OscarMayaC/PFhenryFront',
       demo: 'https://p-fhenry-front.vercel.app/'
     }
-  }
+  }*/
   
  
 ],
