@@ -209,6 +209,22 @@
   border-color: var(--clr-accent);
   background: rgba(200, 255, 87, 0.08);
   transform: translateY(-3px) scale(1.12);
+  margin: 0
+}
+
+.technologiesContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+
+}
+.technologiesContainer h3{
+  margin-top: 0;
+}
+
+.technologiesContainer p{
+  margin-top: 0;
 }
 
 /* ─── Links ───────────────────────────────────────────────── */

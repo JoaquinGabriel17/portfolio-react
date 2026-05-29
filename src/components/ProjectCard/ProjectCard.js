@@ -2,7 +2,7 @@ import styles from './ProjectCard.module.css';
 import { useState } from 'react';
 
 export default function ProjectCard({ ProjectInfo, lang }) {
-  const { image, name, description, features, techIcons, links } = ProjectInfo;
+  const { image, name, description, features, techIcons, links, technologies } = ProjectInfo;
 
 
 
@@ -22,11 +22,17 @@ export default function ProjectCard({ ProjectInfo, lang }) {
               <li key={index}>{feature}</li>
             ))}
           </ul>
+          { techIcons && 
           <ul className={styles.techIconsList}>
             {techIcons.map((techIcon, index) => (
               <li key={index} className={styles.techIcon}>{techIcon}</li>
             ))}
           </ul>
+          }
+          <div className={styles.technologiesContainer}>
+            <h3>Stack: </h3>
+            <p>{technologies.join(', ')}</p>
+          </div>
           <div className={styles.links}>
           {links.demo && (
             <a
