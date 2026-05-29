@@ -1,10 +1,12 @@
 import { SiNextdotjs, SiMongodb, SiRedux, SiFirebase, SiJavascript,SiExpress, SiTypescript, SiTailwindcss  } from 'react-icons/si';
 import { FaServer,FaNodeJs } from 'react-icons/fa'; 
 import { DiReact } from 'react-icons/di';
+
 import rosa from '@/../public/rosadelviento.png'
 import linko from '@/../public/linko2.png'
 import movie from '@/../public/moviefinder.png'
 import agora  from '@/../public/agora.png'
+import colibri from '@/../public/colibri.png'
 
 export const texts = {
   en: {
@@ -34,27 +36,23 @@ export const texts = {
         }]
     },
     ProjectInfo: [
-  /*{
-    name: 'Crypto Metrics',
+  {
+    name: 'Colibrí LATAM',
     description:
-      'This application allows users to track the main cryptocurrencies on the market in real time. The project is built with React for the interface, integrating the CoinGecko API to display up-to-date market data.',
-    image: criptoMetrics.src,
+      'Developed a company application from scratch, including user CRUD operations and management of other entities, a statistics dashboard, and a modern UI/UX design.',
+    image: colibri.src,
     features: [
-      'User registration',
-      'Multiple statistic views',
-      'Real-time market data'
+      'User and other entities CRUD.',
+      'Multiple real-time statistic views',
+      'Modern UI/UX design'
     ],
-    techIcons: [
-      <DiReact key="react" />,
-      <SiRedux key="redux" />,
-      <SiJavascript key="js" />
-    ],
-    technologies: ['React', 'Redux', 'JavaScript', 'Node.js'],
+    techIcons: [],
+    technologies: ['Next.js', 'Nest.js', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'PostgreSQL'],
     links: {
-      github: 'https://github.com/JoaquinGabriel17/crypto-metrics',
-      demo: 'https://crypto-metrics-sigma.vercel.app/'
+      github: null,
+      demo: 'https://colibrilatam.com/index.html'
     }
-  },*/
+  },
   {
     name: 'Agora Mercado',
     description:
@@ -74,7 +72,7 @@ features: [
       <SiTypescript key="ts" />,
       <FaNodeJs key="node"/>,
       <SiTailwindcss key="tailwind" />,
-      <SiMongodb />
+      <SiMongodb key="mongodb"/>
     ],
     technologies: ['React', 'Typescript', 'Mongo DB', 'Node.js', 'Tailwind CSS', 'Express'],
     links: {
@@ -212,7 +210,7 @@ features: [
       <SiTypescript key="ts" />,
       <FaNodeJs key="node"/>,
       <SiTailwindcss key="tailwind" />,
-      <SiMongodb />
+      <SiMongodb key="mongodb" />
     ],
     technologies: ['React', 'Typescript', 'Mongo DB', 'Node.js', 'Tailwind CSS', 'Express'],
     links: {
