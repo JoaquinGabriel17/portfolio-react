@@ -34,13 +34,13 @@ const langChangeHandler = (newLang) => {
           onClick={() => toChangeLang("es")}
           className={lang === "es" ? styles.active : ""}
         >
-          🇪🇸
+          ES
         </button>
         <button
           onClick={() => toChangeLang("en")}
           className={lang === "en" ? styles.active : ""}
         >
-          🇬🇧
+          EN
         </button>
       </div>
       </div>
