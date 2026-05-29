@@ -3,6 +3,7 @@
 /* 1. Contenedor principal */
 .cardContain {
   width: 100%;
+  max-width: fit-content;
   margin-bottom: 2rem;
   /* Animación suave de entrada al cargar */
   animation: fadeIn 0.5s ease-out forwards;
