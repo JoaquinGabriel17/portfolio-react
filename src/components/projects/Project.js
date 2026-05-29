@@ -49,9 +49,9 @@ const goToNext = () => {
         {lang === "es" ? "Proyectos" : "Projects"}
       </h1>
 
-      { lang === "es" ? <p>Mostrando {indexOfFirst + 1} - {Math.min(indexOfLast, ProjectsInfo?.length || 0)} de {ProjectsInfo?.length || 0} proyectos</p> : 
+      { lang === "es" ? <p className={styles.paginationInfo}>Mostrando {indexOfFirst + 1} - {Math.min(indexOfLast, ProjectsInfo?.length || 0)} de {ProjectsInfo?.length || 0} proyectos</p> : 
 
-      <p>Showing {indexOfFirst + 1} - {Math.min(indexOfLast, ProjectsInfo?.length || 0)} of {ProjectsInfo?.length || 0} projects</p>
+      <p className={styles.paginationInfo}>Showing {indexOfFirst + 1} - {Math.min(indexOfLast, ProjectsInfo?.length || 0)} of {ProjectsInfo?.length || 0} projects</p>
       }
 
       <div className={styles.projectCardContainer}>
