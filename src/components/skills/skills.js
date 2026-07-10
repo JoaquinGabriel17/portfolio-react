@@ -15,6 +15,8 @@ import microsql from '@/../public/micro sql.svg'
 import c from '@/../public/C++.svg'
 import SkillCard from '../skillCard/skillCard'
 import typescript from '@/../public/typescript.svg'
+import nestjs from '@/../public/nestjs.svg'
+import tailwind from '@/../public/tailwindcss.svg'
 import { SiTypescript } from 'react-icons/si'
 
 
@@ -22,18 +24,18 @@ import { SiTypescript } from 'react-icons/si'
 export default function Skills() {
 
     let lenguajes = [
-        { name: 'HTML', src: html.src },
+        //{ name: 'HTML', src: html.src },
         { name: 'SQL', src: sql.src },
         { name: 'React', src: react.src },
         { name: 'JavaScript', src: js.src },
-        { name: 'CSS', src: css.src },
+        //{ name: 'CSS', src: css.src },
+        { name: 'Nest.js', src: nestjs.src },
         { name: 'Node.js', src: node.src },
         { name: 'Next.js', src: next.src },
         { name: 'Typescript', src: typescript.src },
+        { name: 'Tailwind CSS', src: tailwind.src },
         { name: 'PostgreSQL', src: postgre.src },
-        { name: 'FileZilla', src: filezila.src },
-        { name: 'MongoDB Compass', src: mongo.src },
-        { name: 'Postman', src: postman.src },
+        { name: 'MongoDB', src: mongo.src, color: "#47A248" },
         { name: 'Swagger', src: swagger.src },
         { name: 'Microsoft SQL Server', src: microsql.src }
     ]
@@ -48,6 +50,7 @@ export default function Skills() {
                         <SkillCard
                             key={index}
                             skill={skill}
+                            color={skill.color || null}
                         ></SkillCard>
                     ))}
                 </div>

@@ -7,6 +7,7 @@ import sql from '@/../public/SQL.svg'
 import js from '@/../public/JavaScript.svg'
 import node from '@/../public/Node.js.svg'
 import react from '@/../public/React.svg'
+import postgre from '@/../public/PostgresSQL.svg'
 import typescript from '@/../public/typescript.svg'
 
 
@@ -16,7 +17,7 @@ export default function Icon({lang}){
   const lenguajes = [
         { name: 'SQL', src: sql.src },
         { name: 'React', src: react.src },
-        { name: 'JavaScript', src: js.src },
+        { name: 'PostgreSQL', src: postgre.src },
         { name: 'Node.js', src: node.src },
         { name: 'Typescript', src: typescript.src },
     ]
