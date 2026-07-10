@@ -13,6 +13,7 @@ import Projects from "@/components/projects/Project";
 import { useState, useEffect } from "react";
 import { texts } from "@/data/texts";
 import Navbar from "@/components/navbar/Navbar";
+import ExperienceCard from "@/components/experienceCard/ExperienceCard";
 
 
 
@@ -52,11 +53,13 @@ export default function Home() {
     <div className={styles.container}>
         <Presentation data={content.presentation} ></Presentation>
         <Icon iconList={icons} lang={lang}></Icon>
-        <Card 
-          data={content.experience}
-          key='experience'
+        {content.experience.length > 0 && content.experience.map((exp, index) => (
+          <ExperienceCard 
+          data={exp}
+          key={`experience ${index}`}
           lang={lang}
-        ></Card>
+        ></ExperienceCard>
+        ))}
         <Projects ProjectsInfo={content.ProjectInfo} lang={lang}></Projects>
         <Skills></Skills>
     </div>
