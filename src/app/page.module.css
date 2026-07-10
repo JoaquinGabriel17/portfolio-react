@@ -18,6 +18,18 @@
     padding-right: 10%;
 }
 
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  /* Mismo gradiente que el componente anterior */
+  background: linear-gradient(90deg, #fff, #a5b4fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
 .aboutMe{
     display: flex;
     flex-direction: row;

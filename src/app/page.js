@@ -53,6 +53,7 @@ export default function Home() {
     <div className={styles.container}>
         <Presentation data={content.presentation} ></Presentation>
         <Icon iconList={icons} lang={lang}></Icon>
+        <h2 className={styles.title}>{lang === "es" ? "Experiencia" : "Experience"}</h2>
         {content.experience.length > 0 && content.experience.map((exp, index) => (
           <ExperienceCard 
           data={exp}
