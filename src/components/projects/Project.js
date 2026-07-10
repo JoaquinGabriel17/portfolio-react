@@ -24,7 +24,7 @@ export default function Projects({ ProjectsInfo, lang }) {
 
 }, [currentPage]);
 
-  const projectsPerPage = 3;
+  const projectsPerPage = 2;
 
   const indexOfLast = currentPage * projectsPerPage;
   const indexOfFirst = indexOfLast - projectsPerPage;

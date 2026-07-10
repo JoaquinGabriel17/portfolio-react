@@ -57,21 +57,28 @@
 }
 .langButtons button {
   padding: 6px 10px;
-  border: 1px solid white;
-  color: white;
+  
   border-radius: 6px;
   cursor: pointer;
-  background-color: transparent;
+  
   font-size: 18px;
   transition: background-color 0.2s ease;
 }
 
 .langButtons button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.1);
+  transition: transform 0.2s ease;
 }
 
 .active {
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: 1px solid rgb(0, 0, 0);
+}
+.inactive{
+    border: 1px solid white;
+  color: white;
+  background-color: transparent;
 }
 .separator{
     display: flex;

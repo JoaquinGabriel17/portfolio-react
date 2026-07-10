@@ -27,18 +27,18 @@ const langChangeHandler = (newLang) => {
     <>{isMobile ? <MenuDesplegable lang={lang === "es" ? "es" : "en"} toChangeLang={langChangeHandler}/> : 
     <nav className={styles.navbar}>
       <div className={styles.separator}>
-      <h1>Jo</h1>
+      <h1>J.O.</h1>
       <div className={styles.langButtons}>
-        <span>{lang === "es" ? "Lenguaje:  " : "Language:  "}</span>
+        {/*<span>{lang === "es" ? "Lenguaje:  " : "Language:  "}</span>*/}  
         <button
           onClick={() => toChangeLang("es")}
-          className={lang === "es" ? styles.active : ""}
+          className={lang === "es" ? styles.active : styles.inactive}
         >
           ES
         </button>
         <button
           onClick={() => toChangeLang("en")}
-          className={lang === "en" ? styles.active : ""}
+          className={lang === "en" ? styles.active : styles.inactive}
         >
           EN
         </button>
