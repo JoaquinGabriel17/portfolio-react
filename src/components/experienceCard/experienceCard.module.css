@@ -3,7 +3,7 @@
 /* 1. Contenedor principal */
 .cardContain {
   width: 100%;
-  max-width: fit-content;
+  max-width: 800px;
   margin-bottom: 2rem;
   /* Animación suave de entrada al cargar */
   animation: fadeIn 0.5s ease-out forwards;
@@ -26,13 +26,14 @@
 .card {
   background: #1e1e24; /* Mismo fondo gris oscuro */
   border-radius: 16px;
-  padding: 2rem;
+  padding: 1rem;
   border: 1px solid rgba(255, 255, 255, 0.08); /* Borde sutil */
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
               0 2px 4px -1px rgba(0, 0, 0, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
   position: relative;
   overflow: hidden; /* Para contener elementos internos */
+  width:100%
 }
 
 /* Efecto Hover: La tarjeta se levanta y brilla un poco el borde */
@@ -51,15 +52,17 @@
   margin-bottom: 1.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  justify-content: space-between;
 }
 
 .icon {
-  width: 30rem;
+  width: fit-content;
   height: 64px;
   object-fit: contain; /* O cover, dependiendo de tus iconos */
   background-color: white; /* Fondo sutil para el icono */
   border-radius: 12px;
   padding: 8px;
+  padding-inline: 2rem
 }
 
 .dateAndSubTitle {

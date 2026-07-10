@@ -8,7 +8,6 @@ export default function ExperienceCard({ data, lang }) {
 
     return (
         <div className={styles.cardContain}>
-            <h1 className={styles.title}>{title}</h1>
             <div className={styles.card}>
                 <div className={styles.separador}>
                     <div className={styles.dateAndSubTitle}>

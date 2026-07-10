@@ -7,6 +7,7 @@ import linko from '@/../public/linko2.png'
 import movie from '@/../public/moviefinder.png'
 import agora from '@/../public/agora.png'
 import colibri from '@/../public/colibri.png'
+import colibri2 from '@/../public/colibri.svg'
 
 export const texts = {
   en: {
@@ -17,6 +18,28 @@ export const texts = {
       mostWork: "What I worked with the most"
     },
     experience: [
+       {
+      paragraph: "Colibrí LATAM is a startup that offers a software for the management of entrepreneurs.",
+      title: "Experience",
+      subtitle: "Full Stack Developer",
+      icon: colibri2.src,
+      date: '01/02/2026  -  Currently',
+      list: [{
+        titleList: 'Functions and Responsibilities',
+        itemsList: [
+          'Development of a full-stack application for the management of entrepreneurs',
+          'CRUD operations for users and other entities',
+          'Real-time statistics dashboard',
+          'Integration with Web3, wallet connection, and Story Protocol blockchain integration',
+        ],
+      },
+      {
+        titleList: 'Technologies and Tools',
+        itemsList: ['React, Nest.js, TypeScript, PostgreSQL, Vercel, Render']
+      }],
+      enterpriseName: "Colibrí LATAM",
+      enterpriseNameVisible: true
+    },
       {
         paragraph: "Alephee is a company that connects sellers with Mercado Libre through automated integrations. I was part of the support team, where I handled customer inquiries, analyzed technical issues, and managed solutions for both external users and internal teams.",
         title: "Experience",
@@ -166,6 +189,28 @@ export const texts = {
       mostWork: "Con lo que mas trabajé"
     },
     experience: [
+       {
+      paragraph: "Colibrí LATAM es una startup que ofrece un software para la gestión de emprendimientos.",
+      title: "Experiencia",
+      subtitle: "Desarrollador Full Stack",
+      icon: colibri2.src,
+      date: '01/02/2026  -  Actualmente',
+      list: [{
+        titleList: 'Funciones y responsabilidades',
+        itemsList: [
+          'Desarrollo de una aplicación punta a punta para la gestión de emprendimientos',
+          'CRUD de usuarios y otras entidades',
+          'Dashboard de estadísticas en tiempo real',
+          'Integración con Web3, conexión de wallet e integración con blockchain de Story Protocol',
+        ],
+      },
+      {
+        titleList: 'Tecnologías y herramientas',
+        itemsList: ['React, Nest.js, TypeScript, PostgreSQL, Vercel, Render']
+      }],
+      enterpriseName: "Colibrí LATAM",
+      enterpriseNameVisible: true
+    },
       {
       paragraph: "Alephee es una empresa que conecta a vendedores con Mercado Libre a través de integraciones automatizadas. Formé parte del equipo de soporte, donde atendía consultas de clientes, analizaba problemas técnicos y gestionaba soluciones tanto para usuarios externos como para equipos internos.",
       title: "Experiencia",
@@ -188,6 +233,7 @@ export const texts = {
       enterpriseName: "Alephee",
       enterpriseNameVisible: false
     },
+   
   ],
 
     ProjectInfo: [
