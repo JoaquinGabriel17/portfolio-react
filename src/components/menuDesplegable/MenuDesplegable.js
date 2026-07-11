@@ -43,32 +43,28 @@ export default function MenuDesplegable({lang, toChangeLang}){
                     <a href='https://github.com/JoaquinGabriel17' target="_blank" rel="noopener noreferrer" className={styles.iconContainer} >
         <FaGithub 
         className={styles.icon}
-        onClick={() => {navigator.clipboard.writeText('https://github.com/JoaquinGabriel17')}}
         ></FaGithub>
       </a>
                 </li>
                 <li className={styles.itemLista}>
                     <a className={styles.iconContainer}
-                    href='https://www.linkedin.com/in/joaquin-ocampo-a7b213252/' target="_blank" rel="noopener noreferrer">
+                    href='https://www.linkedin.com/in/joaquin-ocampo-taboada-a7b213252/?locale=es-ES' target="_blank" rel="noopener noreferrer">
         <FaLinkedin 
         className={styles.icon}
-        onClick={() => {navigator.clipboard.writeText('https://www.linkedin.com/in/joaquin-ocampo-a7b213252/')}}
         ></FaLinkedin>
       </a>
                 </li>
                 <li className={styles.itemLista}>
-                    <a className={styles.iconContainer}>
+                    <a href='https://wa.me/543876567092' target="_blank" rel="noopener noreferrer" className={styles.iconContainer}>
         <FaWhatsapp 
         className={styles.icon}
-        onClick={() => {navigator.clipboard.writeText('+54 9 3876 56-7092')}}
         ></FaWhatsapp>
       </a>
                 </li>
                 <li className={styles.itemLista}>
-                    <a className={styles.iconContainer}>
+                    <a href='mailto:joaquingabriel3@hotmail.com' target="_blank" rel="noopener noreferrer" className={styles.iconContainer}>
         <FaEnvelope 
         className={styles.icon}
-        onClick={() => {navigator.clipboard.writeText('joaquingabriel3@hotmail.com')}}
         ></FaEnvelope>
       </a>
                 </li>

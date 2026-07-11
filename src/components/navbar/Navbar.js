@@ -50,25 +50,21 @@ const langChangeHandler = (newLang) => {
       <a href='https://github.com/JoaquinGabriel17' target="_blank" rel="noopener noreferrer" >
         <FaGithub 
         className={styles.icon}
-        onClick={() => {navigator.clipboard.writeText('https://github.com/JoaquinGabriel17')}}
         ></FaGithub>
       </a>
       <a href='https://www.linkedin.com/in/joaquin-ocampo-taboada-a7b213252/?locale=es-ES' target="_blank" rel="noopener noreferrer">
         <FaLinkedin 
         className={styles.icon}
-        onClick={() => {navigator.clipboard.writeText('https://www.linkedin.com/in/joaquin-ocampo-taboada-a7b213252/?locale=es-ES')}}
         ></FaLinkedin>
       </a>
       <a href='https://wa.me/543876567092' target="_blank" rel="noopener noreferrer">
         <FaWhatsapp 
         className={styles.icon}
-        onClick={() => {navigator.clipboard.writeText('+54 9 3876 56-7092')}}
         ></FaWhatsapp>
       </a>
       <a href='mailto:joaquingabriel3@hotmail.com' target="_blank" rel="noopener noreferrer">
         <FaEnvelope 
         className={styles.icon}
-        onClick={() => {navigator.clipboard.writeText('joaquingabriel3@hotmail.com')}}
         ></FaEnvelope>
       </a>
       </div>
