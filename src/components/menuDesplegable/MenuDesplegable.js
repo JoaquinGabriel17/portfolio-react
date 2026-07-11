@@ -20,21 +20,20 @@ export default function MenuDesplegable({lang, toChangeLang}){
     };
     return(
         <div className={styles.container}>
-            <button onClick={()=>HandlerButton()} className={styles.botonLista}>ABRIR MENU</button>
-            { visibilidadMenu && (
-            <ul className={styles.lista}>
+            <button onClick={()=>HandlerButton()} className={styles.botonLista}>{visibilidadMenu ? "Cerrar" : "Abrir"}</button>
+            <div className={`${styles.expandWrapper} ${visibilidadMenu ? styles.expanded : ''}`}>
+            <ul className={styles.expandInner}>
                 <li className={styles.itemLista}>
                     <div className={styles.langButtons}>
-        <span>{lang === "es" ? "Lengüaje:  " : "Language:  "}</span>
         <button
           onClick={() => toChangeLang("es")}
-          className={lang === "es" ? styles.active : ""}
+          className={lang === "es" ? styles.active : styles.inactive}
         >
           🇪🇸
         </button>
         <button
           onClick={() => toChangeLang("en")}
-          className={lang === "en" ? styles.active : ""}
+          className={lang === "en" ? styles.active : styles.inactive}
         >
           🇬🇧
         </button>
@@ -74,8 +73,8 @@ export default function MenuDesplegable({lang, toChangeLang}){
       </a>
                 </li>
             </ul>
-            )
-            }
+            </div>
+  
         </div>
 
     )

@@ -11,12 +11,13 @@
 .iconContainer{
     display: flex;
     flex-direction: row;
-    margin: 35px;
+    margin: 2rem;
     border-radius: 8px;
     justify-content: space-around;
     position: relative;
     align-items: center;
-    gap: 4rem;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 .iconContainer a{
     border: 1px solid gray;
@@ -76,10 +77,11 @@
   .techsList{
     display: flex;
     flex-direction: row;
-    height: 6rem;
     color: white;
     margin: 1rem;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
   .skill {
@@ -98,6 +100,8 @@
   position: relative;
   overflow: hidden;
   margin: 0;
+  height: 100%;
+  width: 4rem;
 }
 .skill img{
   height: 48px;
@@ -109,8 +113,13 @@
     .CVButton{
         width: 90vw;
     }
-    .iconContainer{
-      flex-direction: column;
-      gap: 1rem;
-    }
   }
+
+  .presentationName{
+    font-size: 1.7rem;        /* Subtítulo: tu rol */
+  font-weight: 500;
+  background: linear-gradient(90deg, #fff, #a5b4fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

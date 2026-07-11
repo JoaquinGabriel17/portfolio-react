@@ -1,14 +1,15 @@
 /* skillCard.module.css */
 
 .skillWrapper {
-  height: 100%; /* Asegura que todas las celdas del grid tengan la misma altura */
+  height: 10rem; /* Asegura que todas las celdas del grid tengan la misma altura */
+  width: 100%;
 }
 
 .skill {
   background: #1e1e24; /* Mismo fondo gris oscuro de los componentes anteriores */
   border: 1px solid rgba(255, 255, 255, 0.08); /* Borde muy sutil */
   border-radius: 12px;
-  padding: 2.5rem 3rem;
+  padding: 1rem 0.5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
