@@ -34,12 +34,17 @@ export default function Icon({lang}){
         className={styles.icon}
         ></FaGithub>
       </a>
-      <a href='https://www.linkedin.com/in/joaquin-ocampo-a7b213252/' target="_blank" rel="noopener noreferrer">Linkedin
+      <a href='https://www.linkedin.com/in/joaquin-ocampo-taboada-a7b213252/?locale=es-ES' target="_blank" rel="noopener noreferrer">Linkedin
         <FaLinkedin 
         className={styles.icon}
         ></FaLinkedin>
       </a>
-      <a onClick={() => {copiar('joaquingabriel3@hotmail.com')}}>joaquingabriel3@hotmail.com
+      <a href='https://wa.me/543876567092' target="_blank" rel="noopener noreferrer">WhatsApp
+        <FaWhatsapp 
+        className={styles.icon}
+        ></FaWhatsapp>
+      </a>
+      <a href='mailto:joaquingabriel3@hotmail.com' target="_blank" rel="noopener noreferrer">joaquingabriel3@hotmail.com
         <FaEnvelope 
         className={styles.icon}
         
