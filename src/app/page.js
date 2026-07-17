@@ -14,6 +14,7 @@ import { useState, useEffect } from "react";
 import { texts } from "@/data/texts";
 import Navbar from "@/components/navbar/Navbar";
 import ExperienceCard from "@/components/experienceCard/ExperienceCard";
+import Certifications from "@/components/certifications/Certifications";
 
 
 
@@ -51,8 +52,12 @@ export default function Home() {
     <div className={styles.ext}>
       <Navbar toChangeLang={changeLang} lang={lang}></Navbar>
     <div className={styles.container}>
+      <section id="presentation">
         <Presentation data={content.presentation} ></Presentation>
         <Icon iconList={icons} lang={lang}></Icon>
+      </section>
+
+        <section id="experience" >
         <h2 className={styles.title}>{lang === "es" ? "Experiencia" : "Experience"}</h2>
         {content.experience.length > 0 && content.experience.map((exp, index) => (
           <ExperienceCard 
@@ -61,8 +66,20 @@ export default function Home() {
           lang={lang}
         ></ExperienceCard>
         ))}
+        </section>
+
+        <section id="projects" >
         <Projects ProjectsInfo={content.ProjectInfo} lang={lang}></Projects>
+        </section>
+
+        <Certifications data={content.certifications} lang={lang}></Certifications>
+
+        <section id="skills" ></section>
         <Skills></Skills>
+
+        
+        
+
     </div>
     </div>
   );

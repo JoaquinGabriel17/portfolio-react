@@ -27,7 +27,6 @@ const langChangeHandler = (newLang) => {
     <>{isMobile ? <MenuDesplegable lang={lang === "es" ? "es" : "en"} toChangeLang={langChangeHandler}/> : 
     <nav className={styles.navbar}>
       <div className={styles.separator}>
-      <h1>J.O.</h1>
       <div className={styles.langButtons}>
         {/*<span>{lang === "es" ? "Lenguaje:  " : "Language:  "}</span>*/}  
         <button
@@ -43,6 +42,15 @@ const langChangeHandler = (newLang) => {
           EN
         </button>
       </div>
+      </div>
+
+      <div className={styles.navContain}>
+        <a className={styles.navButton} href="#presentation">{lang === "es" ? "Inicio" : "Presentation"}</a>
+        <a className={styles.navButton} href="#experience">{lang === "es" ? "Experiencia" : "Experience"}</a>
+        <a className={styles.navButton} href="#projects">{lang === "es" ? "Proyectos" : "Projects"}</a>
+        <a className={styles.navButton} href="#certifications">{lang === "es" ? "Certificaciones" : "Certifications"}</a>
+        <a className={styles.navButton} href="#skills">{lang === "es" ? "Habilidades" : "Skills"}</a>
+        
       </div>
 
 

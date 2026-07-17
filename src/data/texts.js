@@ -11,6 +11,21 @@ import colibri2 from '@/../public/colibri.svg'
 
 export const texts = {
   en: {
+    certifications:[
+      {
+        name: "Cibersecurity",
+        certifications: [
+          {
+            image: "/I2CS.png",
+            name: "Introduction to Cybersecurity",
+            date: "2026",
+            company: "Cisco",
+            url: "https://www.credly.com/badges/dc2d53eb-c21a-46fd-9e38-f2bcab8b5c4b/public_url",
+            pdf: "/cisco-cybersecurity-intro.pdf"
+          },
+        ]
+      }
+    ],
 
     presentation: {
       role: "Full Stack Developer",
@@ -183,6 +198,23 @@ export const texts = {
     },
   },
   es: {
+
+    certifications:[
+      {
+        name: "Ciberseguridad",
+        certifications: [
+          {
+            image: "/I2CS.png",
+            name: "Introducción a la Ciberseguridad",
+            date: "2026",
+            company: "Cisco",
+            url: "https://www.credly.com/badges/dc2d53eb-c21a-46fd-9e38-f2bcab8b5c4b/public_url",
+            pdf: "/cisco-cybersecurity-intro.pdf"
+          },
+        ]
+      }
+    ],
+
     presentation: {
       role: "Desarrollador Full Stack",
       roleDescription: "Desarrollador Full Stack con más de 2 años de experiencia creando aplicaciones web dinámicas e innovadoras. Apasionado por transformar ideas en productos funcionales.",
