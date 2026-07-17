@@ -71,7 +71,7 @@
     cursor: pointer;
   }
   .CVButton:hover{
-    border: 2px solid rgb(138, 0, 0);
+    border: 2px solid #818cf8;
 
   }
   .techsList{

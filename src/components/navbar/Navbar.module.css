@@ -94,10 +94,8 @@
     font-size: 18px;
     transition: background-color 0.2s ease;
 
-    background: linear-gradient(90deg, #fff, #a5b4fc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    color: #818cf8;
+
     font-weight: 600;
     background-color: transparent;
     text-decoration: none;
