@@ -54,7 +54,7 @@ const langChangeHandler = (newLang) => {
       </div>
 
 
-      <div className={styles.iconContain}>
+      {/*<div className={styles.iconContain}>
       <a href='https://github.com/JoaquinGabriel17' target="_blank" rel="noopener noreferrer" >
         <FaGithub 
         className={styles.icon}
@@ -75,7 +75,7 @@ const langChangeHandler = (newLang) => {
         className={styles.icon}
         ></FaEnvelope>
       </a>
-      </div>
+      </div>*/}
     </nav>
     }</>
   );
