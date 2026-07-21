@@ -14,15 +14,20 @@
     align-items: center;
     /* padding-inline: 2rem; */
     padding: 10px;
-    justify-content: space-between; 
+    justify-content: center; 
 }
-@media (max-width: 768px) {
+@media (max-width: 425px) {
     /* Estilos para tablets y celulares */
     .navbar{
         opacity: 0;
     }
+    
   }
-
+@media (max-width: 768px){
+    .separator{
+        top:5rem
+    }
+}
 .navbar h1{
     font-family: 'Dancing Script', cursive;;
     font-size: 2.5rem;
@@ -87,6 +92,8 @@
     align-items: center;
     gap: 3rem;
     flex-direction: row;
+    position: absolute;
+    left: 1rem;
 }
 .navButton{
     padding: 6px 10px;
