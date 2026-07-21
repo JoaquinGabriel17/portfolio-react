@@ -111,6 +111,25 @@ export const texts = {
         }
       },
       {
+        name: 'Linko',
+        description:
+          'Linko is a URL shortener with a clean and intuitive interface, built to showcase full stack development skills using modern technologies.',
+        image: linko.src,
+        features: ['User registration', 'URL shortening', 'Save shortened links'],
+        techIcons: [
+          <DiReact key="react" />,
+          <SiNextdotjs key="next" />,
+          <SiJavascript key="js" />,
+          <SiMongodb key="mongodb" />,
+          <FaNodeJs key="node" />
+        ],
+        technologies: ['React', 'Next.js', 'JavaScript', 'MongoDB', 'Node.js'],
+        links: {
+          github: 'https://github.com/JoaquinGabriel17/url-shortener',
+          demo: 'https://linko-nine.vercel.app/'
+        }
+      },
+      {
         name: 'Agora Mercado',
         description:
           'Agora is an e-commerce platform created to connect buyers and sellers in a digital, simple, and accessible way, allowing users to find and offer products in one place, from any device, without the need for downloads.',
@@ -137,25 +156,7 @@ export const texts = {
           demo: 'https://agora-six-rho.vercel.app/'
         }
       },
-      {
-        name: 'Linko',
-        description:
-          'Linko is a URL shortener with a clean and intuitive interface, built to showcase full stack development skills using modern technologies.',
-        image: linko.src,
-        features: ['User registration', 'URL shortening', 'Save shortened links'],
-        techIcons: [
-          <DiReact key="react" />,
-          <SiNextdotjs key="next" />,
-          <SiJavascript key="js" />,
-          <SiMongodb key="mongodb" />,
-          <FaNodeJs key="node" />
-        ],
-        technologies: ['React', 'Next.js', 'JavaScript', 'MongoDB', 'Node.js'],
-        links: {
-          github: 'https://github.com/JoaquinGabriel17/url-shortener',
-          demo: 'https://linko-nine.vercel.app/'
-        }
-      },
+      
       {
         name: 'Movie Finder',
         description:
@@ -313,6 +314,18 @@ export const texts = {
           demo: 'https://colibrilatam.com/index.html'
         }
       },
+       {
+        name: 'Linko',
+        description: 'Linko es un acortador de URLs con una interfaz simple e intuitiva, creado para demostrar habilidades en desarrollo full stack con tecnologías modernas.',
+        image: linko.src,
+        features: ['Registro de usuarios', 'Acortar URLs', 'Guardar URLs'],
+        techIcons: [<DiReact key="react" />, <SiNextdotjs key="next" />, <SiJavascript key="js" />, <SiMongodb key="mongodb" />, <FaNodeJs key="node" />],
+        technologies: ['React', 'Next.js', 'JavaScript', 'MongoDB', 'Node.js'],
+        links: {
+          github: 'https://github.com/JoaquinGabriel17/url-shortener',
+          demo: 'https://linko-nine.vercel.app/'
+        }
+      },
       /*{
         name: 'Crypto Metrics',
         description: 'Esta aplicación permite consultar en tiempo real las principales criptomonedas del mercado. El proyecto está desarrollado con React para la interfaz, integrando la API de CoinGecko para obtener los datos del mercado en vivo.',
@@ -351,18 +364,7 @@ export const texts = {
           demo: 'https://agora-six-rho.vercel.app/'
         }
       },
-      {
-        name: 'Linko',
-        description: 'Linko es un acortador de URLs con una interfaz simple e intuitiva, creado para demostrar habilidades en desarrollo full stack con tecnologías modernas.',
-        image: linko.src,
-        features: ['Registro de usuarios', 'Acortar URLs', 'Guardar URLs'],
-        techIcons: [<DiReact key="react" />, <SiNextdotjs key="next" />, <SiJavascript key="js" />, <SiMongodb key="mongodb" />, <FaNodeJs key="node" />],
-        technologies: ['React', 'Next.js', 'JavaScript', 'MongoDB', 'Node.js'],
-        links: {
-          github: 'https://github.com/JoaquinGabriel17/url-shortener',
-          demo: 'https://linko-nine.vercel.app/'
-        }
-      },
+     
       {
         name: 'Movie Finder',
         description: 'Aplicación web que permite explorar más de 5.000 películas mediante una búsqueda indexada rápida, eficiente e intuitiva. Incluye múltiples filtros para refinar resultados',
