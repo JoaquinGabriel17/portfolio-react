@@ -25,6 +25,20 @@
     background-color: #23232a;
     border-radius: 10px;
     padding: 1rem;
+    width: 380px
+}
+
+.certificationsContainer{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+@media (max-width: 768px){
+  .certificationsContainer{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .certification{
@@ -32,7 +46,18 @@
     flex-direction: row;
     gap: 1rem;
     align-items: center;
-    padding: 1rem;
+    justify-content: space-between;
+    height: 100%;
+        width: 100%;
+
+}
+
+.dataContainer{
+    height: 100%;
+        width: 100%;
+display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .certification img{
@@ -45,7 +70,8 @@
 .certificationName{
     font-size: 1.2rem;
     font-weight: 500;
-    margin-top: 0.1rem
+    margin-top: 0.1rem;
+    text-align:start; 
 }
 
 .certificationLinks{
@@ -77,10 +103,15 @@
     justify-content: space-between;
     height: fit-content;
     margin:0;
-    padding-left: 1rem;
-    padding-right: 1rem;
     color: rgb(160, 160, 160)
 }
 .certificationHeader p{
     margin:0;
+}
+
+.certificationsList{
+    height: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    width: 100%;
 }
