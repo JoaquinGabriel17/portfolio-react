@@ -13,6 +13,19 @@ export const texts = {
   en: {
     certifications:[
       {
+        name: "Programming",
+        certifications: [
+          {
+            image: null,
+            name: "Full Stack Developer",
+            date: "2024",
+            company: "Soy Henry",
+            url: null,
+            pdf: "/henry.pdf"
+          },
+        ]
+      },
+      {
         name: "Cibersecurity",
         certifications: [
           {
@@ -200,6 +213,19 @@ export const texts = {
   es: {
 
     certifications:[
+      {
+        name: "Programación",
+        certifications: [
+          {
+            image: null,
+            name: "Desarrollador Full Stack",
+            date: "2024",
+            company: "Soy Henry",
+            url: null,
+            pdf: "/henry.pdf"
+          },
+        ]
+      },
       {
         name: "Ciberseguridad",
         certifications: [
