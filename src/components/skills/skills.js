@@ -1,23 +1,18 @@
 import styles from './skills.module.css'
-import html from '@/../public/HTML5.svg'
 import sql from '@/../public/SQL.svg'
-import css from '@/../public/CSS3.svg'
 import js from '@/../public/JavaScript.svg'
 import next from '@/../public/Next.js.svg'
 import node from '@/../public/Node.js.svg'
 import postgre from '@/../public/PostgresSQL.svg'
 import react from '@/../public/React.svg'
-import filezila from '@/../public/FileZilla.svg'
 import mongo from '@/../public/MongoDB.svg'
 import postman from '@/../public/Postman.svg'
 import swagger from '@/../public/Swagger.svg'
 import microsql from '@/../public/micro sql.svg'
-import c from '@/../public/C++.svg'
 import SkillCard from '../skillCard/skillCard'
 import typescript from '@/../public/typescript.svg'
 import nestjs from '@/../public/nestjs.svg'
 import tailwind from '@/../public/tailwindcss.svg'
-import { SiTypescript } from 'react-icons/si'
 
 
 

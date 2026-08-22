@@ -21,7 +21,7 @@ export default function Certifications({ data , lang}) {
                                                 </div>
                                                 <p className={styles.certificationName}>{certification.name}</p>
                                                 <div className={styles.certificationLinks}>
-                                                    {certification.url !== null && <a disabled={certification.url !== null} className={styles.certificationLink} href={certification.url} target="_blank" rel="noopener noreferrer">
+                                                    {certification.url !== null && <a className={styles.certificationLink} href={certification.url} target="_blank" rel="noopener noreferrer">
                                                         {lang === "es" ? "Ver Certificación" : "View Certification"}
                                                     </a>}
                                                     <a className={styles.certificationLink} href={certification.pdf} download target="_blank" rel="noopener noreferrer">
