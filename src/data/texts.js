@@ -22,7 +22,7 @@ export const texts = {
             company: "Soy Henry",
             url: null,
             pdf: "/henry.pdf",
-            detail: "/henry"
+            detail: "/certifications/henry"
           },
         ]
       },
@@ -36,7 +36,7 @@ export const texts = {
             company: "Cisco",
             url: "https://www.credly.com/badges/dc2d53eb-c21a-46fd-9e38-f2bcab8b5c4b/public_url",
             pdf: "/cisco-cybersecurity-intro.pdf",
-            detail: "/henry"
+            detail: "/certifications/henry"
           },
         ]
       }
@@ -226,7 +226,7 @@ export const texts = {
             company: "Soy Henry",
             url: null,
             pdf: "/henry.pdf",
-            detail: "/henry"
+            detail: "/certifications/henry"
           },
         ]
       },
