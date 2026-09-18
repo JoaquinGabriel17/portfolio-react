@@ -21,7 +21,8 @@ export const texts = {
             date: "2024",
             company: "Soy Henry",
             url: null,
-            pdf: "/henry.pdf"
+            pdf: "/henry.pdf",
+            detail: "/henry"
           },
         ]
       },
@@ -34,7 +35,8 @@ export const texts = {
             date: "2026",
             company: "Cisco",
             url: "https://www.credly.com/badges/dc2d53eb-c21a-46fd-9e38-f2bcab8b5c4b/public_url",
-            pdf: "/cisco-cybersecurity-intro.pdf"
+            pdf: "/cisco-cybersecurity-intro.pdf",
+            detail: "/henry"
           },
         ]
       }
@@ -223,7 +225,8 @@ export const texts = {
             date: "2024",
             company: "Soy Henry",
             url: null,
-            pdf: "/henry.pdf"
+            pdf: "/henry.pdf",
+            detail: "/henry"
           },
         ]
       },
@@ -236,7 +239,8 @@ export const texts = {
             date: "2026",
             company: "Cisco",
             url: "https://www.credly.com/badges/dc2d53eb-c21a-46fd-9e38-f2bcab8b5c4b/public_url",
-            pdf: "/cisco-cybersecurity-intro.pdf"
+            pdf: "/cisco-cybersecurity-intro.pdf",
+            detail: "/cv"
           },
         ]
       }
