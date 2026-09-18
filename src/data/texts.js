@@ -11,7 +11,7 @@ import colibri2 from '@/../public/colibri.svg'
 
 export const texts = {
   en: {
-    certifications:[
+    certifications: [
       {
         name: "Programming",
         certifications: [
@@ -48,51 +48,36 @@ export const texts = {
       mostWork: "What I worked with the most"
     },
     experience: [
-       {
-      paragraph: "Colibrí LATAM is a startup that offers a software for the management of entrepreneurs.",
-      title: "Experience",
-      subtitle: "Full Stack Developer",
-      icon: colibri2.src,
-      date: '01/02/2026  -  Currently',
-      list: [{
-        titleList: 'Functions and Responsibilities',
-        itemsList: [
-          'Development of a full-stack application for the management of entrepreneurs',
-          'CRUD operations for users and other entities',
-          'Real-time statistics dashboard',
-          'Integration with Web3, wallet connection, and Story Protocol blockchain integration',
-        ],
+      {
+        company: "Colibrí LATAM",
+        role: "Full Stack Developer - Co-Founder",
+        tags: ["Product", "Entrepreneurship Management", "Blockchain"],
+        stack: ["React", "Nest.js", "TypeScript", "PostgreSQL"],
+        startDate: "JAN 2026",
+        endDate: "PRESENT",
+        isCurrent: true,
       },
       {
-        titleList: 'Technologies and Tools',
-        itemsList: ['React, Nest.js, TypeScript, PostgreSQL, Vercel, Render']
-      }],
-      enterpriseName: "Colibrí LATAM",
-      enterpriseNameVisible: true
-    },
-      {
-        paragraph: "Alephee is a company that connects sellers with Mercado Libre through automated integrations. I was part of the support team, where I handled customer inquiries, analyzed technical issues, and managed solutions for both external users and internal teams.",
-        title: "Experience",
-        subtitle: "Customer Service Analyst - Technical Support Level 1",
-        icon: 'https://storage.wisboo.com/academy_data/mg5EopG0V4/public/GwTnNt7X-logo-alephee_color.png',
-        date: 'July 7, 2023  -  June 17, 2025',
-        list: [{
-          titleList: 'Functions and Responsibilities',
-          itemsList: [
-            'Resolving incidents and performing technical analysis of requirements',
-            'Integrating and consuming services through REST APIs',
-            'Querying and validating data in relational and non-relational databases',
-            'Managing tickets in platforms such as Zendesk and tracking tasks in Visual Studio boards'
-          ],
-        },
-        {
-          titleList: 'Technologies and Tools',
-          itemsList: ['SQL, API REST, Zendesk, Mongo DB Compass, FileZilla, Microsoft Azure']
-        }],
-        enterpriseName: "Alephee",
-        enterpriseNameVisible: false
+        company: "LUUÍ", role: "Full Stack Developer",
+        tags: ["Internship", "Services", "Elderly Care"],
+        stack: ["Next.js", "Nest.js", "TypeScript", "Supabase"], startDate: "AUG 2026", endDate: "PRESENT", isCurrent: true,
       },
-    ],
+      {
+        company: "Aisla Frio Pro", role: "Full Stack Developer",
+        tags: ["Internship", "Business Management", "Services"],
+        stack: ["Nest.js", "Next.js", "TypeScript", "PostgreSQL"], startDate: "JUN 2026", endDate: "SEP 2026", isCurrent: false,
+      },
+      {
+        company: "EcoRed", role: "Full Stack Developer",
+        tags: ["Internship", "Recycling"],
+        stack: ["Nest.js", "Next.js", "TypeScript", "PostgreSQL"], startDate: "MAY 2026", endDate: "SEP 2026", isCurrent: false,
+      },
+      {
+        company: "Alephee", role: "Customer Service Analyst",
+        tags: ["Customer Service", "Problem Solving", "Technical Support"],
+        stack: ["SQL Server", "Excel", "MSSMS", "Zendesk"], startDate: "JUN 2025", endDate: "JUN 2026", isCurrent: false,
+      },],
+
     ProjectInfo: [
       {
         name: 'Colibrí LATAM',
@@ -158,7 +143,7 @@ export const texts = {
           demo: 'https://agora-six-rho.vercel.app/'
         }
       },
-      
+
       {
         name: 'Movie Finder',
         description:
@@ -215,7 +200,7 @@ export const texts = {
   },
   es: {
 
-    certifications:[
+    certifications: [
       {
         name: "Programación",
         certifications: [
@@ -252,52 +237,53 @@ export const texts = {
       mostWork: "Con lo que mas trabajé"
     },
     experience: [
-       {
-      paragraph: "Colibrí LATAM es una startup que ofrece un software para la gestión de emprendimientos.",
-      title: "Experiencia",
-      subtitle: "Desarrollador Full Stack",
-      icon: colibri2.src,
-      date: '01/02/2026  -  Actualmente',
-      list: [{
-        titleList: 'Funciones y responsabilidades',
-        itemsList: [
-          'Desarrollo de una aplicación punta a punta para la gestión de emprendimientos',
-          'CRUD de usuarios y otras entidades',
-          'Dashboard de estadísticas en tiempo real',
-          'Integración con Web3, conexión de wallet e integración con blockchain de Story Protocol',
-        ],
+      {
+        company: "Colibrí LATAM",
+        role: "Full Stack Developer - Co-Founder",
+        tags: ["Producto", "Gestión de emprendimientos", "Blockchain"],
+        stack: ["React", "Nest.js", "TypeScript", "PostgreSQL"],
+        startDate: "ENE 2026",
+        endDate: "ACTUALIDAD",
+        isCurrent: true,
       },
       {
-        titleList: 'Tecnologías y herramientas',
-        itemsList: ['React, Nest.js, TypeScript, PostgreSQL, Vercel, Render']
-      }],
-      enterpriseName: "Colibrí LATAM",
-      enterpriseNameVisible: true
-    },
-      {
-      paragraph: "Alephee es una empresa que conecta a vendedores con Mercado Libre a través de integraciones automatizadas. Formé parte del equipo de soporte, donde atendía consultas de clientes, analizaba problemas técnicos y gestionaba soluciones tanto para usuarios externos como para equipos internos.",
-      title: "Experiencia",
-      subtitle: "Analista de servicio al cliente - Soporte técnico nivel 1",
-      icon: 'https://storage.wisboo.com/academy_data/mg5EopG0V4/public/GwTnNt7X-logo-alephee_color.png',
-      date: '07/07/2023  -  17/06/2025',
-      list: [{
-        titleList: 'Funciones y responsabilidades',
-        itemsList: [
-          'Resolución de incidencias y análisis técnico de requerimientos',
-          'Integración y consumo de servicios mediante API REST',
-          'Consultas y validaciones en bases de datos relacionales y no relacionales',
-          'Gestión de tickets en plataformas como Zendesk y seguimiento de tareas en tableros de Visual Studio'
-        ],
+        company: "LUUÍ",
+        role: "Full Stack Developer",
+        tags: ["Pasantía", "Servicios", "Adultos mayores"],
+        stack: ["Next.js", "Nest.js", "TypeScript", "Supabase"],
+        startDate: "AGO 2026",
+        endDate: "ACTUALIDAD",
+        isCurrent: true,
       },
       {
-        titleList: 'Tecnologías y herramientas',
-        itemsList: ['SQL, API REST, Zendesk, Mongo DB Compass, FileZilla, Microsoft Azure']
-      }],
-      enterpriseName: "Alephee",
-      enterpriseNameVisible: false
-    },
-   
-  ],
+        company: "Aisla Frio Pro",
+        role: "Full Stack Developer",
+        tags: ["Pasantía", "Gestión empresarial", "Servicios"],
+        stack: ["Nest.js", "Next.js", "TypeScript", "PostgreSQL"],
+        startDate: "JUN 2026",
+        endDate: "SEPT 2026",
+        isCurrent: false,
+      },
+
+      {
+        company: "EcoRed",
+        role: "Full Stack Developer",
+        tags: ["Pasantía", "Reciclaje"],
+        stack: ["Nest.js", "Next.js", "TypeScript", "PostgreSQL"],
+        startDate: "MAY 2026",
+        endDate: "SEPT 2026",
+        isCurrent: false,
+      },
+      {
+        company: "Alephee",
+        role: "Analista de servicio al cliente",
+        tags: ["Atención al cliente", "Resolución de problemas", "Soporte técnico"],
+        stack: ["SQL Server", "Excel", "MSSMS", "Zendesk"],
+        startDate: "JUN 2025",
+        endDate: "JUN 2026",
+        isCurrent: false,
+      },
+    ],
 
     ProjectInfo: [
       {
@@ -318,7 +304,7 @@ export const texts = {
           demo: 'https://colibrilatam.com/index.html'
         }
       },
-       {
+      {
         name: 'Linko',
         description: 'Linko es un acortador de URLs con una interfaz simple e intuitiva, creado para demostrar habilidades en desarrollo full stack con tecnologías modernas.',
         image: linko.src,
@@ -368,7 +354,7 @@ export const texts = {
           demo: 'https://agora-six-rho.vercel.app/'
         }
       },
-     
+
       {
         name: 'Movie Finder',
         description: 'Aplicación web que permite explorar más de 5.000 películas mediante una búsqueda indexada rápida, eficiente e intuitiva. Incluye múltiples filtros para refinar resultados',

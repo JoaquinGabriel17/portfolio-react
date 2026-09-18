@@ -47,14 +47,16 @@ export default function Home() {
       </section>
 
         <section id="experience" >
-        <h2 className={styles.title}>{lang === "es" ? "Experiencia" : "Experience"}</h2>
-        {content.experience.length > 0 && content.experience.map((exp, index) => (
-          <ExperienceCard 
-          data={exp}
-          key={`experience ${index}`}
-          lang={lang}
-        ></ExperienceCard>
-        ))}
+          <h2 className={styles.title}>{lang === "es" ? "Experiencia" : "Experience"}</h2>
+          <div className={styles.experienceList}>
+            {content.experience.length > 0 && content.experience.map((exp, index) => (
+              <ExperienceCard 
+                data={exp}
+                key={`experience ${index}`}
+                lang={lang}
+              />
+            ))}
+          </div>
         </section>
 
         <section id="projects" >

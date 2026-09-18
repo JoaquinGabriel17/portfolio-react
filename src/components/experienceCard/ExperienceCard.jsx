@@ -1,57 +1,40 @@
-import styles from './experienceCard.module.css'
-import { useState } from 'react';
+import styles from './experienceCard.module.css';
 
 export default function ExperienceCard({ data, lang }) {
-    const [isExpanded, setIsExpanded] = useState(false);
-
-    const { paragraph, title, subtitle, icon, date, list, enterpriseName, enterpriseNameVisible } = data
+    const { company, role, tags, stack, startDate, endDate, isCurrent } = data;
 
     return (
-        <div className={styles.cardContain}>
-            <div className={styles.card}>
-                <div className={styles.separador}>
-                    <div className={styles.dateAndSubTitle}>
-                        <h2 className={styles.subtitle}>{subtitle}</h2>
-                        <p className={styles.date}>{date}</p>
-                    </div>
-                    {icon && (
-                        <img src={icon} alt='icono de experiencia' className={styles.icon} />
-                    )}
-                    {enterpriseNameVisible && enterpriseName && (
-                        <h2 style={{ color: "white" }}>{enterpriseName}</h2>
-                    )}
-                </div>
+        <div className={styles.item}>
+            {/* Columna 1: Fechas */}
+            <div className={styles.dateColumn}>
+                <span className={styles.dateText}>{startDate}</span>
+                <span className={styles.dateText}>{endDate}</span>
+            </div>
 
-                {/* Contenido siempre montado, se anima con CSS */}
-                <div className={`${styles.expandWrapper} ${isExpanded ? styles.expanded : ''}`}>
-                    <div className={styles.expandInner}>
-                        {paragraph && <h3>{lang === "es" ? "Descripción" : "Description"}</h3>}
-                        <p
-                            className={styles.paragraph}
-                            dangerouslySetInnerHTML={{ __html: paragraph }}
-                        />
-                        {list && list.map((item, index) => (
-                            <div key={index}>
-                                <h3>{item.titleList}</h3>
-                                <ul>
-                                    {item.itemsList.map((subItem, subIndex) => (
-                                        <li key={subIndex}>{subItem}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        ))}
-                    </div>
+            {/* Columna 2: Empresa y Tags */}
+            <div className={styles.mainColumn}>
+                <div className={styles.timelineDotWrapper}>
+                    <div className={`${styles.timelineDot} ${isCurrent ? styles.currentDot : ''}`}></div>
                 </div>
+                <h3 className={styles.companyName}>{company}</h3>
+                <div className={styles.tagsContainer}>
+                    {/* El primer tag (rol) va en color índigo */}
+                    <span className={`${styles.tag} ${styles.primaryTag}`}>{role}</span>
+                    {tags.map((tag, index) => (
+                        <span key={index} className={styles.tag}>{tag}</span>
+                    ))}
+                </div>
+            </div>
 
-                <button
-                    className={styles.expandButton}
-                    onClick={() => setIsExpanded(prev => !prev)}
-                >
-                    {isExpanded
-                        ? (lang === "es" ? "Cerrar detalles" : "Close details")
-                        : (lang === "es" ? "Haz click para ver detalles" : "Click to see details")}
-                </button>
+            {/* Columna 3: Stack */}
+            <div className={styles.stackColumn}>
+                <span className={styles.stackLabel}>Stack</span>
+                <div className={styles.stackList}>
+                    {stack.map((tech, index) => (
+                        <span key={index} className={styles.stackItem}>{tech}</span>
+                    ))}
+                </div>
             </div>
         </div>
-    )
+    );
 }
