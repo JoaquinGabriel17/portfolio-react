@@ -11,7 +11,7 @@ import colibri2 from '@/../public/colibri.svg'
 
 export const texts = {
   en: {
-    certifications:[
+    certifications: [
       {
         name: "Programming",
         certifications: [
@@ -21,7 +21,8 @@ export const texts = {
             date: "2024",
             company: "Soy Henry",
             url: null,
-            pdf: "/henry.pdf"
+            pdf: "/henry.pdf",
+            detail: "/certifications/henry"
           },
         ]
       },
@@ -34,7 +35,8 @@ export const texts = {
             date: "2026",
             company: "Cisco",
             url: "https://www.credly.com/badges/dc2d53eb-c21a-46fd-9e38-f2bcab8b5c4b/public_url",
-            pdf: "/cisco-cybersecurity-intro.pdf"
+            pdf: "/cisco-cybersecurity-intro.pdf",
+            detail: "/certifications/henry"
           },
         ]
       }
@@ -46,161 +48,81 @@ export const texts = {
       mostWork: "What I worked with the most"
     },
     experience: [
-       {
-      paragraph: "Colibrí LATAM is a startup that offers a software for the management of entrepreneurs.",
-      title: "Experience",
-      subtitle: "Full Stack Developer",
-      icon: colibri2.src,
-      date: '01/02/2026  -  Currently',
-      list: [{
-        titleList: 'Functions and Responsibilities',
-        itemsList: [
-          'Development of a full-stack application for the management of entrepreneurs',
-          'CRUD operations for users and other entities',
-          'Real-time statistics dashboard',
-          'Integration with Web3, wallet connection, and Story Protocol blockchain integration',
-        ],
+      {
+        company: "Colibrí LATAM",
+        role: "Full Stack Developer - Co-Founder",
+        tags: ["Product", "Entrepreneurship Management", "Blockchain"],
+        stack: ["React", "Nest.js", "TypeScript", "PostgreSQL"],
+        startDate: "JAN 2026",
+        endDate: "PRESENT",
+        isCurrent: true,
       },
       {
-        titleList: 'Technologies and Tools',
-        itemsList: ['React, Nest.js, TypeScript, PostgreSQL, Vercel, Render']
-      }],
-      enterpriseName: "Colibrí LATAM",
-      enterpriseNameVisible: true
-    },
-      {
-        paragraph: "Alephee is a company that connects sellers with Mercado Libre through automated integrations. I was part of the support team, where I handled customer inquiries, analyzed technical issues, and managed solutions for both external users and internal teams.",
-        title: "Experience",
-        subtitle: "Customer Service Analyst - Technical Support Level 1",
-        icon: 'https://storage.wisboo.com/academy_data/mg5EopG0V4/public/GwTnNt7X-logo-alephee_color.png',
-        date: 'July 7, 2023  -  June 17, 2025',
-        list: [{
-          titleList: 'Functions and Responsibilities',
-          itemsList: [
-            'Resolving incidents and performing technical analysis of requirements',
-            'Integrating and consuming services through REST APIs',
-            'Querying and validating data in relational and non-relational databases',
-            'Managing tickets in platforms such as Zendesk and tracking tasks in Visual Studio boards'
-          ],
-        },
-        {
-          titleList: 'Technologies and Tools',
-          itemsList: ['SQL, API REST, Zendesk, Mongo DB Compass, FileZilla, Microsoft Azure']
-        }],
-        enterpriseName: "Alephee",
-        enterpriseNameVisible: false
+        company: "LUUÍ", role: "Full Stack Developer",
+        tags: ["Internship", "Services", "Elderly Care"],
+        stack: ["Next.js", "Nest.js", "TypeScript", "Supabase"], startDate: "AUG 2026", endDate: "PRESENT", isCurrent: true,
       },
-    ],
+      {
+        company: "Aisla Frio Pro", role: "Full Stack Developer",
+        tags: ["Internship", "Business Management", "Services"],
+        stack: ["Nest.js", "Next.js", "TypeScript", "PostgreSQL"], startDate: "JUN 2026", endDate: "SEP 2026", isCurrent: false,
+      },
+      {
+        company: "EcoRed", role: "Full Stack Developer",
+        tags: ["Internship", "Recycling"],
+        stack: ["Nest.js", "Next.js", "TypeScript", "PostgreSQL"], startDate: "MAY 2026", endDate: "SEP 2026", isCurrent: false,
+      },
+      {
+        company: "Alephee", role: "Customer Service Analyst",
+        tags: ["Customer Service", "Problem Solving", "Technical Support"],
+        stack: ["SQL Server", "Excel", "MSSMS", "Zendesk"], startDate: "JUN 2025", endDate: "JUN 2026", isCurrent: false,
+      },],
+
     ProjectInfo: [
       {
         name: 'Colibrí LATAM',
+        year: '2024',
+        tags: ['Web3', 'Blockchain', 'Dashboard'],
         description:
           'Developed a company application from scratch, including user CRUD operations and management of other entities, a statistics dashboard, and a modern UI/UX design.',
-        image: colibri.src,
-        features: [
-          'User and other entities CRUD.',
-          'Multiple real-time statistic views',
-          'Web3 integration, wallet connection, and Story Protocol integration',
-          'Modern UI/UX design, responsive and accessible'
-        ],
-        techIcons: [],
+        url: 'https://colibrilatam.com/index.html',
         technologies: ['Next.js', 'Nest.js', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'PostgreSQL'],
-        links: {
-          github: null,
-          demo: 'https://colibrilatam.com/index.html'
-        }
       },
       {
         name: 'Linko',
+        year: '2023',
+        tags: ['Full Stack', 'URL Shortener', 'Auth'],
         description:
           'Linko is a URL shortener with a clean and intuitive interface, built to showcase full stack development skills using modern technologies.',
-        image: linko.src,
-        features: ['User registration', 'URL shortening', 'Save shortened links'],
-        techIcons: [
-          <DiReact key="react" />,
-          <SiNextdotjs key="next" />,
-          <SiJavascript key="js" />,
-          <SiMongodb key="mongodb" />,
-          <FaNodeJs key="node" />
-        ],
+        url: 'https://linko-nine.vercel.app/',
         technologies: ['React', 'Next.js', 'JavaScript', 'MongoDB', 'Node.js'],
-        links: {
-          github: 'https://github.com/JoaquinGabriel17/url-shortener',
-          demo: 'https://linko-nine.vercel.app/'
-        }
       },
       {
         name: 'Agora Mercado',
+        year: '2023',
+        tags: ['E-commerce', 'WebSockets', 'Real-time'],
         description:
           'Agora is an e-commerce platform created to connect buyers and sellers in a digital, simple, and accessible way, allowing users to find and offer products in one place, from any device, without the need for downloads.',
-        image: agora.src,
-        features: [
-          'User registration and authentication system with access control',
-          'Real-time notifications using WebSockets',
-          'Order management with state control, automatic expiration, and historical records',
-          'Support system with tickets and real-time chat between users and administrators',
-          'Responsive design'
-        ],
-
-        techIcons: [
-          <DiReact key="react" />,
-          <SiExpress key="express" />,
-          <SiTypescript key="ts" />,
-          <FaNodeJs key="node" />,
-          <SiTailwindcss key="tailwind" />,
-          <SiMongodb key="mongodb" />
-        ],
+        url: 'https://agora-six-rho.vercel.app/',
         technologies: ['React', 'Typescript', 'Mongo DB', 'Node.js', 'Tailwind CSS', 'Express'],
-        links: {
-          github: 'https://github.com/JoaquinGabriel17/rosario-mercado',
-          demo: 'https://agora-six-rho.vercel.app/'
-        }
       },
-      
       {
         name: 'Movie Finder',
+        year: '2023',
+        tags: ['React', 'Redux', 'Search'],
         description:
           'A web application that lets users explore over 5,000 movies through a fast, efficient, and intuitive indexed search. Includes multiple filters to refine search results.',
-        image: movie.src,
-        features: [
-          'Indexed search',
-          'Add movies to favorites',
-          'Detailed movie information'
-        ],
-        techIcons: [
-          <DiReact key="react" />,
-          <SiJavascript key="js" />,
-          <FaNodeJs key="node" />
-        ],
+        url: 'https://movie-finder-beige-zeta.vercel.app/',
         technologies: ['React', 'Redux', 'JavaScript'],
-        links: {
-          github: 'https://github.com/JoaquinGabriel17/Movie-Finder',
-          demo: 'https://movie-finder-beige-zeta.vercel.app/'
-        }
       },
       {
         name: 'Rosa de los vientos',
+        year: '2023',
+        tags: ['E-commerce', 'Firebase', 'Full Stack'],
         description:
           'Rosa de los vientos is a digital restaurant platform where users can buy and sell food products online.',
-        image: rosa.src,
-        features: [
-          'User registration',
-          'Purchasing',
-          'Selling',
-          'Shipping management'
-        ],
-        techIcons: [
-          <DiReact key="react" />,
-          <SiRedux key="redux" />,
-          <SiFirebase key="firebase" />,
-          <SiJavascript key="js" />,
-          <FaNodeJs key="node" />
-        ],
+        url: 'https://p-fhenry-front.vercel.app/',
         technologies: ['React', 'Node.js', 'JavaScript', 'Firebase', 'Redux'],
-        links: {
-          github: 'https://github.com/OscarMayaC/PFhenryFront',
-          demo: 'https://p-fhenry-front.vercel.app/'
-        }
       }
     ],
 
@@ -213,7 +135,7 @@ export const texts = {
   },
   es: {
 
-    certifications:[
+    certifications: [
       {
         name: "Programación",
         certifications: [
@@ -223,7 +145,8 @@ export const texts = {
             date: "2024",
             company: "Soy Henry",
             url: null,
-            pdf: "/henry.pdf"
+            pdf: "/henry.pdf",
+            detail: "/certifications/henry"
           },
         ]
       },
@@ -236,7 +159,8 @@ export const texts = {
             date: "2026",
             company: "Cisco",
             url: "https://www.credly.com/badges/dc2d53eb-c21a-46fd-9e38-f2bcab8b5c4b/public_url",
-            pdf: "/cisco-cybersecurity-intro.pdf"
+            pdf: "/cisco-cybersecurity-intro.pdf",
+            detail: "/cv"
           },
         ]
       }
@@ -248,150 +172,102 @@ export const texts = {
       mostWork: "Con lo que mas trabajé"
     },
     experience: [
-       {
-      paragraph: "Colibrí LATAM es una startup que ofrece un software para la gestión de emprendimientos.",
-      title: "Experiencia",
-      subtitle: "Desarrollador Full Stack",
-      icon: colibri2.src,
-      date: '01/02/2026  -  Actualmente',
-      list: [{
-        titleList: 'Funciones y responsabilidades',
-        itemsList: [
-          'Desarrollo de una aplicación punta a punta para la gestión de emprendimientos',
-          'CRUD de usuarios y otras entidades',
-          'Dashboard de estadísticas en tiempo real',
-          'Integración con Web3, conexión de wallet e integración con blockchain de Story Protocol',
-        ],
+      {
+        company: "Colibrí LATAM",
+        role: "Full Stack Developer - Co-Founder",
+        tags: ["Producto", "Gestión de emprendimientos", "Blockchain"],
+        stack: ["React", "Nest.js", "TypeScript", "PostgreSQL"],
+        startDate: "ENE 2026",
+        endDate: "ACTUALIDAD",
+        isCurrent: true,
       },
       {
-        titleList: 'Tecnologías y herramientas',
-        itemsList: ['React, Nest.js, TypeScript, PostgreSQL, Vercel, Render']
-      }],
-      enterpriseName: "Colibrí LATAM",
-      enterpriseNameVisible: true
-    },
-      {
-      paragraph: "Alephee es una empresa que conecta a vendedores con Mercado Libre a través de integraciones automatizadas. Formé parte del equipo de soporte, donde atendía consultas de clientes, analizaba problemas técnicos y gestionaba soluciones tanto para usuarios externos como para equipos internos.",
-      title: "Experiencia",
-      subtitle: "Analista de servicio al cliente - Soporte técnico nivel 1",
-      icon: 'https://storage.wisboo.com/academy_data/mg5EopG0V4/public/GwTnNt7X-logo-alephee_color.png',
-      date: '07/07/2023  -  17/06/2025',
-      list: [{
-        titleList: 'Funciones y responsabilidades',
-        itemsList: [
-          'Resolución de incidencias y análisis técnico de requerimientos',
-          'Integración y consumo de servicios mediante API REST',
-          'Consultas y validaciones en bases de datos relacionales y no relacionales',
-          'Gestión de tickets en plataformas como Zendesk y seguimiento de tareas en tableros de Visual Studio'
-        ],
+        company: "LUUÍ",
+        role: "Full Stack Developer",
+        tags: ["Pasantía", "Servicios", "Adultos mayores"],
+        stack: ["Next.js", "Nest.js", "TypeScript", "Supabase"],
+        startDate: "AGO 2026",
+        endDate: "ACTUALIDAD",
+        isCurrent: true,
       },
       {
-        titleList: 'Tecnologías y herramientas',
-        itemsList: ['SQL, API REST, Zendesk, Mongo DB Compass, FileZilla, Microsoft Azure']
-      }],
-      enterpriseName: "Alephee",
-      enterpriseNameVisible: false
-    },
-   
-  ],
+        company: "Aisla Frio Pro",
+        role: "Full Stack Developer",
+        tags: ["Pasantía", "Gestión empresarial", "Servicios"],
+        stack: ["Nest.js", "Next.js", "TypeScript", "PostgreSQL"],
+        startDate: "JUN 2026",
+        endDate: "SEPT 2026",
+        isCurrent: false,
+      },
 
-    ProjectInfo: [
+      {
+        company: "EcoRed",
+        role: "Full Stack Developer",
+        tags: ["Pasantía", "Reciclaje"],
+        stack: ["Nest.js", "Next.js", "TypeScript", "PostgreSQL"],
+        startDate: "MAY 2026",
+        endDate: "SEPT 2026",
+        isCurrent: false,
+      },
+      {
+        company: "Alephee",
+        role: "Analista de servicio al cliente",
+        tags: ["Atención al cliente", "Resolución de problemas", "Soporte técnico"],
+        stack: ["SQL Server", "Excel", "MSSMS", "Zendesk"],
+        startDate: "JUN 2025",
+        endDate: "JUN 2026",
+        isCurrent: false,
+      },
+    ],
+
+     ProjectInfo: [
       {
         name: 'Colibrí LATAM',
+        year: '2024',
+        tags: ['Web3', 'Blockchain', 'Dashboard'],
         description:
-          'Desarrollo de una aplicación punta a punta para la gestión de emprendimientos con CRUD de usuarios y otras entidades, dashboard de estadísticas en tiempo real y integración de Web3.',
-        image: colibri.src,
-        features: [
-          'CRUD de usuarios y otras entidades',
-          'Vistas de estadísticas en tiempo real',
-          'Integración de Web3, conexión de wallet e integración con blockchain de Story Protocol',
-          'Diseño UI/UX moderno, responsive y accesible'
-        ],
-        techIcons: [],
+          'Desarrollo de una aplicación punta a punta para la gestión de emprendimientos con CRUD de usuarios y otras entidades, dashboard de estadísticas en tiempo real e integración de Web3.',
+        url: 'https://colibrilatam.com/index.html',
         technologies: ['Next.js', 'Nest.js', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'PostgreSQL'],
-        links: {
-          github: null,
-          demo: 'https://colibrilatam.com/index.html'
-        }
       },
-       {
+      {
         name: 'Linko',
-        description: 'Linko es un acortador de URLs con una interfaz simple e intuitiva, creado para demostrar habilidades en desarrollo full stack con tecnologías modernas.',
-        image: linko.src,
-        features: ['Registro de usuarios', 'Acortar URLs', 'Guardar URLs'],
-        techIcons: [<DiReact key="react" />, <SiNextdotjs key="next" />, <SiJavascript key="js" />, <SiMongodb key="mongodb" />, <FaNodeJs key="node" />],
+        year: '2023',
+        tags: ['Full Stack', 'Acortador', 'Auth'],
+        description:
+          'Linko es un acortador de URLs con una interfaz simple e intuitiva, creado para demostrar habilidades en desarrollo full stack con tecnologías modernas.',
+        url: 'https://linko-nine.vercel.app/',
         technologies: ['React', 'Next.js', 'JavaScript', 'MongoDB', 'Node.js'],
-        links: {
-          github: 'https://github.com/JoaquinGabriel17/url-shortener',
-          demo: 'https://linko-nine.vercel.app/'
-        }
       },
-      /*{
-        name: 'Crypto Metrics',
-        description: 'Esta aplicación permite consultar en tiempo real las principales criptomonedas del mercado. El proyecto está desarrollado con React para la interfaz, integrando la API de CoinGecko para obtener los datos del mercado en vivo.',
-        image: criptoMetrics.src,
-        features: ['Registro de usuarios', 'Múltiples vistas de estadísticas', 'Estadísticas en tiempo real'],
-        techIcons: [<DiReact key="react" />, <SiRedux key="redux" />, <SiJavascript key="js" />],
-        links:{
-          github: 'https://github.com/JoaquinGabriel17/crypto-metrics',
-          demo: 'https://crypto-metrics-sigma.vercel.app/'
-        }
-      },*/
       {
         name: 'Agora Mercado',
+        year: '2023',
+        tags: ['E-commerce', 'WebSockets', 'Tiempo real'],
         description:
           'Agora es un e-commerce creado para conectar compradores y vendedores de forma digital, simple y accesible, permitiendo encontrar y ofrecer productos en un solo lugar, desde cualquier dispositivo y sin necesidad de descargas.',
-        image: agora.src,
-        features: [
-          'Sistema de registro y autenticación de usuarios con control de acceso',
-          'Notificaciones en tiempo real mediante WebSockets',
-          'Gestión de órdenes con control de estados, expiración automática y registro histórico',
-          'Sistema de soporte con tickets y chat en tiempo real entre usuarios y administradores',
-          'Diseño responsive'
-        ],
-
-        techIcons: [
-          <DiReact key="react" />,
-          <SiExpress key="express" />,
-          <SiTypescript key="ts" />,
-          <FaNodeJs key="node" />,
-          <SiTailwindcss key="tailwind" />,
-          <SiMongodb key="mongodb" />
-        ],
+        url: 'https://agora-six-rho.vercel.app/',
         technologies: ['React', 'Typescript', 'Mongo DB', 'Node.js', 'Tailwind CSS', 'Express'],
-        links: {
-          github: 'https://github.com/JoaquinGabriel17/rosario-mercado',
-          demo: 'https://agora-six-rho.vercel.app/'
-        }
       },
-     
       {
         name: 'Movie Finder',
-        description: 'Aplicación web que permite explorar más de 5.000 películas mediante una búsqueda indexada rápida, eficiente e intuitiva. Incluye múltiples filtros para refinar resultados',
-        image: movie.src,
-        features: ['Búsqueda indexada', 'Agregar películas a favoritas', 'Información detallada de películas'],
-        techIcons: [<DiReact key="react" />, <SiJavascript key="js" />, <FaNodeJs key="node" />],
+        year: '2023',
+        tags: ['React', 'Redux', 'Búsqueda'],
+        description:
+          'Aplicación web que permite explorar más de 5.000 películas mediante una búsqueda indexada rápida, eficiente e intuitiva. Incluye múltiples filtros para refinar resultados.',
+        url: 'https://movie-finder-beige-zeta.vercel.app/',
         technologies: ['React', 'Redux', 'JavaScript'],
-        links: {
-          github: 'https://github.com/JoaquinGabriel17/Movie-Finder',
-          demo: 'https://movie-finder-beige-zeta.vercel.app/'
-        }
       },
       {
         name: 'Rosa de los vientos',
-        description: 'Rosa de los vientos es un restaurante digital donde los usuarios pueden comprar y vender alimentos.',
-        image: rosa.src,
-        features: ['Registro de usuarios', 'Compra', 'Venta', 'Gestión de envíos'],
-        techIcons: [<DiReact key="react" />, <SiRedux key="redux" />, <SiFirebase key="firebase" />, <SiJavascript key="js" />, <FaNodeJs key="node" />],
+        year: '2023',
+        tags: ['E-commerce', 'Firebase', 'Full Stack'],
+        description:
+          'Rosa de los vientos es un restaurante digital donde los usuarios pueden comprar y vender alimentos.',
+        url: 'https://p-fhenry-front.vercel.app/',
         technologies: ['React', 'Node.js', 'JavaScript', 'Firebase', 'Redux'],
-        links: {
-          github: 'https://github.com/OscarMayaC/PFhenryFront',
-          demo: 'https://p-fhenry-front.vercel.app/'
-        }
       }
-
-
     ],
+
     contact: {
       title: "Contacto",
       email: "Escríbeme a: joaquin@example.com",

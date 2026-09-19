@@ -1,0 +1,20 @@
+.main{
+    width: 100vw;
+    
+    padding-block: 8vh;
+}
+.backButton{
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border: 1px solid #818cf8;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    background-color: #000000;
+}
+.pdfContainer{
+    width: 100%;
+}

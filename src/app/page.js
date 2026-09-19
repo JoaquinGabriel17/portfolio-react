@@ -1,9 +1,7 @@
 "use client"
-import Image from "next/image";
 import styles from "./page.module.css";
 import Presentation from "@/components/presentation/presentation";
 import Skills from "@/components/skills/skills";
-import Card from "@/components/card/card";
 import Icon from "@/components/icons/Icon";
 import github from '@/../public/github.svg'
 import linkedin from '@/../public/linkedin.svg'
@@ -16,12 +14,7 @@ import Navbar from "@/components/navbar/Navbar";
 import ExperienceCard from "@/components/experienceCard/ExperienceCard";
 import Certifications from "@/components/certifications/Certifications";
 
-
-
-
 export default function Home() {
-
-  // Estado para el idioma seleccionado
   const [lang, setLang] = useState("en");
   const [content, setContent] = useState(texts["en"]); 
 
@@ -32,7 +25,6 @@ export default function Home() {
   }, []);
 
   const changeLang = (newLang) => {
-    console.log("Changing language to:", newLang);
     setLang(newLang);
     localStorage.setItem("lang", newLang);
     setContent(texts[newLang]);
@@ -40,13 +32,10 @@ export default function Home() {
 
   let icons = [
     {src: github.src, href: 'https://github.com/JoaquinGabriel17'},
-    {src: linkedin.src, href: 'https://www.linkedin.com/in/joaquin-ocampo-a7b213252/'},
+    {src: linkedin.src, href: 'https://www.linkedin.com/in/joaquin-ocampo-taboada-a7b213252/?locale=es-ES'},
     {src: wasap.src, href: '+54 9 3876 56-7092'},
     {src: email.src, href: 'joaquingabriel3@hotmail.com'}
   ]
-
-
-  
 
   return (
     <div className={styles.ext}>
@@ -58,14 +47,16 @@ export default function Home() {
       </section>
 
         <section id="experience" >
-        <h2 className={styles.title}>{lang === "es" ? "Experiencia" : "Experience"}</h2>
-        {content.experience.length > 0 && content.experience.map((exp, index) => (
-          <ExperienceCard 
-          data={exp}
-          key={`experience ${index}`}
-          lang={lang}
-        ></ExperienceCard>
-        ))}
+          <h2 className={styles.title}>{lang === "es" ? "Experiencia" : "Experience"}</h2>
+          <div className={styles.experienceList}>
+            {content.experience.length > 0 && content.experience.map((exp, index) => (
+              <ExperienceCard 
+                data={exp}
+                key={`experience ${index}`}
+                lang={lang}
+              />
+            ))}
+          </div>
         </section>
 
         <section id="projects" >
@@ -74,11 +65,9 @@ export default function Home() {
 
         <Certifications data={content.certifications} lang={lang}></Certifications>
 
-        <section id="skills" ></section>
-        <Skills></Skills>
-
-        
-        
+        <section id="skills">
+          <Skills></Skills>
+        </section>
 
     </div>
     </div>

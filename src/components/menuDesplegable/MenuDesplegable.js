@@ -8,15 +8,7 @@ export default function MenuDesplegable({lang, toChangeLang}){
 
     const [visibilidadMenu, SetVisibilidadMenu] = useState(false)
     function HandlerButton(){
-        if(visibilidadMenu){
-            SetVisibilidadMenu(!visibilidadMenu)
-           
-        }
-        else{
-            SetVisibilidadMenu(!visibilidadMenu)
-
-        }
-        console.log(visibilidadMenu)
+        SetVisibilidadMenu(!visibilidadMenu)
     };
     return(
         <div className={styles.container}>
