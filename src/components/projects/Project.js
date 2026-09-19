@@ -6,6 +6,7 @@ export default function Projects({ ProjectsInfo, lang }) {
     
     <div className={styles.container}>
       <h2 className={styles.title}>{lang === "es" ? "Proyectos" : "Projects"}</h2>  
+      <div className={styles.list}>
       {ProjectsInfo && ProjectsInfo.map((project, index) => (
         <ProjectRow
           key={`${project.name}-${index}`}
@@ -13,6 +14,7 @@ export default function Projects({ ProjectsInfo, lang }) {
           lang={lang}
         />
       ))}
+      </div>
     </div>
   );
 }
