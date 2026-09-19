@@ -1,0 +1,165 @@
+/* ProjectRow.module.css */
+
+.row {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  padding: 2.25rem 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+  transition: background 0.3s ease, padding-left 0.3s ease;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.row:hover {
+  background: rgba(255, 255, 255, 0.05);
+  padding-left: 1.25rem;
+}
+
+/* ─── Year ──────────────────────────────────────────────── */
+.year {
+  font-family: 'DM Mono', monospace;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.35);
+  letter-spacing: 0.05em;
+  align-self: center;
+  padding-top: 0.4rem;
+}
+
+/* ─── Center (title + tags + description) ───────────────── */
+.center {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  min-width: 0;
+  text-align: left;
+}
+
+.title {
+  font-family: 'Syne', sans-serif;
+  font-weight: 700;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  color: #ffffff;
+  margin: 0;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  transition: color 0.3s ease;
+}
+
+.row:hover .title {
+  color: #a5b4fc;
+}
+
+.tagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.tag {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1rem;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  max-width: 700px;
+}
+
+/* ─── Right (stack + button) ────────────────────────────── */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-shrink: 0;
+}
+
+.stack {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  max-width: 230px;
+  line-height: 1.5;
+}
+
+.stackContainer{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  gap: 0.5rem;
+}
+
+.stackLabel{
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+  background: transparent;
+}
+
+.row:hover .iconButton {
+  border-color: #818cf8;
+  color: #818cf8;
+  background: rgba(129, 140, 248, 0.06);
+  transform: translate(2px, -2px);
+}
+
+/* ─── Responsive ────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.75rem 0.25rem;
+  }
+
+  .year {
+    padding-top: 0;
+    align-self: flex-start;
+  }
+
+  .center {
+    gap: 0.6rem;
+  }
+
+  .description {
+    font-size: 0.85rem;
+  }
+
+  .right {
+    justify-content: space-between;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .stack {
+    text-align: left;
+    max-width: none;
+  }
+
+  .row:hover {
+    padding-left: 0.25rem;
+  }
+}
