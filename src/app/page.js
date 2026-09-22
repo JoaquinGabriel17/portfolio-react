@@ -43,7 +43,7 @@ export default function Home() {
     <div className={styles.container}>
       <section id="presentation">
         <Presentation data={content.presentation} ></Presentation>
-        <Icon iconList={icons} lang={lang}></Icon>
+        
       </section>
 
         <section id="experience" >
