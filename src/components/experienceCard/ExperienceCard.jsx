@@ -30,9 +30,7 @@ export default function ExperienceCard({ data, lang }) {
             <div className={styles.stackColumn}>
                 <span className={styles.stackLabel}>Stack</span>
                 <div className={styles.stackList}>
-                    {stack.map((tech, index) => (
-                        <span key={index} className={styles.stackItem}>{tech}</span>
-                    ))}
+                    {stack.join(' / ')}
                 </div>
             </div>
         </div>
