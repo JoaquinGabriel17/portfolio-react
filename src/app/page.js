@@ -89,7 +89,7 @@ export default function Home() {
               ? "Desarrollo productos y aplicaciones de extremo a extremo, combinando frontend, backend y arquitectura de software. Busco mejorar continuamente mis conocimientos y aplicar tecnologías y buenas prácticas que aporten valor a cada proyecto."
               : "I develop end-to-end products and applications, combining frontend, backend, and software architecture. I continuously work to expand my knowledge and apply technologies and best practices that add value to every project."}
           />
-          <button className={`btn-primary ${styles.button}`}> <span>{lang === "es" ? "Más sobre mí" : "More about me"}</span></button>
+          <a href="/about"  className={`btn-primary ${styles.button}`}> <span>{lang === "es" ? "Más sobre mí" : "More about me"}</span></a>
         </section>
         <section id="contact"></section>
         <Footer></Footer>
