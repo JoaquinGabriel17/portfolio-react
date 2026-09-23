@@ -44,7 +44,7 @@ export default function Home() {
       <Navbar toChangeLang={changeLang} lang={lang}></Navbar>
       <div className={styles.container}>
         <section id="presentation">
-          <Presentation data={content.presentation} ></Presentation>
+          <Presentation data={content.presentation} lang={lang} ></Presentation>
 
         </section>
 

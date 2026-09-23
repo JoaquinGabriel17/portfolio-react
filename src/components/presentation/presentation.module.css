@@ -37,6 +37,20 @@
     margin-bottom: 1rem;
 }
 
+.dynamicTitle{
+    min-height: 40vh;
+}
+
+.dynamicTitle span{
+    display: inline-block;
+  margin-left: 2px;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
 .parrafo {
     text-wrap: balance;
 }

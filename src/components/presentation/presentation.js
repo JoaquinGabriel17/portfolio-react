@@ -1,6 +1,8 @@
 import styles from './presentation.module.css'
+import { useTypewriter } from "@/components/typeWriter/useTypewriter";
+import {useMemo} from "react";
 
-export default function Presentation({ data }) {
+export default function Presentation({ data, lang }) {
     const { 
         role, 
         title, 
@@ -10,13 +12,34 @@ export default function Presentation({ data }) {
         buttonText 
     } = data;
 
+    const phrases = useMemo(
+    () =>
+      lang === "es"
+        ? [
+            "Desarrollador Full Stack.",
+            "Soluciones escalables.",
+            "Pasión por la tecnología.",
+          ]
+        : [
+            "Full Stack Developer.",
+            "Scalable solutions.",
+            "Passionate about technology.",
+          ],
+    [lang]
+  );
+
+  const typed = useTypewriter(phrases);
+
     return (
         <section className={styles.presentation}>
             
             {/* Columna izquierda: Texto y botón */}
             <div className={styles.presentationContent}>
                 <span className={styles.role}>{role}</span>
-                <h1 className={styles.title}>{title}</h1>
+                <h1 className={styles.dynamicTitle}>
+      {typed}
+      <span className="animate-pulse">|</span>
+    </h1>
                 <p className={styles.parrafo}>{roleDescription}</p>
                 
                 <a href="#projects" className={`btn-primary ${styles.button}`}>
