@@ -1,6 +1,6 @@
 :root{
-  --gradient-bg: linear-gradient(90deg, #fff, #a5b4fc);
-  --gradient-text: linear-gradient(90deg, #fff, #a5b4fc);
+  --gradient-bg: linear-gradient(90deg, #fff, #b91c1c);
+  --gradient-text: linear-gradient(90deg, #fff, #b91c1c);
     --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
     --default-font-family: var(--font-sans);

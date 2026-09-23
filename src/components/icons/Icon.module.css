@@ -71,7 +71,7 @@
     cursor: pointer;
   }
   .CVButton:hover{
-    border: 2px solid #818cf8;
+    border: 2px solid #b91c1c;
 
   }
   .techsList{
@@ -118,7 +118,7 @@
   .presentationName{
     font-size: 1.7rem;        /* Subtítulo: tu rol */
   font-weight: 500;
-  background: linear-gradient(90deg, #fff, #a5b4fc);
+  background: linear-gradient(90deg, #fff, #b91c1c);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

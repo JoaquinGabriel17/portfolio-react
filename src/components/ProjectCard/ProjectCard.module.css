@@ -7,7 +7,7 @@
   --clr-surface: #16161a;
   --clr-border: #2a2a32;
   --clr-accent: #c8ff57;
-  --clr-accent2: #a5b4fc;
+  --clr-accent2: #b91c1c;
   --clr-text: #e8e8ef;
   --clr-muted: #6e6e82;
   --radius: 16px;
@@ -29,7 +29,7 @@
   box-shadow:
     0 0 0 1px var(--clr-accent2),
     0 24px 64px rgba(0, 0, 0, 0.55),
-    0 0 80px rgba(92, 108, 255, 0.08);
+    0 0 80px rgba(185, 28, 28, 0.08);
 }
 
 /* ─── Card Content ────────────────────────────────────────── */
@@ -91,7 +91,7 @@
   inset: 0;
   background: linear-gradient(
     160deg,
-    rgba(92, 108, 255, 0.07) 0%,
+    rgba(185, 28, 28, 0.07) 0%,
     transparent 50%,
     rgba(0, 0, 0, 0.25) 100%
   );
@@ -269,6 +269,6 @@
 .link:last-child:not(:first-child):hover {
   border-color: var(--clr-accent2);
   color: var(--clr-accent2);
-  box-shadow: 0 4px 20px rgba(92, 108, 255, 0.22);
+  box-shadow: 0 4px 20px rgba(185, 28, 28, 0.22);
   transform: translateY(-2px);
 }

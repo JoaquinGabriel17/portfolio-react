@@ -15,7 +15,7 @@
   font-weight: 700;
   margin-bottom: 1rem;
   /* Mismo gradiente que el componente anterior */
-  background: linear-gradient(90deg, #fff, #a5b4fc);
+  background: linear-gradient(90deg, #fff, #b91c1c);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -40,7 +40,7 @@
   transform: translateY(-5px);
   box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3), 
               0 10px 10px -5px rgba(0, 0, 0, 0.2);
-  border-color: rgba(129, 140, 248, 0.3); /* Color acento muy sutil en el borde */
+  border-color: rgba(185, 28, 28, 0.3); /* Color acento muy sutil en el borde */
 }
 
 /* 4. Encabezado de la tarjeta (Icono + Título + Fecha) */
@@ -90,7 +90,7 @@
 
 /* 5. Títulos de secciones internas (Descripción, Listas) */
 .card h3 {
-  color: #818cf8; /* El mismo color índigo del componente anterior */
+  color: #b91c1c; /* El mismo color rojo del componente anterior */
   font-size: 1.1rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -107,7 +107,7 @@
   display: inline-block;
   width: 4px;
   height: 16px;
-  background-color: #818cf8;
+  background-color: #b91c1c;
   margin-right: 10px;
   border-radius: 2px;
 }
@@ -151,7 +151,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: #818cf8;
+  color: #b91c1c;
   font-weight: bold;
 }
 

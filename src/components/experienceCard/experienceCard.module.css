@@ -55,7 +55,7 @@
     background: rgba(255, 255, 255, 0.03);
 }
 
-/* El primer tag (rol) en color índigo */
+/* El primer tag (rol) en color rojo */
 .primaryTag {
     color: #f87171;
     border-color: rgba(248, 129, 129, 0.3);
@@ -119,7 +119,7 @@
     z-index: 1;
 }
 
-/* Punto índigo para el trabajo actual */
+/* Punto rojo para el trabajo actual */
 .currentDot {
     background-color: #f87171;
     box-shadow: 0 0 8px rgba(248, 129, 129, 0.6);

@@ -18,7 +18,7 @@ export default function ExperienceCard({ data, lang }) {
                 </div>
                 <h3 className={styles.companyName}>{company}</h3>
                 <div className={styles.tagsContainer}>
-                    {/* El primer tag (rol) va en color índigo */}
+                    {/* El primer tag (rol) va en color rojo */}
                     <span className={`${styles.tag} ${styles.primaryTag}`}>{role}</span>
                     {tags.map((tag, index) => (
                         <span key={index} className={styles.tag}>{tag}</span>
