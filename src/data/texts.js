@@ -1,16 +1,16 @@
-import { SiNextdotjs, SiMongodb, SiRedux, SiFirebase, SiJavascript, SiExpress, SiTypescript, SiTailwindcss } from 'react-icons/si';
-import { FaServer, FaNodeJs } from 'react-icons/fa';
-import { DiReact } from 'react-icons/di';
 
-import rosa from '@/../public/rosadelviento.png'
-import linko from '@/../public/linko2.png'
-import movie from '@/../public/moviefinder.png'
-import agora from '@/../public/agora.png'
-import colibri from '@/../public/colibri.png'
-import colibri2 from '@/../public/colibri.svg'
+
 
 export const texts = {
   en: {
+        skills: {
+      categories: [
+        { title: "Front-end", items: ["React Native", "CSS", "Tailwind", "JavaScript", "TypeScript", "React", "Next.js"] },
+        { title: "Back-end", items: ["Node.js", "Express.js", "Python", "Nest.js", "Swagger"] },
+        { title: "Data", items: [ "MongoDB", "SQL", "PostgreSQL"] },
+        { title: "Tools", items: ["Git", "GitHub", "Figma", "Linux", "Postman", "Microsoft SQL Server"] }
+      ]
+    },
     certifications: [
       {
         name: "Programming",
@@ -138,7 +138,14 @@ export const texts = {
     },
   },
   es: {
-
+            skills: {
+      categories: [
+        { title: "Front-end", items: ["React Native", "CSS", "Tailwind", "JavaScript", "TypeScript", "React", "Next.js"] },
+        { title: "Back-end", items: ["Node.js", "Express.js", "Python", "Nest.js", "Swagger"] },
+        { title: "Datos", items: [ "MongoDB", "SQL", "PostgreSQL"] },
+        { title: "Herramientas", items: ["Git", "GitHub", "Figma", "Linux", "Postman", "Microsoft SQL Server"] }
+      ]
+    },
     certifications: [
       {
         name: "Programación",
