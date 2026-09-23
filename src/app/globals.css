@@ -68,15 +68,19 @@ section{
 
 #experience{
   width: 100%;
-  
+  margin-bottom: 7rem;
   
 }
 #projects{
   width: 100%;
+  margin-bottom: 7rem;
 }
 
 #certifications{
   width: 100%;
+}
+#about{
+  /*margin-bottom: 7rem;*/
 }
 
 
