@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaWhatsapp,FaEnvelope } from 'react-icons/fa';
 import MenuDesplegable from '../menuDesplegable/MenuDesplegable';
 import React, { useState, useEffect } from 'react';
 
-export default function Navbar({toChangeLang, lang}) {
+export default function Navbar({toChangeLang, lang, about = false}) {
 
   const [isMobile, setIsMobile] = useState(false);
 
@@ -22,6 +22,8 @@ useEffect(() => {
 const langChangeHandler = (newLang) => {
   toChangeLang(newLang);
 }
+
+ 
 
   return (
     <>{isMobile ? <MenuDesplegable lang={lang === "es" ? "es" : "en"} toChangeLang={langChangeHandler}/> : 
@@ -45,14 +47,19 @@ const langChangeHandler = (newLang) => {
       </div>
       </div>
 
-      <div className={styles.navContain}>
-        <a className={styles.navButton} href="#presentation">{lang === "es" ? "Inicio" : "Presentation"}</a>
+{ about ? (
+  <a className={`btn-primary ${styles.button}`} href="/" target="_self">Volver al inicio</a>
+) : (
+  <div className={styles.navContain}>
+        <a className={styles.navButton} href="#presentation">{lang === "es" ? "Inicio" : "Start"}</a>
         <a className={styles.navButton} href="#experience">{lang === "es" ? "Experiencia" : "Experience"}</a>
         <a className={styles.navButton} href="#projects">{lang === "es" ? "Proyectos" : "Projects"}</a>
-        <a className={styles.navButton} href="#certifications">{lang === "es" ? "Certificaciones" : "Certifications"}</a>
-        <a className={styles.navButton} href="#skills">{lang === "es" ? "Habilidades" : "Skills"}</a>
+        <a className={styles.navButton} href="#about">{lang === "es" ? "Sobre mí" : "About me"}</a>
+        <a className={styles.navButton} href="#contact">{lang === "es" ? "Contacto" : "Contact"}</a>
         
       </div>
+)}
+      
 
 
       {/*<div className={styles.iconContain}>
