@@ -13,6 +13,7 @@ import { texts } from "@/data/texts";
 import Navbar from "@/components/navbar/Navbar";
 import ExperienceCard from "@/components/experienceCard/ExperienceCard";
 import Certifications from "@/components/certifications/Certifications";
+import Footer from "@/components/Footer/Footer";
 
 export default function Home() {
   const [lang, setLang] = useState("en");
@@ -65,9 +66,10 @@ export default function Home() {
 
         <Certifications data={content.certifications} lang={lang}></Certifications>
 
-        <section id="skills">
+       {/* <section id="skills">
           <Skills></Skills>
-        </section>
+        </section>*/}
+        <Footer></Footer>
 
     </div>
     </div>

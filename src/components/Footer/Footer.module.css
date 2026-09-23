@@ -1,0 +1,93 @@
+.footer {
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.18); /* Similar al borde de #experience */
+  padding: 2rem 0;
+  margin-top: 4rem; /* Separación de la sección anterior */
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-site);
+  padding: 0 20px; /* Padding para móviles */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.info {
+  display: flex;
+  gap: 2rem;
+  color: var(--color-muted);
+  font-family: var(--font-mono); /* Toque técnico como en h2 */
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.iconLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px; /* Ajustado al tamaño de tu captura */
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: border-color 0.3s ease, transform 0.3s ease;
+  text-decoration: none;
+}
+
+.iconLink:hover {
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+/* Estado base del icono (sin hover) */
+.icon {
+  width: 22px;
+  height: 22px;
+  transition: filter 0.3s ease, opacity 0.3s ease;
+  opacity: 0.8; /* Un poco de transparencia para que se vea grisáceo */
+  
+  /* Si tus archivos SVG originales son negros, este filtro los vuelve blancos.
+     Si ya son blancos, este filtro no les hará daño. */
+  filter: brightness(0) invert(1); 
+}
+
+/* Estado hover del icono */
+.iconLink:hover .icon {
+  opacity: 1;
+  /* Aquí aplicamos el filtro que convierte el blanco al color --color-accent (#b91c1c) */
+  filter: invert(19%) sepia(89%) saturate(2729%) hue-rotate(348deg) brightness(81%) contrast(91%);
+}
+/* Estado inicial: iconos en color muted (si no tienen filtro por defecto) */
+.iconLink .icon {
+  /* Si los SVG son originalmente blancos, podemos atenuarlos un poco */
+  opacity: 0.8;
+}
+
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .info {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+}
