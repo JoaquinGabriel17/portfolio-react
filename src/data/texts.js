@@ -43,16 +43,20 @@ export const texts = {
     ],
 
     presentation: {
-      role: "Full Stack Developer",
-      roleDescription: "Full Stack Developer with over 2 years of experience in creating dynamic and innovative web applications. Passionate about turning ideas into functional products.",
-      mostWork: "What I worked with the most"
-    },
+  role: "Full Stack Developer",
+  title: "Clean code.",
+  roleDescription: "Full Stack Developer with over 2 years of experience in creating dynamic and innovative web applications. Passionate about turning ideas into functional products.",
+  mostWork: "What I worked with the most",
+  imageUrl: "/alephee.png", // ← Reemplaza con tu imagen real
+  availableForWork: "Available for new projects",
+  buttonText: "View projects"
+},
     experience: [
       {
         company: "Colibrí LATAM",
         role: "Full Stack Developer - Co-Founder",
         tags: ["Product", "Entrepreneurship Management", "Blockchain"],
-        stack: ["React", "Nest.js", "TypeScript", "PostgreSQL"],
+        stack: ["Next.js", "Nest.js", "TypeScript", "PostgreSQL"],
         startDate: "JAN 2026",
         endDate: "PRESENT",
         isCurrent: true,
@@ -167,16 +171,20 @@ export const texts = {
     ],
 
     presentation: {
-      role: "Desarrollador Full Stack",
-      roleDescription: "Desarrollador Full Stack con más de 2 años de experiencia creando aplicaciones web dinámicas e innovadoras. Apasionado por transformar ideas en productos funcionales.",
-      mostWork: "Con lo que mas trabajé"
-    },
+  role: "Desarrollador Full Stack",
+  title: "Código limpio.",
+  roleDescription: "Desarrollador Full Stack con más de 2 años de experiencia creando aplicaciones web dinámicas e innovadoras. Apasionado por transformar ideas en productos funcionales.",
+  mostWork: "Con lo que mas trabajé",
+  imageUrl: "/alephee.png", // ← Reemplaza con tu imagen real
+  availableForWork: "Disponible para nuevos proyectos",
+  buttonText: "Ver proyectos"
+},
     experience: [
       {
         company: "Colibrí LATAM",
         role: "Full Stack Developer - Co-Founder",
         tags: ["Producto", "Gestión de emprendimientos", "Blockchain"],
-        stack: ["React", "Nest.js", "TypeScript", "PostgreSQL"],
+        stack: ["Next.js", "Nest.js", "TypeScript", "PostgreSQL"],
         startDate: "ENE 2026",
         endDate: "ACTUALIDAD",
         isCurrent: true,

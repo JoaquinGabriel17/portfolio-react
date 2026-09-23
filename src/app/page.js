@@ -13,10 +13,12 @@ import { texts } from "@/data/texts";
 import Navbar from "@/components/navbar/Navbar";
 import ExperienceCard from "@/components/experienceCard/ExperienceCard";
 import Certifications from "@/components/certifications/Certifications";
+import Footer from "@/components/Footer/Footer";
+import SectionHeader from "@/components/sectionHeader/SectionHeader";
 
 export default function Home() {
   const [lang, setLang] = useState("en");
-  const [content, setContent] = useState(texts["en"]); 
+  const [content, setContent] = useState(texts["en"]);
 
   useEffect(() => {
     const savedLang = localStorage.getItem("lang") || "en";
@@ -31,26 +33,32 @@ export default function Home() {
   };
 
   let icons = [
-    {src: github.src, href: 'https://github.com/JoaquinGabriel17'},
-    {src: linkedin.src, href: 'https://www.linkedin.com/in/joaquin-ocampo-taboada-a7b213252/?locale=es-ES'},
-    {src: wasap.src, href: '+54 9 3876 56-7092'},
-    {src: email.src, href: 'joaquingabriel3@hotmail.com'}
+    { src: github.src, href: 'https://github.com/JoaquinGabriel17' },
+    { src: linkedin.src, href: 'https://www.linkedin.com/in/joaquin-ocampo-taboada-a7b213252/?locale=es-ES' },
+    { src: wasap.src, href: '+54 9 3876 56-7092' },
+    { src: email.src, href: 'joaquingabriel3@hotmail.com' }
   ]
 
   return (
     <div className={styles.ext}>
       <Navbar toChangeLang={changeLang} lang={lang}></Navbar>
-    <div className={styles.container}>
-      <section id="presentation">
-        <Presentation data={content.presentation} ></Presentation>
-        <Icon iconList={icons} lang={lang}></Icon>
-      </section>
+      <div className={styles.container}>
+        <section id="presentation">
+          <Presentation data={content.presentation} ></Presentation>
+
+        </section>
 
         <section id="experience" >
-          <h2 className={styles.title}>{lang === "es" ? "Experiencia" : "Experience"}</h2>
+          <SectionHeader
+            subtitle={lang === "es" ? "Experiencia" : "Experience"}
+            title={lang === "es" ? "Trayectoria construyendo soluciones." : "A journey building solutions."}
+            description={lang === "es"
+              ? "Un recorrido por los roles y proyectos que marcaron mi desarrollo profesional y técnico."
+              : "A journey through the roles and projects that marked my professional and technical development."}
+          />
           <div className={styles.experienceList}>
             {content.experience.length > 0 && content.experience.map((exp, index) => (
-              <ExperienceCard 
+              <ExperienceCard
                 data={exp}
                 key={`experience ${index}`}
                 lang={lang}
@@ -60,16 +68,47 @@ export default function Home() {
         </section>
 
         <section id="projects" >
-        <Projects ProjectsInfo={content.ProjectInfo} lang={lang}></Projects>
+          <SectionHeader
+            subtitle={lang === "es" ? "Proyectos" : "Projects"}
+            title={lang === "es" ? "Proyectos construidos para resolver problemas reales." : "Projects built to solve real-world problems."}
+            description={lang === "es"
+              ? "Una selección de proyectos donde combino desarrollo frontend y backend, arquitectura y tecnologías modernas para construir aplicaciones funcionales y escalables."
+              : "A selection of projects where I combine frontend and backend development, architecture, and modern technologies to build functional and scalable applications."}
+          />
+          <Projects ProjectsInfo={content.ProjectInfo} lang={lang}></Projects>
         </section>
 
-        <Certifications data={content.certifications} lang={lang}></Certifications>
 
-        <section id="skills">
-          <Skills></Skills>
+
+
+        <section id="about">
+          <SectionHeader
+            subtitle={lang === "es" ? "Sobre mí" : "About me"}
+            title={lang === "es" ? "Construyo soluciones tecnológicas." : "I build technology solutions."}
+            description={lang === "es"
+              ? "Desarrollo productos y aplicaciones de extremo a extremo, combinando frontend, backend y arquitectura de software. Busco mejorar continuamente mis conocimientos y aplicar tecnologías y buenas prácticas que aporten valor a cada proyecto."
+              : "I develop end-to-end products and applications, combining frontend, backend, and software architecture. I continuously work to expand my knowledge and apply technologies and best practices that add value to every project."}
+            button={lang === "es" ? "Más sobre mí" : "More about me"}
+            link="/about"
+          />
+          
         </section>
+        <section id="contact">
+          <SectionHeader
+            subtitle={lang === "es" ? "Contacto" : "Contact"}
+            title={lang === "es" ? "Hablemos de lo que podemos construir." : "Let's talk about what we can build."}
+            description={lang === "es"
+              ? "Si tenés una idea, necesitás ayuda con un producto o querés trabajar conmigo, podemos hablar y colaborar."
+              : "If you have an idea, need help with a product, or want to work with me, let's talk and find the best way to bring it to life."}
+            button={lang === "es" ? "Enviame un correo" : "Send me an email"}
+            link="mailto:joaquingabriel3@hotmail.com"
+            external={true}
+          />
 
-    </div>
+        </section>
+        <Footer></Footer>
+
+      </div>
     </div>
   );
 }

@@ -3,10 +3,7 @@ import CertificationList from './CertificationList';
 
 export default function Certifications({ data, lang }) {
     return (
-        <section id="certifications">
-            <h1 className={styles.title}>
-                {lang === "es" ? "Certificaciones" : "Certifications"}
-            </h1>
+        <section>
             <div className={styles.certificationsContainer}>
                 {data.map((category, index) => (
                     <CertificationList

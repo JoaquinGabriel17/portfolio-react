@@ -63,7 +63,7 @@
   font-size: 2rem;
   margin-bottom: 1rem;
   font-weight: 700;
-  background: linear-gradient(90deg, #fff, #a5b4fc); /* Gradiente sutil en texto */
+  background: linear-gradient(90deg, #fff, #b91c1c); /* Gradiente sutil en texto */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -91,13 +91,13 @@
 }
 
 .featureSection h3 {
-  color: yellow; /* Color acento (Indigo claro) */
+  color: yellow; /* Color acento (Rojo claro) */
   font-size: 1.2rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 600;
-  border-bottom: 2px solid rgba(129, 140, 248, 0.2);
+  border-bottom: 2px solid rgba(185, 28, 28, 0.2);
   padding-bottom: 0.5rem;
   display: inline-block;
 }
@@ -145,13 +145,13 @@
 
 /* Estilo para el primer botón (Demo) - Primario */
 .link:first-child {
-  background-color: #4f46e5; /* Indigo intenso */
+  background-color: #b91c1c; /* Rojo intenso */
   color: white;
-  box-shadow: 0 4px 14px 0 rgba(79, 70, 229, 0.39);
+  box-shadow: 0 4px 14px 0 rgba(185, 28, 28, 0.39);
 }
 
 .link:first-child:hover {
-  background-color: #4338ca;
+  background-color: #b91c1c;
   transform: translateY(-2px);
 }
 

@@ -12,6 +12,10 @@
   cursor: pointer;
   transition: background 0.3s ease, padding-left 0.3s ease;
   font-family: 'DM Sans', sans-serif;
+
+  /* ← NUEVO: altura fija de fila (3 × 220 = 660px en la lista) */
+  height: 220px;
+  overflow: hidden;
 }
 
 .row:hover {
@@ -40,8 +44,8 @@
 
 .title {
   font-family: 'Syne', sans-serif;
-  font-weight: 700;
-  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: lighter;
+  font-size: clamp(1.5rem, 2.5vw, 2.3rem);
   color: #ffffff;
   margin: 0;
   line-height: 1.15;
@@ -50,7 +54,7 @@
 }
 
 .row:hover .title {
-  color: #a5b4fc;
+  color: #b91c1c;
 }
 
 .tagsContainer {
@@ -74,6 +78,12 @@
   color: rgba(255, 255, 255, 0.5);
   margin: 0;
   max-width: 700px;
+
+  /* ← NUEVO: clamps a 2 líneas para mantener la fila estable */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 /* ─── Right (stack + button) ────────────────────────────── */
@@ -95,15 +105,19 @@
   line-height: 1.5;
 }
 
-.stackContainer{
+.stackContainer {
   display: flex;
   flex-direction: column;
   text-align: left;
   gap: 0.5rem;
 }
 
-.stackLabel{
+.stackLabel {
   color: rgba(255, 255, 255, 0.4);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.5rem;
 }
 
 .iconButton {
@@ -121,9 +135,9 @@
 }
 
 .row:hover .iconButton {
-  border-color: #818cf8;
-  color: #818cf8;
-  background: rgba(129, 140, 248, 0.06);
+  border-color: #b91c1c;
+  color: #b91c1c;
+  background: rgba(185, 28, 28, 0.06);
   transform: translate(2px, -2px);
 }
 
@@ -133,6 +147,10 @@
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1.75rem 0.25rem;
+
+    /* ← NUEVO: en mobile liberamos la altura fija */
+    height: auto;
+    overflow: visible;
   }
 
   .year {
@@ -146,6 +164,11 @@
 
   .description {
     font-size: 0.85rem;
+
+    /* ← NUEVO: sin clamp en mobile */
+    display: block;
+    -webkit-line-clamp: unset;
+    overflow: visible;
   }
 
   .right {

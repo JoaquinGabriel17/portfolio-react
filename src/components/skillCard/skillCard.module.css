@@ -21,9 +21,9 @@
 /* Efecto Hover: Elevación y Borde Brillante */
 .skill:hover {
   transform: translateY(-8px); /* Sube un poco más que las cards grandes */
-  border-color: rgba(129, 140, 248, 0.5); /* Color acento (#818cf8) al borde */
+  border-color: rgba(185, 28, 28, 0.5); /* Color acento (#b91c1c) al borde */
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 
-              0 0 15px rgba(129, 140, 248, 0.2); /* Glow suave */
+              0 0 15px rgba(185, 28, 28, 0.2); /* Glow suave */
   background: #23232a; /* Un tono apenas más claro al hacer hover */
 }
 

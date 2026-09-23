@@ -2,7 +2,7 @@
     
     font-size: 1.8rem;        /* Subtítulo: tu rol */
   font-weight: 700;
-  background: linear-gradient(90deg, #fff, #a5b4fc);
+  background: linear-gradient(90deg, #fff, #b91c1c);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -14,14 +14,14 @@
   font-weight: 700;
   margin: 0;
   padding-bottom: 1rem;
-  border-bottom: 1px solid #818cf8;
+  border-bottom: 1px solid #b91c1c;
 }
 
 .categoryContainer{
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
-    border: 1px solid #818cf8;
+    border: 1px solid #b91c1c;
     background-color: #23232a;
     border-radius: 10px;
     padding: 1rem;
@@ -121,8 +121,8 @@ display: flex;
     align-items: center;
     justify-content: center;
     background-color: #2f2f38;
-    border: 1px dashed #818cf8;
-    color: #a5b4fc;
+    border: 1px dashed #b91c1c;
+    color: #b91c1c;
     flex-shrink: 0;
 }
 
@@ -133,7 +133,7 @@ display: flex;
     padding: 0.5rem 1rem;
     border-radius: 5px;
     background-color: transparent;
-    border: 1px solid #818cf8;
+    border: 1px solid #b91c1c;
     text-decoration: none;
     font-weight: 500;
     font: inherit;              /* MEJORA: hereda tipografía del contenedor */
@@ -146,7 +146,7 @@ display: flex;
 }
 
 .certificationLink:hover:not(:disabled) {
-    background-color: #818cf8;
+    background-color: #b91c1c;
     color: black;
 }
 

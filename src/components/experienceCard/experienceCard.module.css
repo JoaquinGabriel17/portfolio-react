@@ -3,7 +3,6 @@
     display: grid;
     grid-template-columns: 120px 1fr 180px; /* 3 columnas */
     gap: 2rem;
-    padding: 2rem 0;
     position: relative;
     border-bottom: 1px solid rgba(255, 255, 255, 0.05); /* Línea sutil divisoria */
 }
@@ -14,6 +13,7 @@
     flex-direction: column;
     gap: 0.2rem;
     padding-top: 0.5rem;
+    justify-content: center;
 }
 
 .dateText {
@@ -27,13 +27,13 @@
 /* Columna 2: Empresa y Tags */
 .mainColumn {
     position: relative;
+    padding: 2rem 0;
 }
 
 .companyName {
     color: #ffffff;
     font-size: 2.2rem;
     font-weight: 400;
-    font-family: 'Georgia', 'Times New Roman', serif; /* Estilo elegante de la imagen */
     margin: 0 0 0.8rem 0;
     line-height: 1.1;
     text-align: left;
@@ -54,19 +54,20 @@
     background: rgba(255, 255, 255, 0.03);
 }
 
-/* El primer tag (rol) en color índigo */
+/* El primer tag (rol) en color rojo */
 .primaryTag {
-    color: #818cf8;
-    border-color: rgba(129, 140, 248, 0.3);
-    background: rgba(129, 140, 248, 0.1);
+    color: #f87171;
+    border-color: rgba(248, 129, 129, 0.3);
+    background: rgba(248, 129, 129, 0.1);
 }
 
 /* Columna 3: Stack */
 .stackColumn {
     display: flex;
     flex-direction: column;
-    align-items: flex-end; /* Alineado a la derecha */
+    align-items: start;
     padding-top: 0.5rem;
+    justify-content: center;
 }
 
 .stackLabel {
@@ -78,10 +79,15 @@
 }
 
 .stackList {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 0.2rem;
+
+    font-family: 'DM Mono', monospace;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: left;
+  max-width: 230px;
+  line-height: 1.5;
 }
 
 .stackItem {
@@ -102,8 +108,8 @@
 /* El punto (siempre visible) */
 .timelineDot {
     position: absolute;
-    left: -4px; /* Centrar el punto en la línea */
-    top: 0;
+    left: -6px; /* Centrar el punto en la línea */
+    top: 3rem;
     width: 9px;
     height: 9px;
     border-radius: 50%;
@@ -112,10 +118,10 @@
     z-index: 1;
 }
 
-/* Punto índigo para el trabajo actual */
+/* Punto rojo para el trabajo actual */
 .currentDot {
-    background-color: #818cf8;
-    box-shadow: 0 0 8px rgba(129, 140, 248, 0.6);
+    background-color: #f87171;
+    box-shadow: 0 0 8px rgba(248, 129, 129, 0.6);
 }
 
 /* --- Responsive --- */
@@ -127,9 +133,7 @@
     }
 
     .timelineDotWrapper {
-        left: 0.5rem; /* Mover la línea a la izquierda en móviles */
-        top: 0;
-        height: 100%;
+        display: none;
     }
 
     .dateColumn {
