@@ -51,11 +51,11 @@ const langChangeHandler = (newLang) => {
   <a className={`btn-primary ${styles.button}`} href="/" target="_self">Volver al inicio</a>
 ) : (
   <div className={styles.navContain}>
-        <a className={styles.navButton} href="#presentation">{lang === "es" ? "Inicio" : "Presentation"}</a>
+        <a className={styles.navButton} href="#presentation">{lang === "es" ? "Inicio" : "Start"}</a>
         <a className={styles.navButton} href="#experience">{lang === "es" ? "Experiencia" : "Experience"}</a>
         <a className={styles.navButton} href="#projects">{lang === "es" ? "Proyectos" : "Projects"}</a>
-        <a className={styles.navButton} href="#certifications">{lang === "es" ? "Certificaciones" : "Certifications"}</a>
-        <a className={styles.navButton} href="#skills">{lang === "es" ? "Habilidades" : "Skills"}</a>
+        <a className={styles.navButton} href="#about">{lang === "es" ? "Sobre mí" : "About me"}</a>
+        <a className={styles.navButton} href="#contact">{lang === "es" ? "Contacto" : "Contact"}</a>
         
       </div>
 )}
