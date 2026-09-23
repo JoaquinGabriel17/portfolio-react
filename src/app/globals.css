@@ -56,7 +56,6 @@ h1{
 h2 {
     color: rgba(255, 255, 255, 0.5);
     font-size: 1rem;
-    text-transform: uppercase;
     letter-spacing: 0.05em;
     font-family: monospace; /* Toque técnico */
     font-weight: normal;
@@ -69,14 +68,15 @@ section{
 #experience{
   width: 100%;
   
-  border-top: 1px solid rgba(255, 255, 255, 0.18);
   
 }
 #projects{
   width: 100%;
-  border-block: 1px solid rgba(255, 255, 255, 0.18);
 }
 
+#certifications{
+  width: 100%;
+}
 /* ===== BOTÓN PRINCIPAL (outline) ===== */
 .btn-primary {
   display: inline-flex;

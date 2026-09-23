@@ -14,6 +14,7 @@ import Navbar from "@/components/navbar/Navbar";
 import ExperienceCard from "@/components/experienceCard/ExperienceCard";
 import Certifications from "@/components/certifications/Certifications";
 import Footer from "@/components/Footer/Footer";
+import SectionHeader from "@/components/sectionHeader/SectionHeader";
 
 export default function Home() {
   const [lang, setLang] = useState("en");
@@ -48,7 +49,13 @@ export default function Home() {
       </section>
 
         <section id="experience" >
-          <h2 className={styles.title}>{lang === "es" ? "Experiencia" : "Experience"}</h2>
+          <SectionHeader 
+            subtitle={lang === "es" ? "Experiencia" : "Experience"}
+            title={lang === "es" ? "Trayectoria construyendo soluciones." : "A journey building solutions."}
+            description={lang === "es" 
+              ? "Un recorrido por los roles y proyectos que marcaron mi desarrollo profesional y técnico." 
+              : "A journey through the roles and projects that marked my professional and technical development."}
+          />
           <div className={styles.experienceList}>
             {content.experience.length > 0 && content.experience.map((exp, index) => (
               <ExperienceCard 
@@ -61,12 +68,30 @@ export default function Home() {
         </section>
 
         <section id="projects" >
+          <SectionHeader 
+            subtitle={lang === "es" ? "Proyectos" : "Projects"}
+            title={lang === "es" ? "Trabajo pensado para funcionar y sentirse bien." : "Work designed to function and feel good."}
+            description={lang === "es" 
+              ? "Algunos proyectos que resumen mi forma de trabajar: interfaces claras, estructura sólida y decisiones visuales con intención." 
+              : "Some projects that summarize my way of working: clear interfaces, solid structure, and visual decisions with intention."}
+          />
         <Projects ProjectsInfo={content.ProjectInfo} lang={lang}></Projects>
         </section>
 
-        <Certifications data={content.certifications} lang={lang}></Certifications>
+              
+              {/*<section id="certifications">
+                <SectionHeader 
+            subtitle={lang === "es" ? "Experiencia" : "Experience"}
+            title={lang === "es" ? "Trayectoria construyendo soluciones." : "A journey building solutions."}
+            description={lang === "es" 
+              ? "Un recorrido por los roles y proyectos que marcaron mi desarrollo profesional y técnico." 
+              : "A journey through the roles and projects that marked my professional and technical development."}
+          />
+          <Certifications data={content.certifications} lang={lang}></Certifications>
+              </section>
+        
 
-       {/* <section id="skills">
+        <section id="skills">
           <Skills></Skills>
         </section>*/}
         <Footer></Footer>
