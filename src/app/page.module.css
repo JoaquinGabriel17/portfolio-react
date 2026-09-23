@@ -8,7 +8,7 @@
     align-items: center;
     background: #0c0a09;
     box-sizing: border-box;
-    gap: 6rem;
+    gap: 2rem;
     padding-left: 10%;
     padding-right: 10%;
     width: 100vw;
@@ -23,6 +23,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
+}
+
+.button{
+  position: absolute;
+  top: 0;
+}
+
+#about{
+  position: relative;
 }
 
 @media (max-width: 768px){

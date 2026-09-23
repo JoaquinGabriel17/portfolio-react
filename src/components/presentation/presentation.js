@@ -27,13 +27,13 @@ export default function Presentation({ data }) {
 
             {/* Columna derecha: Imagen y badge */}
             <div className={styles.imageContainer}>
-                <img 
+                {/*<img 
                     src={imageUrl} 
                     alt={role} 
                     className={styles.image} 
                 />
                 
-                {/*<div className={styles.availabilityBadge}>
+                <div className={styles.availabilityBadge}>
                     <div className={styles.badgeContent}>
                         <span className={styles.dot}></span>
                         <span className={styles.badgeText}>{availableForWork}</span>
