@@ -70,10 +70,10 @@ export default function Home() {
         <section id="projects" >
           <SectionHeader 
             subtitle={lang === "es" ? "Proyectos" : "Projects"}
-            title={lang === "es" ? "Trabajo pensado para funcionar y sentirse bien." : "Work designed to function and feel good."}
+            title={lang === "es" ? "Proyectos construidos para resolver problemas reales." : "Projects built to solve real-world problems."}
             description={lang === "es" 
-              ? "Algunos proyectos que resumen mi forma de trabajar: interfaces claras, estructura sólida y decisiones visuales con intención." 
-              : "Some projects that summarize my way of working: clear interfaces, solid structure, and visual decisions with intention."}
+              ? "Una selección de proyectos donde combino desarrollo frontend y backend, arquitectura y tecnologías modernas para construir aplicaciones funcionales y escalables." 
+              : "A selection of projects where I combine frontend and backend development, architecture, and modern technologies to build functional and scalable applications."}
           />
         <Projects ProjectsInfo={content.ProjectInfo} lang={lang}></Projects>
         </section>
@@ -94,6 +94,8 @@ export default function Home() {
         <section id="skills">
           <Skills></Skills>
         </section>*/}
+
+        <section id="contact"></section>
         <Footer></Footer>
 
     </div>

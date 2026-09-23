@@ -57,19 +57,18 @@
 
 /* Language Switcher Styles */
 .langButtons{
-    gap: 0.5rem;
+    gap: 0.1rem;
     display: flex;
     align-items: center;
     margin-left: 1rem;
+    
 }
 .langButtons button {
-  padding: 6px 10px;
-  
-  border-radius: 6px;
+  padding: 0.5rem 0.9rem;
   cursor: pointer;
-  
   font-size: 18px;
   transition: background-color 0.2s ease;
+  border: solid 1px rgba(255, 255, 255, 0.288);
 }
 
 .langButtons button:hover {
@@ -78,14 +77,14 @@
 }
 
 .active {
-  background-color: rgb(255, 255, 255);
-  color: black;
-  border: 1px solid rgb(0, 0, 0);
+  background-color: var(--color-accent);
+  color: white;
+  border: 0;
 }
 .inactive{
-    border: 1px solid white;
   color: white;
   background-color: transparent;
+  border: 0;
 }
 .separator{
     display: flex;
