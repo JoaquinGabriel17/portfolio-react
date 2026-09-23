@@ -83,53 +83,56 @@ export const texts = {
       },],
 
     ProjectInfo: [
-      {
-        name: 'Colibrí LATAM',
-        year: '2024',
-        tags: ['Web3', 'Blockchain', 'Dashboard'],
-        description:
-          'Developed a company application from scratch, including user CRUD operations and management of other entities, a statistics dashboard, and a modern UI/UX design.',
-        url: 'https://colibrilatam.com/index.html',
-        technologies: ['Next.js', 'Nest.js', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'PostgreSQL'],
-      },
-      {
-        name: 'Linko',
-        year: '2023',
-        tags: ['Full Stack', 'URL Shortener', 'Auth'],
-        description:
-          'Linko is a URL shortener with a clean and intuitive interface, built to showcase full stack development skills using modern technologies.',
-        url: 'https://linko-nine.vercel.app/',
-        technologies: ['React', 'Next.js', 'JavaScript', 'MongoDB', 'Node.js'],
-      },
-      {
-        name: 'Agora Mercado',
-        year: '2023',
-        tags: ['E-commerce', 'WebSockets', 'Real-time'],
-        description:
-          'Agora is an e-commerce platform created to connect buyers and sellers in a digital, simple, and accessible way, allowing users to find and offer products in one place, from any device, without the need for downloads.',
-        url: 'https://agora-six-rho.vercel.app/',
-        technologies: ['React', 'Typescript', 'Mongo DB', 'Node.js', 'Tailwind CSS', 'Express'],
-      },
-      {
-        name: 'Movie Finder',
-        year: '2023',
-        tags: ['React', 'Redux', 'Search'],
-        description:
-          'A web application that lets users explore over 5,000 movies through a fast, efficient, and intuitive indexed search. Includes multiple filters to refine search results.',
-        url: 'https://movie-finder-beige-zeta.vercel.app/',
-        technologies: ['React', 'Redux', 'JavaScript'],
-      },
-      {
-        name: 'Rosa de los vientos',
-        year: '2023',
-        tags: ['E-commerce', 'Firebase', 'Full Stack'],
-        description:
-          'Rosa de los vientos is a digital restaurant platform where users can buy and sell food products online.',
-        url: 'https://p-fhenry-front.vercel.app/',
-        technologies: ['React', 'Node.js', 'JavaScript', 'Firebase', 'Redux'],
-      }
-    ],
+  {
+    name: 'Colibrí LATAM',
+    year: '2024',
+    tags: ['Web3', 'Blockchain', 'Dashboard'],
+    description:
+      'Development of an end-to-end application for entrepreneurship management, featuring CRUD functionality for users and other entities, a real-time statistics dashboard, and Web3 integration.',
+    url: 'https://colibrilatam.com/index.html',
+    technologies: ['Next.js', 'Nest.js', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'PostgreSQL'],
+  },
 
+  {
+    name: 'Aisla Frio Pro',
+    year: '2026',
+    tags: ['E-commerce', 'Services', 'Customer Management'],
+    description:
+      'Web application for a company specializing in thermal insulation services, featuring customer management functionality.',
+    url: 'https://aislafriopro-frontend.vercel.app/',
+    technologies: ['Next.js', 'Typescript', 'PostgreSQL', 'Nest.js', 'Tailwind CSS', 'Express'],
+  },
+
+  {
+    name: 'EcoRed',
+    year: '2026',
+    tags: ['Recycling', 'Connectivity', 'Services'],
+    description:
+      'Web application focused on waste recycling, connecting users globally to exchange ecoResources.',
+    url: 'https://www.laecored.com/',
+    technologies: ['Next.js', 'Typescript', 'PostgreSQL', 'Nest.js', 'Tailwind CSS', 'Express'],
+  },
+
+  {
+    name: 'Linko',
+    year: '2025',
+    tags: ['Full Stack', 'URL Shortener', 'Auth'],
+    description:
+      'Linko is a URL shortener with a simple and intuitive interface, created to demonstrate full-stack development skills using modern technologies.',
+    url: 'https://linko-nine.vercel.app/',
+    technologies: ['React', 'Next.js', 'JavaScript', 'MongoDB', 'Node.js'],
+  },
+
+  {
+    name: 'Rosa de los vientos',
+    year: '2023',
+    tags: ['E-commerce', 'Firebase', 'Full Stack'],
+    description:
+      'Rosa de los vientos is a digital restaurant where users can buy and sell food.',
+    url: 'https://p-fhenry-front.vercel.app/',
+    technologies: ['React', 'Node.js', 'JavaScript', 'Firebase', 'Redux'],
+  }
+],
 
 
     contact: {
@@ -245,33 +248,36 @@ export const texts = {
         url: 'https://colibrilatam.com/index.html',
         technologies: ['Next.js', 'Nest.js', 'JavaScript', 'TypeScript', 'Tailwind CSS', 'PostgreSQL'],
       },
+      
+      {
+        name: 'Aisla Frio Pro',
+        year: '2026',
+        tags: ['E-commerce', 'Servicios', 'Gestión de clientes'],
+        description:
+          'Aplicación web para una empresa dedicada a la venta de servicios de aislación térmica, con funcionalidad de gestión de clientes.',
+        url: 'https://aislafriopro-frontend.vercel.app/',
+        technologies: ['Next.js', 'Typescript', 'PostgreSQL', 'Nest.js', 'Tailwind CSS', 'Express'],
+      },
+      {
+        name: 'EcoRed',
+        year: '2026',
+        tags: ['Reciclaje', 'Conectividad', 'Servicios'],
+        description:
+          'Aplicación web dedicada al reciclaje de residuos, conectando usuarios globalmente para el intercambio de ecoRecursos.',
+        url: 'https://www.laecored.com/',
+        technologies: ['Next.js', 'Typescript', 'PostgreSQL', 'Nest.js', 'Tailwind CSS', 'Express'],
+      },
+      
       {
         name: 'Linko',
-        year: '2023',
+        year: '2025',
         tags: ['Full Stack', 'Acortador', 'Auth'],
         description:
           'Linko es un acortador de URLs con una interfaz simple e intuitiva, creado para demostrar habilidades en desarrollo full stack con tecnologías modernas.',
         url: 'https://linko-nine.vercel.app/',
         technologies: ['React', 'Next.js', 'JavaScript', 'MongoDB', 'Node.js'],
       },
-      {
-        name: 'Agora Mercado',
-        year: '2023',
-        tags: ['E-commerce', 'WebSockets', 'Tiempo real'],
-        description:
-          'Agora es un e-commerce creado para conectar compradores y vendedores de forma digital, simple y accesible, permitiendo encontrar y ofrecer productos en un solo lugar, desde cualquier dispositivo y sin necesidad de descargas.',
-        url: 'https://agora-six-rho.vercel.app/',
-        technologies: ['React', 'Typescript', 'Mongo DB', 'Node.js', 'Tailwind CSS', 'Express'],
-      },
-      {
-        name: 'Movie Finder',
-        year: '2023',
-        tags: ['React', 'Redux', 'Búsqueda'],
-        description:
-          'Aplicación web que permite explorar más de 5.000 películas mediante una búsqueda indexada rápida, eficiente e intuitiva. Incluye múltiples filtros para refinar resultados.',
-        url: 'https://movie-finder-beige-zeta.vercel.app/',
-        technologies: ['React', 'Redux', 'JavaScript'],
-      },
+     
       {
         name: 'Rosa de los vientos',
         year: '2023',
