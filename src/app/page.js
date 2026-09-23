@@ -88,10 +88,24 @@ export default function Home() {
             description={lang === "es"
               ? "Desarrollo productos y aplicaciones de extremo a extremo, combinando frontend, backend y arquitectura de software. Busco mejorar continuamente mis conocimientos y aplicar tecnologías y buenas prácticas que aporten valor a cada proyecto."
               : "I develop end-to-end products and applications, combining frontend, backend, and software architecture. I continuously work to expand my knowledge and apply technologies and best practices that add value to every project."}
+            button={lang === "es" ? "Más sobre mí" : "More about me"}
+            link="/about"
           />
-          <a href="/about"  className={`btn-primary ${styles.button}`}> <span>{lang === "es" ? "Más sobre mí" : "More about me"}</span></a>
+          
         </section>
-        <section id="contact"></section>
+        <section id="contact">
+          <SectionHeader
+            subtitle={lang === "es" ? "Contacto" : "Contact"}
+            title={lang === "es" ? "Hablemos de lo que podemos construir." : "Let's talk about what we can build."}
+            description={lang === "es"
+              ? "Si tenés una idea, necesitás ayuda con un producto o querés trabajar conmigo, podemos hablar y colaborar."
+              : "If you have an idea, need help with a product, or want to work with me, let's talk and find the best way to bring it to life."}
+            button={lang === "es" ? "Enviame un correo" : "Send me an email"}
+            link="mailto:joaquingabriel3@hotmail.com"
+            external={true}
+          />
+
+        </section>
         <Footer></Footer>
 
       </div>

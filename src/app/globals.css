@@ -79,9 +79,7 @@ section{
   width: 100%;
 }
 
-#about{
-  position: relative;
-}
+
 /* ===== BOTÓN PRINCIPAL (outline) ===== */
 .btn-primary {
   display: inline-flex;
