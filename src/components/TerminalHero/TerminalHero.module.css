@@ -1,0 +1,233 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-10) var(--space-6);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% 0%, var(--accent-soft) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.terminalWrapper {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+  position: relative;
+  z-index: 1;
+}
+
+.terminal {
+  width: 100%;
+  background: var(--bg-deep);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow:
+    0 24px 48px rgba(0, 0, 0, 0.4),
+    0 0 0 1px var(--border),
+    inset 0 1px 0 rgba(255, 255, 255, 0.02);
+  overflow: hidden;
+  transition: box-shadow var(--transition-base), border-color var(--transition-base);
+}
+
+.terminal:hover {
+  border-color: var(--border-strong);
+  box-shadow:
+    0 32px 64px rgba(0, 0, 0, 0.5),
+    0 0 0 1px var(--border-strong),
+    inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.terminalHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
+}
+
+.dots {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: var(--radius-full);
+  background: var(--border-strong);
+  transition: background var(--transition-fast);
+}
+
+.dot.close { background: #e85d4d; }
+.dot.minimize { background: #e8b84d; }
+.dot.maximize { background: #4db85d; }
+
+.terminal:hover .dot.close { background: #ff6b5b; }
+.terminal:hover .dot.minimize { background: #ffcc5c; }
+.terminal:hover .dot.maximize { background: #5cff6b; }
+
+.terminalTitle {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--fg-subtle);
+  margin-left: var(--space-2);
+  letter-spacing: 0.05em;
+}
+
+.terminalBody {
+  min-height: 380px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+
+.linesContainer {
+  padding: var(--space-4);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.line {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-2);
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.prompt {
+  color: var(--accent);
+  white-space: nowrap;
+  font-weight: 500;
+}
+
+.cmd {
+  color: var(--fg-primary);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.output {
+  color: var(--fg-muted);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.error {
+  color: var(--error);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.inputLine {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-2);
+}
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--fg-primary);
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  outline: none;
+  min-width: 0;
+}
+
+.input::placeholder {
+  color: var(--fg-subtle);
+  opacity: 0.6;
+}
+
+.cursor {
+  display: inline-block;
+  width: 8px;
+  height: 1.2em;
+  background: var(--accent);
+  animation: blink 1s step-end infinite;
+  vertical-align: text-bottom;
+  margin-left: 2px;
+  flex-shrink: 0;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.ctaWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  text-align: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.ctaBtn {
+  min-width: 220px;
+}
+
+.hint {
+  font-size: var(--text-xs);
+  color: var(--fg-subtle);
+  font-family: var(--font-mono);
+  letter-spacing: 0.03em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: var(--space-8) var(--space-4);
+  }
+
+  .terminalBody {
+    min-height: 320px;
+    max-height: 50vh;
+  }
+
+  .linesContainer {
+    padding: var(--space-3);
+    font-size: var(--text-xs);
+  }
+
+  .ctaBtn {
+    width: 100%;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminalTitle {
+    display: none;
+  }
+
+  .linesContainer {
+    font-size: 11px;
+  }
+
+  .prompt {
+    font-size: 11px;
+  }
+}

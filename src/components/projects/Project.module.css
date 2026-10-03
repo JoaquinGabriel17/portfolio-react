@@ -1,45 +1,33 @@
-/* Project.module.css */
+/* Project.module.css — Enhanced carousel with new design system */
 .container {
   display: flex;
   flex-direction: column;
   width: 100%;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  gap: var(--space-6);
 }
 
-.title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-  background: linear-gradient(90deg, #fff, #b91c1c);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: inline-block;
-}
-
-/* ─── Layout: flecha | lista (3 filas fijas) | flecha ──── */
 .paginationWrapper {
   display: flex;
-  align-items: stretch;      /* las flechas toman la altura completa */
-  gap: 0.75rem;
+  align-items: stretch;
+  gap: var(--space-4);
   width: 100%;
 }
 
 .list {
   flex: 1;
   min-width: 0;
-  height: 660px;             /* 3 filas × 220px (fijo) */
   display: flex;
   flex-direction: column;
-  overflow: hidden;
-  animation: fadeIn 0.35s ease;
-  touch-action: pan-y;       /* permite scroll vertical, reserva gestos horizontales */
+  gap: var(--space-4);
+  animation: fadeIn var(--transition-slow) ease-out;
+  touch-action: pan-y;
+  will-change: transform;
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(8px);
+    transform: translateY(12px);
   }
   to {
     opacity: 1;
@@ -47,90 +35,173 @@
   }
 }
 
-/* ─── Flechas (ghost, altura total) ─────────────────────── */
+/* Arrow buttons — enhanced */
 .arrow {
   flex-shrink: 0;
-  width: 48px;
+  width: 56px;
+  height: 56px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  background: transparent;
-  border: none;
-  border-radius: 8px;
-  color: rgba(255, 255, 255, 0.45);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-full);
+  color: var(--fg-muted);
   cursor: pointer;
-  transition: color 0.25s ease, background-color 0.25s ease;
+  transition: all var(--transition-base);
+  z-index: 1;
 }
 
 .arrow:hover:not(:disabled) {
-  color: #b91c1c;
-  background: rgba(185, 28, 28, 0.12);
+  background: var(--bg-hover);
+  border-color: var(--accent);
+  color: var(--accent-strong);
+  transform: scale(1.05);
 }
 
 .arrow:focus-visible {
-  outline: 2px solid #b91c1c;
-  outline-offset: 2px;
+  outline: 2px solid var(--border-focus);
+  outline-offset: 3px;
 }
 
 .arrow:disabled {
-  opacity: 0.2;
+  opacity: 0.3;
   cursor: not-allowed;
+  transform: none;
 }
 
-/* ─── Dots ──────────────────────────────────────────────── */
+.arrow svg {
+  transition: transform var(--transition-fast);
+}
+
+.arrow:hover:not(:disabled) svg {
+  transform: translateX(-2px);
+}
+
+.arrow.next:hover:not(:disabled) svg {
+  transform: translateX(2px);
+}
+
+/* Dots pagination — enhanced */
 .dots {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.6rem;
-  padding: 1.5rem 0 0.5rem;
+  gap: var(--space-2);
+  padding: var(--space-4) 0 var(--space-2);
 }
 
 .dot {
-  width: 8px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   padding: 0;
   border: none;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.18);
+  border-radius: var(--radius-full);
+  background: var(--border);
   cursor: pointer;
-  transition: width 0.3s ease, background-color 0.3s ease,
-    border-radius 0.3s ease;
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.dot::before {
+  content: "";
+  position: absolute;
+  inset: -4px;
+  border-radius: var(--radius-full);
 }
 
 .dot:hover {
-  background: rgba(185, 28, 28, 0.55);
+  background: var(--accent);
+  transform: scale(1.2);
 }
 
 .dot:focus-visible {
-  outline: 2px solid #b91c1c;
+  outline: 2px solid var(--border-focus);
   outline-offset: 3px;
 }
 
 .dotActive {
-  width: 26px;
-  border-radius: 4px;
-  background: #b91c1c;
+  background: var(--accent);
+  width: 28px;
+  border-radius: var(--radius-full);
+  box-shadow: 0 0 0 3px var(--accent-glow);
 }
 
-/* ─── Responsive ────────────────────────────────────────── */
-@media (max-width: 768px) {
+/* Responsive */
+@media (max-width: 1024px) {
   .arrow {
-    display: none;              /* mobile: sólo dots + swipe */
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: var(--space-4);
+  }
+
+  .paginationWrapper {
+    gap: var(--space-2);
+  }
+
+  .arrow {
+    width: 44px;
+    height: 44px;
+    opacity: 0.6;
+  }
+
+  .arrow:hover:not(:disabled) {
+    opacity: 1;
+  }
+
+  .list {
+    gap: var(--space-3);
+  }
+
+  .dots {
+    padding-top: var(--space-3);
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .dotActive {
+    width: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .arrow {
+    display: none;
   }
 
   .paginationWrapper {
     gap: 0;
   }
+}
 
-  .list {
-    height: auto;               /* las filas son más altas apiladas */
-    min-height: 0;
-    overflow: visible;
-  }
+/* Animation states */
+.list.animating {
+  animation: fadeIn var(--transition-base) ease-out;
+}
 
-  .dots {
-    padding-top: 1.25rem;
-  }
+.arrow.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+/* Page info */
+.pageInfo {
+  display: flex;
+  justify-content: center;
+  padding-top: var(--space-2);
+}
+
+.pageCounter {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--fg-subtle);
+  letter-spacing: 0.05em;
 }

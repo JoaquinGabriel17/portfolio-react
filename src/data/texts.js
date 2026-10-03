@@ -44,10 +44,10 @@ export const texts = {
 
     presentation: {
   role: "Full Stack Developer",
-  title: "Clean code.",
-  roleDescription: "Full Stack Developer with over 2 years of experience in creating dynamic and innovative web applications. Passionate about turning ideas into functional products.",
+  title: "Products that ship.",
+  roleDescription: "Full Stack Developer with over 2 years of experience building end-to-end products across fintech, healthcare, sustainability, and Web3. Co-founder of Colibrí LATAM. I ship products, not just code.",
   mostWork: "What I worked with the most",
-  imageUrl: "/alephee.png", // ← Reemplaza con tu imagen real
+  imageUrl: "/alephee.png",
   availableForWork: "Available for new projects",
   buttonText: "View projects"
 },
@@ -182,10 +182,10 @@ export const texts = {
 
     presentation: {
   role: "Desarrollador Full Stack",
-  title: "Código limpio.",
-  roleDescription: "Desarrollador Full Stack con más de 2 años de experiencia creando aplicaciones web dinámicas e innovadoras. Apasionado por transformar ideas en productos funcionales.",
-  mostWork: "Con lo que mas trabajé",
-  imageUrl: "/alephee.png", // ← Reemplaza con tu imagen real
+  title: "Productos, no solo código.",
+  roleDescription: "Desarrollador Full Stack con más de 2 años construyendo productos de punta a punta en fintech, salud, sostenibilidad y Web3. Co-fundador de Colibrí LATAM. Entrego productos, no solo código.",
+  mostWork: "Con lo que más trabajé",
+  imageUrl: "/alephee.png",
   availableForWork: "Disponible para nuevos proyectos",
   buttonText: "Ver proyectos"
 },
