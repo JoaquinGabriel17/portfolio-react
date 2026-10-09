@@ -1,7 +1,7 @@
 "use client"
 import { useState } from 'react';
 import styles from './MenuDesplegable.module.css'
-import { FaGithub, FaLinkedin, FaWhatsapp,FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaWhatsapp,FaEnvelope, FaBars } from 'react-icons/fa';
 
 
 export default function MenuDesplegable({lang, toChangeLang}){
@@ -12,25 +12,29 @@ export default function MenuDesplegable({lang, toChangeLang}){
     };
     return(
         <div className={styles.container}>
-            <button onClick={()=>HandlerButton()} className={styles.botonLista}>{visibilidadMenu ? "Cerrar" : "Abrir"}</button>
-            <div className={`${styles.expandWrapper} ${visibilidadMenu ? styles.expanded : ''}`}>
-            <ul className={styles.expandInner}>
-                <li className={styles.itemLista}>
-                    <div className={styles.langButtons}>
+            
+              <div className={styles.langButtons}>
         <button
           onClick={() => toChangeLang("es")}
           className={lang === "es" ? styles.active : styles.inactive}
         >
-          🇪🇸
+          ES
         </button>
         <button
           onClick={() => toChangeLang("en")}
           className={lang === "en" ? styles.active : styles.inactive}
         >
-          🇬🇧
+          EN
         </button>
       </div>
-                </li>
+      <a href="/"><button  className={styles.botonInicio}>Inicio</button></a>
+            {/* <ul className={styles.expandInner}>
+                <button onClick={()=>HandlerButton()} className={styles.botonLista}>
+                {visibilidadMenu ? <FaBars /> : <FaBars />}
+            </button>
+            <div className={`${styles.expandWrapper} ${visibilidadMenu ? styles.expanded : ''}`}>
+                    
+                
                 <li className={styles.itemLista}>
                     <a href='https://github.com/JoaquinGabriel17' target="_blank" rel="noopener noreferrer" className={styles.iconContainer} >
         <FaGithub 
@@ -61,7 +65,10 @@ export default function MenuDesplegable({lang, toChangeLang}){
       </a>
                 </li>
             </ul>
-            </div>
+
+             </div>
+      */}
+           
   
         </div>
 

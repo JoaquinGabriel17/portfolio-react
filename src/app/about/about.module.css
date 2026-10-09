@@ -31,6 +31,14 @@
 
 @media (max-width: 768px){
   .main section{
-    width: 100%
+    width: 90vw;
+}
+
+.buttonContainer{
+    display: flex;
+    flex-direction: column;
+}
+.aboutDescription{
+    display: none;
 }
 }
