@@ -1,7 +1,7 @@
 import styles from './experienceCard.module.css';
 
 export default function ExperienceCard({ data, lang }) {
-    const { company, role, tags, stack, startDate, endDate, isCurrent } = data;
+    const { company, role, tags, startDate, endDate, isCurrent, description } = data;
 
     return (
         <div className={styles.item}>
@@ -24,15 +24,19 @@ export default function ExperienceCard({ data, lang }) {
                         <span key={index} className={styles.tag}>{tag}</span>
                     ))}
                 </div>
-            </div>
-
-            {/* Columna 3: Stack */}
-            <div className={styles.stackColumn}>
-                <span className={styles.stackLabel}>Stack</span>
-                <div className={styles.stackList}>
-                    {stack.join(' / ')}
+                <div>
+                    <p className={styles.description}>{description}</p>
                 </div>
             </div>
+
+            {/* Columna 3: Stack 
+            <div className={styles.descriptionColumn}>
+                <span className={styles.stackLabel}>{lang === "es" ? "Descripción" : "Description"}</span>
+                <p className={styles.descriptionText}>
+                    {description}
+                </p>
+            </div>
+            */}
         </div>
     );
 }

@@ -57,10 +57,12 @@
   padding: 0;
   background: transparent;
   border: none;
+  background-color: rgba(255, 255, 255, 0.05);
   border-radius: 8px;
   color: rgba(255, 255, 255, 0.45);
   cursor: pointer;
   transition: color 0.25s ease, background-color 0.25s ease;
+  
 }
 
 .arrow:hover:not(:disabled) {
