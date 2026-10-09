@@ -77,7 +77,7 @@
 }
 
 .active {
-  background-color: var(--color-accent);
+  background-color: var(--color-accent-muted);
   color: white;
   border: 0;
 }
@@ -110,6 +110,7 @@
 .navButton:hover{
     transform: scale(1.1);
     transition: transform 0.2s ease;
+    color: var(--color-accent);
 }
 .navContain{
     display: flex;

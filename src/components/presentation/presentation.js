@@ -17,12 +17,12 @@ export default function Presentation({ data, lang }) {
       lang === "es"
         ? [
             "Desarrollador Full Stack.",
-            "Soluciones escalables.",
+            "Productos, no solo código.",
             "Pasión por la tecnología.",
           ]
         : [
             "Full Stack Developer.",
-            "Scalable solutions.",
+            "Products that ship.",
             "Passionate about technology.",
           ],
     [lang]
@@ -49,8 +49,8 @@ export default function Presentation({ data, lang }) {
             </div>
 
             {/* Columna derecha: Imagen y badge */}
-            <div className={styles.imageContainer}>
-                {/*<img 
+            {/*<div className={styles.imageContainer}>
+                <img 
                     src={imageUrl} 
                     alt={role} 
                     className={styles.image} 
@@ -74,8 +74,8 @@ export default function Presentation({ data, lang }) {
                         <line x1="7" y1="17" x2="17" y2="7" />
                         <polyline points="7 7 17 7 17 17" />
                     </svg>
-                </div>*/}
-            </div>
+                </div>
+            </div>*/}
 
         </section>
     )

@@ -95,10 +95,8 @@
 }
 
 .stack {
-  font-family: 'DM Mono', monospace;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
   color: rgba(255, 255, 255, 0.8);
   text-align: left;
   max-width: 230px;
