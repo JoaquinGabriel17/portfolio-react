@@ -57,6 +57,11 @@
 
 .button {
     margin-top: 2rem;
+    
+}
+.buton:hover {
+    
+    border-color: var(--color-accent);
 }
 
 /* ===== COLUMNA DERECHA ===== */
@@ -118,10 +123,16 @@
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
+
+    .dynamicTitle{
+    min-height: 27vh;
+}
+
     .presentation {
         flex-direction: column;
         padding: 5px;
         margin-top: 10vh;
+        margin-bottom: 5vh;
         gap: 2.5rem;
         min-height: auto;
     }
