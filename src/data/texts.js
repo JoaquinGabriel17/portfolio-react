@@ -98,6 +98,7 @@ export const texts = {
       {
         name: 'Colibrí LATAM',
         year: '2024',
+        image: '/colibri.png',
         tags: ['Web3', 'Blockchain', 'Dashboard'],
         description:
           'Development of an end-to-end application for entrepreneurship management, featuring CRUD functionality for users and other entities, a real-time statistics dashboard, and Web3 integration.',
@@ -107,6 +108,7 @@ export const texts = {
       {
         name: 'Aisla Frio Pro',
         year: '2026',
+        image: '/aislafriopro.png',
         tags: ['E-commerce', 'Services', 'Customer Management'],
         description:
           'Web application for a company specializing in thermal insulation services, featuring customer management functionality.',
@@ -116,6 +118,7 @@ export const texts = {
       {
         name: 'EcoRed',
         year: '2026',
+        image: '/ecored.png',
         tags: ['Recycling', 'Connectivity', 'Services'],
         description:
           'Web application focused on waste recycling, connecting users globally to exchange ecoResources.',
@@ -125,6 +128,7 @@ export const texts = {
       {
         name: 'Linko',
         year: '2025',
+        image: '/linko2.png',
         tags: ['Full Stack', 'URL Shortener', 'Auth'],
         description:
           'Linko is a URL shortener with a simple and intuitive interface, created to demonstrate full-stack development skills using modern technologies.',
@@ -134,6 +138,7 @@ export const texts = {
       {
         name: 'Rosa de los vientos',
         year: '2023',
+        image: '/rosadelviento.png',
         tags: ['E-commerce', 'Firebase', 'Full Stack'],
         description:
           'Rosa de los vientos is a digital restaurant where users can buy and sell food.',
@@ -245,6 +250,7 @@ export const texts = {
       {
         name: 'Colibrí LATAM',
         year: '2024',
+        image: '/colibri.png',
         tags: ['Web3', 'Blockchain', 'Dashboard'],
         description:
           'Desarrollo de una aplicación punta a punta para la gestión de emprendimientos con CRUD de usuarios y otras entidades, dashboard de estadísticas en tiempo real e integración de Web3.',
@@ -254,6 +260,7 @@ export const texts = {
       {
         name: 'Aisla Frio Pro',
         year: '2026',
+        image: '/aislafriopro.png',
         tags: ['E-commerce', 'Servicios', 'Gestión de clientes'],
         description:
           'Aplicación web para una empresa dedicada a la venta de servicios de aislación térmica, con funcionalidad de gestión de clientes.',
@@ -263,6 +270,7 @@ export const texts = {
       {
         name: 'EcoRed',
         year: '2026',
+        image: '/ecored.png',
         tags: ['Reciclaje', 'Conectividad', 'Servicios'],
         description:
           'Aplicación web dedicada al reciclaje de residuos, conectando usuarios globalmente para el intercambio de ecoRecursos.',
@@ -272,6 +280,7 @@ export const texts = {
       {
         name: 'Linko',
         year: '2025',
+        image: '/linko2.png',
         tags: ['Full Stack', 'Acortador', 'Auth'],
         description:
           'Linko es un acortador de URLs con una interfaz simple e intuitiva, creado para demostrar habilidades en desarrollo full stack con tecnologías modernas.',
@@ -281,6 +290,7 @@ export const texts = {
       {
         name: 'Rosa de los vientos',
         year: '2023',
+        image: '/rosadelviento.png',
         tags: ['E-commerce', 'Firebase', 'Full Stack'],
         description:
           'Rosa de los vientos es un restaurante digital donde los usuarios pueden comprar y vender alimentos.',
