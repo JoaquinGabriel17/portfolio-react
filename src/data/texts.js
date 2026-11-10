@@ -97,7 +97,7 @@ export const texts = {
     ProjectInfo: [
       {
         name: 'Colibrí LATAM',
-        year: '2024',
+        year: '2026',
         image: '/colibri.png',
         tags: ['Web3', 'Blockchain', 'Dashboard'],
         description:
@@ -127,7 +127,7 @@ export const texts = {
       },
       {
         name: 'Linko',
-        year: '2025',
+        year: '2026',
         image: '/linko2.png',
         tags: ['Full Stack', 'URL Shortener', 'Auth'],
         description:
@@ -249,7 +249,7 @@ export const texts = {
     ProjectInfo: [
       {
         name: 'Colibrí LATAM',
-        year: '2024',
+        year: '2026',
         image: '/colibri.png',
         tags: ['Web3', 'Blockchain', 'Dashboard'],
         description:
@@ -279,7 +279,7 @@ export const texts = {
       },
       {
         name: 'Linko',
-        year: '2025',
+        year: '2026',
         image: '/linko2.png',
         tags: ['Full Stack', 'Acortador', 'Auth'],
         description:
