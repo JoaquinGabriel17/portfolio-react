@@ -1,17 +1,30 @@
+import Image from 'next/image';
 import styles from './ProjectRow.module.css';
 import { ExternalLink } from 'lucide-react';
 
 export default function ProjectRow({ project, lang }) {
-  const { year, name, tags, description, url, technologies } = project;
+  const { year, name, tags, description, url, technologies, image } = project;
 
   return (
     <a
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className={styles.row}
+      className={`${styles.row} ${image ? '' : styles.rowNoMedia}`}
     >
       <div className={styles.year}>{year}</div>
+
+      {image && (
+        <div className={styles.media}>
+          <Image
+            src={image}
+            alt=""
+            fill
+            sizes="(max-width: 768px) 100vw, 190px"
+            className={styles.image}
+          />
+        </div>
+      )}
 
       <div className={styles.center}>
         <h3 className={styles.title}>{name}</h3>
